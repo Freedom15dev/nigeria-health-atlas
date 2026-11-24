@@ -1,0 +1,38 @@
+state,evidence,n_rows,n_facilities,public_dialysis_working,machines_working_low,machines_working_high,machines_not_working_low,machines_not_working_high,nephrologists_low,nephrologists_high,gap_equipment,gap_workforce,gap_systems,gap_unknown,earliest_source_date,latest_source_date,source_types
+Abia,found,4,2,unknown,,,,,,,0,0,0,4,2023-01-20,2026-02-07,"government, news"
+Adamawa,found,2,1,yes,,,,,,,0,0,0,2,2025-01-08,2025-04-02,news
+Akwa Ibom,found,4,3,unknown,,,,,,,0,1,2,1,2010-12-27,2025-03-24,"government, news, peer-reviewed"
+Anambra,found,2,1,unknown,,,,,,,0,0,0,2,2022-08-06,2026-09-24,news
+Bauchi,found,9,4,yes,,,,,,,0,1,2,6,2022-02-23,2026-08-12,"government, news"
+Bayelsa,found,3,2,unknown,,,,,,,0,0,1,2,2025-02-11,2025-08-28,"government, news"
+Benue,found,5,1,yes,4.0,4.0,2.0,2.0,,,1,1,1,2,2015-01-27,2023-11-08,news
+Borno,found,7,2,yes,,,,,,,0,1,1,5,2022-08-31,2025-08-20,"government, news, peer-reviewed"
+Cross River,found,1,1,unknown,,,,,,,0,0,0,1,2026-07-10,2026-07-10,government
+Delta,found,2,2,unknown,,,,,,,0,0,0,2,2023-05-16,2026-09-18,news
+Ebonyi,found,3,2,yes,,,,,,,0,0,0,3,2024-01-18,2026-11-19,"government, news"
+Edo,found,5,1,yes,2.0,2.0,,,,,1,0,0,4,2021-05-24,2026-09-24,"government, news"
+Ekiti,found,3,3,yes,6.0,6.0,,,,,0,0,0,3,2020-01-28,2025-04-22,"government, news"
+Enugu,found,3,2,unknown,,,,,,,0,0,0,3,2022-08-06,2026-09-24,"government, news"
+Federal Capital Territory,found,6,2,yes,5.0,5.0,,,,,2,0,1,3,2025-01-14,2026,"government, news"
+Gombe,found,4,2,unknown,,,,,,,0,0,1,3,2017-02-09,2026-03-12,news
+Imo,found,3,2,yes,,,,,,,0,0,0,3,2022-01-29,2025-10-13,"government, news"
+Jigawa,found,6,4,yes,,,,,,,0,1,1,4,2020-03-27,2025-12-03,"news, peer-reviewed"
+Kaduna,found,2,2,unknown,,,,,,,0,0,0,2,2021-04-28,2021-04-29,news
+Kano,found,12,4,yes,12.0,12.0,14.0,16.0,1.0,1.0,2,0,1,9,2017-05-25,2025-10-12,"government, news"
+Katsina,found,4,2,unknown,,,,,1.0,1.0,1,0,0,3,2023-09-07,2026-08-06,"government, news"
+Kebbi,found,5,3,yes,,,,,,,0,0,2,3,2017-02-20,2021-06-30,"news, peer-reviewed"
+Kogi,found,2,2,yes,1.0,1.0,,,,,0,0,1,1,2020-01-28,2025-07-08,news
+Kwara,found,4,2,yes,2.0,2.0,,,,,1,0,0,3,2017-04-05,2021-07-20,news
+Lagos,found,13,9,yes,16.0,18.0,24.0,24.0,,,2,0,1,10,2019-07-31,2025-08-20,"government, news"
+Nasarawa,found,2,2,yes,3.0,3.0,,,,,0,0,0,2,2020-01-28,2026-01-29,"government, news"
+Niger,found,2,1,unknown,,,,,,,0,0,1,1,2019-06-07,2024-03-21,news
+Ogun,found,2,2,unknown,,,,,,,0,0,0,2,2020-08-12,2021-08-08,news
+Ondo,found,3,3,unknown,,,,,,,0,0,0,3,2013-11-09,2026-09-24,news
+Osun,found,3,3,unknown,,,,,,,1,0,0,2,2020-01-28,2026-11-05,news
+Oyo,found,6,2,yes,3.0,3.0,,,1.0,1.0,0,0,1,5,2013-04-05,2025-08-20,"government, news"
+Plateau,found,4,2,unknown,,,,,,,1,0,0,3,2020-01-28,2025-08-20,"government, news"
+Rivers,found,3,2,unknown,,,,,,,0,0,0,3,2019-04-29,2026-04-10,"government, news, professional body"
+Sokoto,found,4,2,yes,1.0,1.0,6.0,6.0,,,0,0,1,3,2019-05-06,2021-06-30,"news, peer-reviewed"
+Taraba,found,5,2,reported not working,,,,,,,2,0,1,2,2023-05,2026-01-09,"government, news"
+Yobe,found,3,2,yes,11.0,11.0,,,,,0,0,1,2,2025-03,2026-09-03,"news, peer-reviewed"
+Zamfara,found,3,2,reported not working,,,,,,,1,0,0,2,2020-12-07,2024-03-19,"news, peer-reviewed"

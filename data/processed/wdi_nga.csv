@@ -1,0 +1,139 @@
+indicator_id,year,value,indicator,source_id,raw_file,pulled
+SH.XPD.OOPC.CH.ZS,2000,60.16206741,Out-of-pocket expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.OOPC.CH.ZS,2001,60.74782181,Out-of-pocket expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.OOPC.CH.ZS,2002,65.04915619,Out-of-pocket expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.OOPC.CH.ZS,2003,72.81436157,Out-of-pocket expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.OOPC.CH.ZS,2004,64.54787445,Out-of-pocket expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.OOPC.CH.ZS,2005,65.97051239,Out-of-pocket expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.OOPC.CH.ZS,2006,70.45880127,Out-of-pocket expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.OOPC.CH.ZS,2007,70.93754578,Out-of-pocket expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.OOPC.CH.ZS,2008,72.75693512,Out-of-pocket expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.OOPC.CH.ZS,2009,74.47493744,Out-of-pocket expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.OOPC.CH.ZS,2010,76.87748718,Out-of-pocket expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.OOPC.CH.ZS,2011,74.72514343,Out-of-pocket expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.OOPC.CH.ZS,2012,72.84432983,Out-of-pocket expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.OOPC.CH.ZS,2013,70.92673492,Out-of-pocket expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.OOPC.CH.ZS,2014,71.85419464,Out-of-pocket expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.OOPC.CH.ZS,2015,71.89007568,Out-of-pocket expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.OOPC.CH.ZS,2016,75.18703461,Out-of-pocket expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.OOPC.CH.ZS,2017,77.38787079,Out-of-pocket expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.OOPC.CH.ZS,2018,75.94579315,Out-of-pocket expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.OOPC.CH.ZS,2019,71.49702454,Out-of-pocket expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.OOPC.CH.ZS,2020,74.67578125,Out-of-pocket expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.OOPC.CH.ZS,2021,76.24337006,Out-of-pocket expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.OOPC.CH.ZS,2022,75.73786163,Out-of-pocket expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.OOPC.CH.ZS,2023,71.90481567,Out-of-pocket expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.CHEX.PC.CD,2000,17.15887642,Current health expenditure per capita (current US$),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.CHEX.PC.CD,2001,17.96053314,Current health expenditure per capita (current US$),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.CHEX.PC.CD,2002,17.53752899,Current health expenditure per capita (current US$),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.CHEX.PC.CD,2003,37.91439438,Current health expenditure per capita (current US$),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.CHEX.PC.CD,2004,42.81798172,Current health expenditure per capita (current US$),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.CHEX.PC.CD,2005,52.24337006,Current health expenditure per capita (current US$),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.CHEX.PC.CD,2006,63.63072205,Current health expenditure per capita (current US$),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.CHEX.PC.CD,2007,66.90659332,Current health expenditure per capita (current US$),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.CHEX.PC.CD,2008,77.45053101,Current health expenditure per capita (current US$),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.CHEX.PC.CD,2009,65.71811676,Current health expenditure per capita (current US$),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.CHEX.PC.CD,2010,73.008255,Current health expenditure per capita (current US$),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.CHEX.PC.CD,2011,80.2377243,Current health expenditure per capita (current US$),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.CHEX.PC.CD,2012,87.89523315,Current health expenditure per capita (current US$),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.CHEX.PC.CD,2013,97.29588318,Current health expenditure per capita (current US$),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.CHEX.PC.CD,2014,102.39888763,Current health expenditure per capita (current US$),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.CHEX.PC.CD,2015,92.91207123,Current health expenditure per capita (current US$),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.CHEX.PC.CD,2016,75.52328491,Current health expenditure per capita (current US$),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.CHEX.PC.CD,2017,70.31814575,Current health expenditure per capita (current US$),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.CHEX.PC.CD,2018,63.60244751,Current health expenditure per capita (current US$),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.CHEX.PC.CD,2019,67.6254425,Current health expenditure per capita (current US$),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.CHEX.PC.CD,2020,67.91384888,Current health expenditure per capita (current US$),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.CHEX.PC.CD,2021,81.87322235,Current health expenditure per capita (current US$),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.CHEX.PC.CD,2022,89.62958527,Current health expenditure per capita (current US$),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.CHEX.PC.CD,2023,66.82009125,Current health expenditure per capita (current US$),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.GHED.CH.ZS,2000,18.31479263,Domestic general government health expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.GHED.CH.ZS,2001,26.89140511,Domestic general government health expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.GHED.CH.ZS,2002,21.33314896,Domestic general government health expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.GHED.CH.ZS,2003,18.39930725,Domestic general government health expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.GHED.CH.ZS,2004,25.94121552,Domestic general government health expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.GHED.CH.ZS,2005,25.55648804,Domestic general government health expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.GHED.CH.ZS,2006,21.18177032,Domestic general government health expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.GHED.CH.ZS,2007,19.91349602,Domestic general government health expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.GHED.CH.ZS,2008,17.87425423,Domestic general government health expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.GHED.CH.ZS,2009,15.92125893,Domestic general government health expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.GHED.CH.ZS,2010,13.60430336,Domestic general government health expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.GHED.CH.ZS,2011,14.43568802,Domestic general government health expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.GHED.CH.ZS,2012,16.20215034,Domestic general government health expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.GHED.CH.ZS,2013,14.30348778,Domestic general government health expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.GHED.CH.ZS,2014,13.3177433,Domestic general government health expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.GHED.CH.ZS,2015,16.44574738,Domestic general government health expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.GHED.CH.ZS,2016,13.0209322,Domestic general government health expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.GHED.CH.ZS,2017,14.2133503,Domestic general government health expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.GHED.CH.ZS,2018,16.09827423,Domestic general government health expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.GHED.CH.ZS,2019,15.73634243,Domestic general government health expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.GHED.CH.ZS,2020,14.96697235,Domestic general government health expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.GHED.CH.ZS,2021,13.27266693,Domestic general government health expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.GHED.CH.ZS,2022,14.71478939,Domestic general government health expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+SH.XPD.GHED.CH.ZS,2023,14.33912182,Domestic general government health expenditure (% of current health expenditure),wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1960,0.714285999714286,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1961,0.714285999714286,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1962,0.714285999714286,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1963,0.714285999714286,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1964,0.714285999714286,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1965,0.714285999714286,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1966,0.714285999714286,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1967,0.714285999714286,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1968,0.714285999714286,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1969,0.714285999714286,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1970,0.714285999714286,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1971,0.712855832988095,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1972,0.657894999,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1973,0.657894999,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1974,0.630282046248239,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1975,0.615501553350787,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1976,0.626601003665368,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1977,0.644701062141185,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1978,0.635271994265801,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1979,0.604007374017144,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1980,0.546780891916083,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1981,0.617708175028804,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1982,0.673461261528523,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1983,0.724409851151573,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1984,0.766527449112392,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1985,0.893774083333333,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1986,1.7545230040748,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1987,4.0160373443363,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1988,4.53696666666666,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1989,7.364735,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1990,8.038285,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1991,9.90949166666666,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1992,17.298425,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1993,22.0654,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1994,21.996,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1995,21.8952583333333,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1996,21.884425,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1997,21.88605,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1998,21.886,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,1999,92.3381,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,2000,101.697333333333,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,2001,111.23125,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,2002,120.578158333333,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,2003,129.22235,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,2004,132.888025,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,2005,131.274333333333,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,2006,128.651666666666,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,2007,125.808108333333,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,2008,118.566666666666,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,2009,148.88,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,2010,150.2975,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,2011,153.8625,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,2012,157.5,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,2013,157.311666666666,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,2014,158.552641666666,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,2015,192.440333333333,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,2016,253.492,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,2017,305.790109160004,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,2018,306.083688245234,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,2019,306.920951495222,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,2020,358.810797258297,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,2021,401.152029220779,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,2022,425.979158066857,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,2023,645.194067883201,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,2024,1478.96519740023,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24
+PA.NUS.FCRF,2025,1518.38094813367,"Official exchange rate (LCU per US$, period average)",wdi,wdi_nga_2026-11-24.json,2026-11-24

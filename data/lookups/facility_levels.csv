@@ -1,0 +1,12 @@
+source_id,field,raw_value,level,note
+grid3_hf_v2,facility_level,Primary,primary,
+grid3_hf_v2,facility_level,Secondary,secondary,
+grid3_hf_v2,facility_level,Tertiary,tertiary,
+grid3_hf_v2,facility_level,Unknown,unknown,level not recorded in source
+ehealthafrica_hf,type,Primary,primary,
+ehealthafrica_hf,type,Secondary,secondary,
+ehealthafrica_hf,type,Tertiary,tertiary,
+ehealthafrica_hf,type,Primary Health Clinic,primary,facility-type label used in the level field
+ehealthafrica_hf,type,Primary Health Center,primary,facility-type label used in the level field
+ehealthafrica_hf,type,Health Post Dispensary,primary,facility-type label used in the level field
+ehealthafrica_hf,type,Unknown,unknown,level not recorded in source

@@ -1,0 +1,175 @@
+# Inputs for one illustrative haemodialysis centre (src/centre_model.py).
+# Every input: value (base case), low, high, unit, source.
+# "worse" says which bound is the pessimistic one for the centre's finances:
+#   low / high  -> used by the low (pessimistic) and high (optimistic) scenarios
+#   fixed       -> a design choice, the same in every scenario (change it in the app)
+# "assumption — to verify" means I found no public source; treat it as a placeholder.
+# Nothing here describes any real firm's terms. The PPP structures are general illustrations.
+
+label: "An illustrative model using public data and stated assumptions. Not investment advice."
+currency: NGN
+
+capacity:
+  machines:
+    value: 10
+    low: 6
+    high: 15
+    unit: haemodialysis machines
+    worse: fixed
+    source: "Register: Kidney360 2022 survey, 1-15 machines per centre (mean 4); YSUTH Damaturu 11 working (2026); LASUTH 8 stations (2022)"
+  shifts_per_day:
+    value: 2
+    low: 2
+    high: 3
+    unit: shifts per machine per day
+    worse: fixed
+    source: "Register: ATBUTH Bauchi runs 'a morning/evening shift' (2025); LASUTH 8 stations for 22 sessions a day (~2.75 shifts) (2022)"
+  days_open_per_week:
+    value: 6
+    low: 5
+    high: 7
+    unit: days per week
+    worse: fixed
+    source: "assumption — to verify"
+  capacity_used:
+    value: 0.75
+    low: 0.50
+    high: 0.90
+    unit: share of available session slots used (0-1)
+    worse: low
+    source: "assumption — to verify. Register shows why it can fall: power cuts limit Alimosho General Hospital to one batch a day (2024); consumables run out (National Hospital Abuja, 2026)"
+  sessions_per_patient_per_week:
+    value: 2
+    low: 2
+    high: 3
+    unit: sessions per patient per week
+    worse: fixed
+    source: "assumption — to verify. Three a week is the usual clinical standard; two is assumed because most patients pay out of pocket (98% of dialysis paid out-of-pocket, Kidney360 2022)"
+
+prices:   # what the centre receives per session, by who pays
+  price_out_of_pocket_ngn:
+    value: 45000
+    low: 40000
+    high: 50000
+    unit: NGN per session
+    worse: low
+    source: "Register/cost evidence: Lagos State hospitals N40,000-45,000 (thepodiummedia.com, 2024-12-22); average N40,000 (Kidney360, 2022-07-14); private N50,000-80,000 (The Guardian, 2026-03-12)"
+  price_subsidised_ngn:
+    value: 12000
+    low: 12000
+    high: 40000
+    unit: NGN per session received by the centre
+    worse: low
+    source: "Federal subsidy: patient pays N12,000 (fmino.gov.ng, 2025-08-20). Base assumes the centre receives only the patient's share; how any federal top-up would reach a partner-run centre is unknown (assumption — to verify)"
+  price_nhia_ngn:
+    value: 40000
+    low: 30000
+    high: 45000
+    unit: NGN per session
+    worse: low
+    source: "assumption — to verify (NHIA dialysis tariff not found)"
+  price_employer_hmo_ngn:
+    value: 50000
+    low: 45000
+    high: 60000
+    unit: NGN per session
+    worse: low
+    source: "assumption — to verify (set near the private-hospital range in The Guardian, 2026-03-12)"
+
+payer_mix:   # shares of sessions; each column (value / low / high) must sum to 1
+  out_of_pocket:  {value: 0.80, low: 0.90, high: 0.65, price: price_out_of_pocket_ngn}
+  subsidised:     {value: 0.10, low: 0.08, high: 0.15, price: price_subsidised_ngn}
+  nhia:           {value: 0.05, low: 0.01, high: 0.10, price: price_nhia_ngn}
+  employer_hmo:   {value: 0.05, low: 0.01, high: 0.10, price: price_employer_hmo_ngn}
+  unit: share of sessions
+  source: "assumption — to verify. Anchored on 98% out-of-pocket (Kidney360, 2022) and NHIA coverage of 10-13% (Health Minister, Feb 2026, per the brief). low = 'mostly out-of-pocket', high = 'more insured'. Scenarios use the value column; the app lets you pick."
+
+costs:
+  consumables_per_session_usd:
+    value: 20
+    low: 15
+    high: 30
+    unit: US$ per session (dialyser, bloodlines, concentrate, needles; imported)
+    worse: high
+    source: "assumption — to verify. Imported, so priced in US$ and converted at the exchange rate. Register: spare parts and supplies 'imported, scarce and costly' (Kidney360, 2022)"
+  power_water_per_session_ngn:
+    value: 6000
+    low: 4000
+    high: 10000
+    unit: NGN per session (generator diesel, water treatment)
+    worse: high
+    source: "assumption — to verify. Register: power cuts and generator backups named as a problem in many centres (e.g. Kidney360 2022; ATBUTH runs on a standby generator, 2025)"
+  staff_cost_per_shift_ngn:
+    value: 120000
+    low: 80000
+    high: 180000
+    unit: NGN per shift (dialysis nurses, technician, share of a nephrologist)
+    worse: high
+    source: "assumption — to verify"
+  equipment_cost_per_machine_usd:
+    value: 28000
+    low: 20000
+    high: 33000
+    unit: US$ per machine
+    worse: high
+    source: "Register: UCH Ibadan bought 3 machines for N30m (Blueprint, 2020-01-28): about US$28,000 each at the 2020 rate and US$33,000 at the 2019 rate (World Bank). Gombe's N200m for 6 machines plus a water plant (BusinessDay, 2017-02-09) includes the plant, so it isn't used. Converted in notebook 04"
+  setup_cost_usd:
+    value: 120000
+    low: 80000
+    high: 200000
+    unit: US$ one-off (water treatment plant, generator, fit-out)
+    worse: high
+    source: "assumption — to verify. Register: donated centres come with a reverse-osmosis water plant and a 30-50 kVA generator (RCCG centres, 2021-2025)"
+  maintenance_pct_of_equipment_per_year:
+    value: 0.10
+    low: 0.07
+    high: 0.15
+    unit: share of equipment cost per year
+    worse: high
+    source: "assumption — to verify. Register: downtime from old, poorly maintained machines and scarce spare parts (Kidney360, 2022)"
+  equipment_life_years:
+    value: 7
+    low: 5
+    high: 10
+    unit: years
+    worse: low
+    source: "assumption — to verify"
+
+fx:
+  fx_ngn_per_usd:
+    value: from_data:wdi:PA.NUS.FCRF
+    low: from_data:wdi:PA.NUS.FCRF
+    high: from_data:wdi:PA.NUS.FCRF
+    unit: NGN per US$
+    worse: fixed
+    source: "World Bank WDI PA.NUS.FCRF, official exchange rate, latest annual average (read at run time from data/processed/wdi_nga.csv)"
+  naira_shocks:
+    value: [0.20, 0.50]
+    low: [0.20, 0.50]
+    high: [0.20, 0.50]
+    unit: share by which the naira weakens (more NGN per US$)
+    worse: fixed
+    source: "Brief: test the naira weakening by 20% and by 50%. Session prices are assumed to stay the same in naira (assumption — to verify)"
+
+ppp:   # illustrative structures only: general examples, not any real firm's terms
+  partner_fee_per_session_ngn:
+    value: 40000
+    low: 40000
+    high: 40000
+    unit: NGN per session paid by the hospital to the private partner
+    worse: fixed
+    source: "assumption — illustrative. Set just above the partner's base-case cost per session (consumables + maintenance), so the example isn't loss-making by construction"
+  partner_revenue_share:
+    value: 0.95
+    low: 0.95
+    high: 0.95
+    unit: share of session revenue paid to the private partner
+    worse: fixed
+    source: "assumption — illustrative. Set so the partner's base-case income roughly matches the fee structure, for a like-for-like comparison"
+  cost_split:
+    value: "partner: equipment, set-up, maintenance, consumables; hospital: staff, power and water, space"
+    low: same
+    high: same
+    unit: text
+    worse: fixed
+    source: "assumption — illustrative"

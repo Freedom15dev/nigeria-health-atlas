@@ -1,0 +1,20 @@
+# Project brief (kept private)
+CLAUDE.md
+
+# Environment
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.qodo/
+
+# Large raw files not used by the pipeline run
+# (FR395 PDF is only needed by the one-off transcribe script; the mastergrid raster is unused)
+data/raw/*.pdf
+data/raw/*.tif
+*.tmp
+.ipynb_checkpoints/
+
+# Planning documents (kept locally, not published)
+DESIGN.md
+Nigeria Health Atlas dashboard mockup.html

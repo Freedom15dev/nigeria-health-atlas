@@ -1,0 +1,37 @@
+column,description,unit,source_id,data_date,derivation
+state,Official state name,,lookup,lookup table (no date),
+state_code,ISO 3166-2 code,,lookup,lookup table (no date),
+zone,Geopolitical zone,,lookup,lookup table (no date),
+population_total,"Modelled population, 2025 estimate, rounded to nearest 1,000",people,grid3_pop_v3,2025 estimates; accessed 2026-11-24,
+population_40plus,Population aged 40+,people,grid3_pop_v3,2025 estimates; accessed 2026-11-24,unknown: no age-sex groups in source file
+fac_all_grid3,"Health facilities, all levels, after de-duplication",count,grid3_hf_v2,2024-11-11; accessed 2026-11-24,
+fac_primary_grid3,Primary-level facilities,count,grid3_hf_v2,2024-11-11; accessed 2026-11-24,level via facility_levels.csv
+fac_secondary_grid3,Secondary-level facilities,count,grid3_hf_v2,2024-11-11; accessed 2026-11-24,level via facility_levels.csv
+fac_tertiary_grid3,Tertiary-level facilities,count,grid3_hf_v2,2024-11-11; accessed 2026-11-24,level via facility_levels.csv
+fac_level_unknown_grid3,Facilities with no level recorded,count,grid3_hf_v2,2024-11-11; accessed 2026-11-24,
+fac_sec_tert_public_grid3,Public secondary + tertiary facilities,count,grid3_hf_v2,2024-11-11; accessed 2026-11-24,ownership = public
+fac_all_eha,"Health facilities, all levels (cross-check)",count,ehealthafrica_hf,2018-12-18 to 2020-07-04; accessed 2026-11-24,not de-duplicated
+fac_sec_tert_eha,Secondary + tertiary facilities (cross-check),count,ehealthafrica_hf,2018-12-18 to 2020-07-04; accessed 2026-11-24,
+fac_sec_tert_grid3,Secondary + tertiary facilities,count,grid3_hf_v2,2024-11-11; accessed 2026-11-24,secondary + tertiary
+insurance_any_men_pct,Men 15-49 with any health insurance,%,ndhs2024_api,fieldwork 2023-12-01 to 2024-05-01; published 2025-10-15; pulled 2026-11-24,AH_HINS_M_ANY
+insurance_none_women_pct,Women 15-49 with no health insurance,%,ndhs2024_api,fieldwork 2023-12-01 to 2024-05-01; published 2025-10-15; pulled 2026-11-24,AH_HINS_W_NON
+insurance_any_women_pct,Women 15-49 with any health insurance,%,ndhs2024_api,fieldwork 2023-12-01 to 2024-05-01; published 2025-10-15; pulled 2026-11-24,calculated: 100 - AH_HINS_W_NON
+wealth_q4_pct,Household population in 4th wealth quintile,%,ndhs2024_api,fieldwork 2023-12-01 to 2024-05-01; published 2025-10-15; pulled 2026-11-24,HC_WIXQ_P_4TH
+wealth_q5_pct,Household population in highest wealth quintile,%,ndhs2024_api,fieldwork 2023-12-01 to 2024-05-01; published 2025-10-15; pulled 2026-11-24,HC_WIXQ_P_HGH
+wealth_top2_pct,Household population in top two wealth quintiles,%,ndhs2024_api,fieldwork 2023-12-01 to 2024-05-01; published 2025-10-15; pulled 2026-11-24,calculated: HC_WIXQ_P_4TH + HC_WIXQ_P_HGH
+barrier_distance_women_pct,Women 15-49 for whom distance is a big problem in getting care,%,ndhs2024_api,fieldwork 2023-12-01 to 2024-05-01; published 2025-10-15; pulled 2026-11-24,RH_PAHC_W_DIS
+barrier_money_women_pct,Women 15-49 for whom getting money is a big problem in getting care,%,ndhs2024_api,fieldwork 2023-12-01 to 2024-05-01; published 2025-10-15; pulled 2026-11-24,RH_PAHC_W_MON
+bp_ever_measured_men_pct,Men 15-49 who ever had blood pressure measured,%,ndhs2024_fr395,fieldwork 2023-12-01 to 2024-05-01; published October 2025; accessed 2026-11-24,"Table 19.1.2, p.589; self-reported"
+bp_ever_measured_women_pct,Women 15-49 who ever had blood pressure measured,%,ndhs2024_fr395,fieldwork 2023-12-01 to 2024-05-01; published October 2025; accessed 2026-11-24,"Table 19.1.1, p.587; self-reported"
+bp_ever_told_high_men_pct,Men 15-49 ever told they have high blood pressure,%,ndhs2024_fr395,fieldwork 2023-12-01 to 2024-05-01; published October 2025; accessed 2026-11-24,"Table 19.1.2, p.589; self-reported, not measured prevalence"
+bp_ever_told_high_women_pct,Women 15-49 ever told they have high blood pressure,%,ndhs2024_fr395,fieldwork 2023-12-01 to 2024-05-01; published October 2025; accessed 2026-11-24,"Table 19.1.1, p.587; self-reported, not measured prevalence"
+sugar_ever_measured_men_pct,Men 15-49 who ever had blood sugar measured,%,ndhs2024_fr395,fieldwork 2023-12-01 to 2024-05-01; published October 2025; accessed 2026-11-24,"Table 19.2.2, p.593; self-reported"
+sugar_ever_measured_women_pct,Women 15-49 who ever had blood sugar measured,%,ndhs2024_fr395,fieldwork 2023-12-01 to 2024-05-01; published October 2025; accessed 2026-11-24,"Table 19.2.1, p.591; self-reported"
+sugar_ever_told_high_men_pct,Men 15-49 ever told they have high blood sugar,%,ndhs2024_fr395,fieldwork 2023-12-01 to 2024-05-01; published October 2025; accessed 2026-11-24,"Table 19.2.2, p.593; self-reported, not measured prevalence"
+sugar_ever_told_high_women_pct,Women 15-49 ever told they have high blood sugar,%,ndhs2024_fr395,fieldwork 2023-12-01 to 2024-05-01; published October 2025; accessed 2026-11-24,"Table 19.2.1, p.591; self-reported, not measured prevalence"
+fac_all_per_100k,"Facilities per 100,000 people","per 100,000",grid3_hf_v2; grid3_pop_v3,2024-11-11; accessed 2026-11-24 | 2025 estimates; accessed 2026-11-24,"fac_all_grid3 / population_total x 100,000; 1 decimal"
+fac_sec_tert_per_100k,"Secondary + tertiary facilities per 100,000 people","per 100,000",grid3_hf_v2; grid3_pop_v3,2024-11-11; accessed 2026-11-24 | 2025 estimates; accessed 2026-11-24,"fac_sec_tert_grid3 / population_total x 100,000; 1 decimal"
+crosscheck_diff_percent,GRID3 count vs eHealth Africa count,% difference,grid3_hf_v2; ehealthafrica_hf,2024-11-11; accessed 2026-11-24 | 2018-12-18 to 2020-07-04; accessed 2026-11-24,(GRID3 - eHA) / eHA x 100
+crosscheck_flag,Counts differ by more than 20%,true/false,grid3_hf_v2; ehealthafrica_hf,2024-11-11; accessed 2026-11-24 | 2018-12-18 to 2020-07-04; accessed 2026-11-24,abs(crosscheck_diff_percent) > 20
+crosscheck_sec_tert_diff_percent,"GRID3 vs eHealth Africa, secondary + tertiary only",% difference,grid3_hf_v2; ehealthafrica_hf,2024-11-11; accessed 2026-11-24 | 2018-12-18 to 2020-07-04; accessed 2026-11-24,(GRID3 - eHA) / eHA x 100
+crosscheck_sec_tert_flag,Secondary + tertiary counts differ by more than 20%,true/false,grid3_hf_v2; ehealthafrica_hf,2024-11-11; accessed 2026-11-24 | 2018-12-18 to 2020-07-04; accessed 2026-11-24,abs(crosscheck_sec_tert_diff_percent) > 20

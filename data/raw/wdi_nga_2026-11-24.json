@@ -1,0 +1,1334 @@
+{
+ "_pulled": "2026-11-24",
+ "_signature": "b31431e0d55a04e0030b8fb4b9f02b27d8987a42a991fec90713257bbb97d9ff",
+ "payload": {
+  "SH.XPD.OOPC.CH.ZS": [
+   {
+    "year": "1960",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1961",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1962",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1963",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1964",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1965",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1966",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1967",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1968",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1969",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1970",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1971",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1972",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1973",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1974",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1975",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1976",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1977",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1978",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1979",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1980",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1981",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1982",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1983",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1984",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1985",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1986",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1987",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1988",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1989",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1990",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1991",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1992",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1993",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1994",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1995",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1996",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1997",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1998",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1999",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2000",
+    "value": 60.16206741,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2001",
+    "value": 60.74782181,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2002",
+    "value": 65.04915619,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2003",
+    "value": 72.81436157,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2004",
+    "value": 64.54787445,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2005",
+    "value": 65.97051239,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2006",
+    "value": 70.45880127,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2007",
+    "value": 70.93754578,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2008",
+    "value": 72.75693512,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2009",
+    "value": 74.47493744,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2010",
+    "value": 76.87748718,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2011",
+    "value": 74.72514343,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2012",
+    "value": 72.84432983,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2013",
+    "value": 70.92673492,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2014",
+    "value": 71.85419464,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2015",
+    "value": 71.89007568,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2016",
+    "value": 75.18703461,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2017",
+    "value": 77.38787079,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2018",
+    "value": 75.94579315,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2019",
+    "value": 71.49702454,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2020",
+    "value": 74.67578125,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2021",
+    "value": 76.24337006,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2022",
+    "value": 75.73786163,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2023",
+    "value": 71.90481567,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2024",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2025",
+    "value": null,
+    "indicator": "Out-of-pocket expenditure (% of current health expenditure)"
+   }
+  ],
+  "SH.XPD.CHEX.PC.CD": [
+   {
+    "year": "1960",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1961",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1962",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1963",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1964",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1965",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1966",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1967",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1968",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1969",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1970",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1971",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1972",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1973",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1974",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1975",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1976",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1977",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1978",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1979",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1980",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1981",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1982",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1983",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1984",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1985",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1986",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1987",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1988",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1989",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1990",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1991",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1992",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1993",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1994",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1995",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1996",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1997",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1998",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "1999",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "2000",
+    "value": 17.15887642,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "2001",
+    "value": 17.96053314,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "2002",
+    "value": 17.53752899,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "2003",
+    "value": 37.91439438,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "2004",
+    "value": 42.81798172,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "2005",
+    "value": 52.24337006,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "2006",
+    "value": 63.63072205,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "2007",
+    "value": 66.90659332,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "2008",
+    "value": 77.45053101,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "2009",
+    "value": 65.71811676,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "2010",
+    "value": 73.008255,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "2011",
+    "value": 80.2377243,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "2012",
+    "value": 87.89523315,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "2013",
+    "value": 97.29588318,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "2014",
+    "value": 102.39888763,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "2015",
+    "value": 92.91207123,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "2016",
+    "value": 75.52328491,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "2017",
+    "value": 70.31814575,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "2018",
+    "value": 63.60244751,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "2019",
+    "value": 67.6254425,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "2020",
+    "value": 67.91384888,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "2021",
+    "value": 81.87322235,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "2022",
+    "value": 89.62958527,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "2023",
+    "value": 66.82009125,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "2024",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   },
+   {
+    "year": "2025",
+    "value": null,
+    "indicator": "Current health expenditure per capita (current US$)"
+   }
+  ],
+  "SH.XPD.GHED.CH.ZS": [
+   {
+    "year": "1960",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1961",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1962",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1963",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1964",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1965",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1966",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1967",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1968",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1969",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1970",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1971",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1972",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1973",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1974",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1975",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1976",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1977",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1978",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1979",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1980",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1981",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1982",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1983",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1984",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1985",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1986",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1987",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1988",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1989",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1990",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1991",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1992",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1993",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1994",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1995",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1996",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1997",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1998",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "1999",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2000",
+    "value": 18.31479263,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2001",
+    "value": 26.89140511,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2002",
+    "value": 21.33314896,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2003",
+    "value": 18.39930725,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2004",
+    "value": 25.94121552,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2005",
+    "value": 25.55648804,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2006",
+    "value": 21.18177032,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2007",
+    "value": 19.91349602,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2008",
+    "value": 17.87425423,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2009",
+    "value": 15.92125893,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2010",
+    "value": 13.60430336,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2011",
+    "value": 14.43568802,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2012",
+    "value": 16.20215034,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2013",
+    "value": 14.30348778,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2014",
+    "value": 13.3177433,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2015",
+    "value": 16.44574738,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2016",
+    "value": 13.0209322,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2017",
+    "value": 14.2133503,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2018",
+    "value": 16.09827423,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2019",
+    "value": 15.73634243,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2020",
+    "value": 14.96697235,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2021",
+    "value": 13.27266693,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2022",
+    "value": 14.71478939,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2023",
+    "value": 14.33912182,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2024",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   },
+   {
+    "year": "2025",
+    "value": null,
+    "indicator": "Domestic general government health expenditure (% of current health expenditure)"
+   }
+  ],
+  "PA.NUS.FCRF": [
+   {
+    "year": "1960",
+    "value": 0.714285999714286,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1961",
+    "value": 0.714285999714286,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1962",
+    "value": 0.714285999714286,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1963",
+    "value": 0.714285999714286,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1964",
+    "value": 0.714285999714286,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1965",
+    "value": 0.714285999714286,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1966",
+    "value": 0.714285999714286,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1967",
+    "value": 0.714285999714286,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1968",
+    "value": 0.714285999714286,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1969",
+    "value": 0.714285999714286,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1970",
+    "value": 0.714285999714286,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1971",
+    "value": 0.712855832988095,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1972",
+    "value": 0.657894999,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1973",
+    "value": 0.657894999,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1974",
+    "value": 0.630282046248239,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1975",
+    "value": 0.615501553350787,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1976",
+    "value": 0.626601003665368,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1977",
+    "value": 0.644701062141185,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1978",
+    "value": 0.635271994265801,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1979",
+    "value": 0.604007374017144,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1980",
+    "value": 0.546780891916083,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1981",
+    "value": 0.617708175028804,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1982",
+    "value": 0.673461261528523,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1983",
+    "value": 0.724409851151573,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1984",
+    "value": 0.766527449112392,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1985",
+    "value": 0.893774083333333,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1986",
+    "value": 1.7545230040748,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1987",
+    "value": 4.0160373443363,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1988",
+    "value": 4.53696666666666,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1989",
+    "value": 7.364735,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1990",
+    "value": 8.038285,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1991",
+    "value": 9.90949166666666,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1992",
+    "value": 17.298425,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1993",
+    "value": 22.0654,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1994",
+    "value": 21.996,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1995",
+    "value": 21.8952583333333,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1996",
+    "value": 21.884425,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1997",
+    "value": 21.88605,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1998",
+    "value": 21.886,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "1999",
+    "value": 92.3381,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "2000",
+    "value": 101.697333333333,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "2001",
+    "value": 111.23125,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "2002",
+    "value": 120.578158333333,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "2003",
+    "value": 129.22235,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "2004",
+    "value": 132.888025,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "2005",
+    "value": 131.274333333333,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "2006",
+    "value": 128.651666666666,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "2007",
+    "value": 125.808108333333,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "2008",
+    "value": 118.566666666666,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "2009",
+    "value": 148.88,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "2010",
+    "value": 150.2975,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "2011",
+    "value": 153.8625,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "2012",
+    "value": 157.5,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "2013",
+    "value": 157.311666666666,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "2014",
+    "value": 158.552641666666,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "2015",
+    "value": 192.440333333333,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "2016",
+    "value": 253.492,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "2017",
+    "value": 305.790109160004,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "2018",
+    "value": 306.083688245234,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "2019",
+    "value": 306.920951495222,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "2020",
+    "value": 358.810797258297,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "2021",
+    "value": 401.152029220779,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "2022",
+    "value": 425.979158066857,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "2023",
+    "value": 645.194067883201,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "2024",
+    "value": 1478.96519740023,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   },
+   {
+    "year": "2025",
+    "value": 1518.38094813367,
+    "indicator": "Official exchange rate (LCU per US$, period average)"
+   }
+  ]
+ }
+}

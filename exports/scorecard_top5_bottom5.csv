@@ -1,0 +1,11 @@
+end,rank,state,score_need,score_supply_gap,score_ability_to_pay,score_total,label
+top 5,1,Kano,83.3,90.3,63.9,79.2,"A screening tool, not investment advice."
+top 5,2,Edo,91.7,41.7,95.8,76.4,"A screening tool, not investment advice."
+top 5,3,Ogun,94.4,45.8,84.7,75.0,"A screening tool, not investment advice."
+top 5,4,Delta,100.0,38.9,75.0,71.3,"A screening tool, not investment advice."
+top 5,4,Ondo,80.6,52.8,80.6,71.3,"A screening tool, not investment advice."
+bottom 5,33,Ekiti,5.6,25.0,56.9,29.2,"A screening tool, not investment advice."
+bottom 5,34,Cross River,27.8,8.3,38.9,25.0,"A screening tool, not investment advice."
+bottom 5,35,Enugu,20.8,2.8,44.4,22.7,"A screening tool, not investment advice."
+bottom 5,36,Kebbi,0.0,59.7,0.0,19.9,"A screening tool, not investment advice."
+bottom 5,37,Ebonyi,2.8,30.6,19.4,17.6,"A screening tool, not investment advice."

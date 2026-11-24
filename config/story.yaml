@@ -1,0 +1,12 @@
+# Story settings used by the app and README.
+# Halima is an illustrative character, never a real person. No invented quotes.
+# Her state must be chosen from the data (high need, little capacity) and confirmed by Freedom.
+halima:
+  age: 52
+  occupation: trader
+  state: Bauchi
+  confirmed: true    # confirmed by Freedom on 2026-11-24
+  why: >
+    Working choice from the Phase 2 scorecard: a North East state with a high supply-gap score,
+    a low ability-to-pay score, and a dialysis unit in the register (ATBUTH Bauchi) that runs on a
+    standby generator. Alternatives considered: Kano, Kaduna.

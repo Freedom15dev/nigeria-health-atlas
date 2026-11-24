@@ -1,0 +1,38 @@
+state,fac_all_grid3,fac_all_eha,crosscheck_diff_percent,crosscheck_flag,fac_sec_tert_grid3,fac_sec_tert_eha,crosscheck_sec_tert_diff_percent,crosscheck_sec_tert_flag
+Borno,804,884,-9.0,False,61,53,15.0,False
+Adamawa,1561,1575,-1.0,False,54,29,86.0,True
+Zamfara,928,916,1.0,False,37,22,68.0,True
+Katsina,2296,2228,3.0,False,46,25,84.0,True
+Sokoto,937,914,3.0,False,40,29,38.0,True
+Benue,2284,2192,4.0,False,137,61,125.0,True
+Cross River,1522,1470,4.0,False,155,56,177.0,True
+Enugu,1455,1384,5.0,False,341,119,187.0,True
+Taraba,1463,1380,6.0,False,43,22,95.0,True
+Nasarawa,1207,1126,7.0,False,50,27,85.0,True
+Imo,1776,1661,7.0,False,349,93,275.0,True
+Akwa Ibom,934,870,7.0,False,190,59,222.0,True
+Ondo,1096,1025,7.0,False,96,42,129.0,True
+Abia,1321,1218,8.0,False,178,58,207.0,True
+Osun,1728,1607,8.0,False,97,66,47.0,True
+Bayelsa,422,387,9.0,False,88,35,151.0,True
+Rivers,791,723,9.0,False,116,63,84.0,True
+Kano,1723,1561,10.0,False,139,49,184.0,True
+Niger,2201,2010,10.0,False,83,43,93.0,True
+Bauchi,1468,1331,10.0,False,63,26,142.0,True
+Kogi,1644,1499,10.0,False,164,60,173.0,True
+Edo,1069,972,10.0,False,137,56,145.0,True
+Kebbi,1207,1091,11.0,False,62,32,94.0,True
+Yobe,663,597,11.0,False,28,15,87.0,True
+Ebonyi,1243,1112,12.0,False,92,64,44.0,True
+Anambra,1867,1648,13.0,False,498,154,223.0,True
+Federal Capital Territory,651,576,13.0,False,107,39,174.0,True
+Ekiti,771,679,14.0,False,120,57,111.0,True
+Ogun,1993,1721,16.0,False,235,107,120.0,True
+Gombe,897,776,16.0,False,58,36,61.0,True
+Delta,1059,909,17.0,False,190,71,168.0,True
+Oyo,2045,1713,19.0,False,585,119,392.0,True
+Lagos,2794,2320,20.0,False,675,227,197.0,True
+Plateau,1643,1348,22.0,True,103,30,243.0,True
+Kwara,1096,891,23.0,True,191,59,224.0,True
+Jigawa,904,729,24.0,True,32,17,88.0,True
+Kaduna,1545,1103,40.0,True,129,18,617.0,True

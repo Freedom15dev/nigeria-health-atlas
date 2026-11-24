@@ -1,0 +1,15 @@
+globalid,state,lga,ward,facility_name,level,facility_level_option,ownership,ownership_type,latitude,longitude,geocoordinates_source,last_updated
+56a37eba-02a2-4618-a699-5a418840a1c3,Ekiti,Ikole,Ikole Central,Ikole Methodist Primary Health Care Center,primary,Primary Health Center,public,Local Government,7.79361,5.51535,NHFR_2024,2024-11-11
+d1ee6e35-6239-492a-9af2-7cdf94ab3f60,Enugu,Enugu South,Awkunanaw East,Divine Providence Hospital,primary,Primary Health Clinic,private,Not For Profit,6.41753,7.49278,NHFR_2024,2024-11-11
+6c32f3c3-6539-46bf-a204-3105eeab28e8,Enugu,Enugu South,Amechi East,Ugwuagba Health Center,primary,Unknown,public,Local Government,6.35948,7.50784,NHFR_2024,2024-11-11
+25b528e1-c501-4f47-91b4-9dde9f996041,Federal Capital Territory,Abaji,Unknown,Abaji General Hospital,secondary,Unknown,public,Unknown,8.486525416,6.9440943,NHFR_2024,2024-11-11
+751bb9ae-5c9f-45b0-95c2-6c9eb2a2f815,Imo,Ideato South,Umuma / Isiaku / Umulewe,Dikenafai Maternity and Child Health Centre,primary,Primary Health Clinic,unknown,Unknown,5.765686035,7.155700684,GRID3_EHEALTH,2024-11-11
+6b0a744c-ce14-4732-803c-ede774f4a00b,Imo,Obowo,Umulogho/Umagu,Umuagu Health Center,primary,Primary Health Center,public,Local Government,5.56792,7.39994,NHFR_2024,2024-11-11
+567b1ae2-eb38-4260-b76e-6549d1a5e2b8,Imo,Orlu,Umuowa 1,St Mary'S Children and Community Hospital,secondary,Unknown,private,For Profit,5.76546,7.03935,NHFR_2024,2024-11-11
+d59fc739-73bd-4e5b-9a29-566fb5ea5c5e,Kwara,Oke-Ero,Ilale / Erinmope / Imoji,Erinmope Health Center,primary,Primary Health Center,public,Local Government,8.07516,5.09094,NHFR_2024,2024-11-11
+f90bf116-f0ad-4926-8110-2ecb102bcc8f,Lagos,Alimosho,Egbe-Liasu,Ayis Hospital,primary,Primary Health Clinic,private,For Profit,6.55102,3.27701,NHFR_2024,2024-11-11
+b1b1b12e-1687-42a6-8320-28573f49b6a5,Lagos,Alimosho,Egbe-Liasu,Blue Sea Hospital,primary,Primary Health Clinic,private,For Profit,6.55855,3.27992,NHFR_2024,2024-11-11
+1fff9350-5198-4e7c-ab43-b9d272c7c700,Lagos,Ikeja,Orile Ikeja,God'S Love Hospital,secondary,Unknown,private,For Profit,6.5938978,3.3419924,NHFR_2024,2024-11-11
+6dc5a691-7a76-4abe-a14a-67b5ad84c0ca,Lagos,Mushin,Mushin,Ak Oyekan Hospital,secondary,Unknown,private,Unknown,6.52011,3.36423,NHFR_2024,2024-11-11
+1915b8f2-b10f-4d73-93d4-24df94776aa1,Osun,Atakumosa East,Eti-Oni,Etioni Primary Health Center,primary,Primary Health Center,public,Local Government,7.38811,4.75533,NHFR_2024,2024-11-11
+1dcf0b9a-138e-4687-b5a5-6b4a93dac1ce,Taraba,Gassol,Gassol,Tella Primary Health Center,primary,Unknown,public,Unknown,8.3946,10.51698,NHFR_2024,2024-11-11

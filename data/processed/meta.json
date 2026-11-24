@@ -1,0 +1,110 @@
+{
+  "built": "2026-11-24",
+  "data_as_of": {
+    "grid3_hf_v2": "2024-11-11",
+    "ehealthafrica_hf": "2018-12-18 to 2020-07-04",
+    "grid3_pop_v3": "2025 estimates",
+    "ndhs2024_api": "fieldwork 2023-12-01 to 2024-05-01; published 2025-10-15",
+    "ndhs2024_fr395": "fieldwork 2023-12-01 to 2024-05-01; published October 2025",
+    "wdi": "latest year per indicator",
+    "geoboundaries_adm1": "boundary year 2022; source updated 2023-02-26; geoBoundaries build 2023-12-12",
+    "money_matters_monthly": "latest month in the panel (see meta.json)",
+    "nbs_cpi": "latest monthly release (see the release JSON in data/raw)",
+    "headline_figures": null
+  },
+  "raw_files": {
+    "grid3_hf_v2": {
+      "file": "grid3_nga_health_facilities_v2_0_2026-11-24.gpkg",
+      "sha256": "cd4b90f804c22a473a755d488ef92703fc165a3063e205a8983adac218087318"
+    },
+    "ehealthafrica_hf": {
+      "file": "ehealthafrica_nga_health_facilities_2026-11-24.csv",
+      "sha256": "5d18a31c8a46053c5e7c5ed3d7138393b7ba6f9de9155bbf03c569f862659630"
+    },
+    "grid3_pop_v3": {
+      "file": "grid3_worldpop_nga_population_v3_0_admin_2026-11-24.zip",
+      "sha256": "99ac8a6b09edfeecc8a90526b69d0c95882a52cacce8b4446d39731ed8d0004d"
+    },
+    "ndhs2024_fr395": {
+      "file": "ndhs2024_fr395_final_report_2026-11-24.pdf",
+      "sha256": "a64e7f6d5dbdff17cb371e2e320de985a142137d6d86b7bcb85b5e1cb019a16e"
+    }
+  },
+  "rows": {
+    "state_panel": 37
+  },
+  "pipeline_steps": {
+    "grid3": {
+      "rows_in": 51022,
+      "duplicates_dropped": 14,
+      "rows_out": 51008
+    },
+    "ehealthafrica": {
+      "rows": 46146,
+      "possible_duplicates_not_dropped": 445
+    },
+    "population": {
+      "states": 37,
+      "sum_of_states": 237527782.002,
+      "national_total": 237527782.0
+    },
+    "dhs": {
+      "raw_file": "dhs_NG2024DHS_state_2026-11-24.json",
+      "indicators": 6,
+      "states": 37
+    },
+    "wdi": {
+      "raw_file": "wdi_nga_2026-11-24.json"
+    }
+  },
+  "flags": {
+    "crosscheck_states_over_20pct": [
+      "Plateau",
+      "Kwara",
+      "Jigawa",
+      "Kaduna"
+    ],
+    "crosscheck_sec_tert_states_over_20pct": [
+      "Adamawa",
+      "Zamfara",
+      "Katsina",
+      "Sokoto",
+      "Benue",
+      "Cross River",
+      "Enugu",
+      "Taraba",
+      "Nasarawa",
+      "Imo",
+      "Akwa Ibom",
+      "Ondo",
+      "Abia",
+      "Osun",
+      "Bayelsa",
+      "Rivers",
+      "Kano",
+      "Niger",
+      "Bauchi",
+      "Kogi",
+      "Edo",
+      "Kebbi",
+      "Yobe",
+      "Ebonyi",
+      "Anambra",
+      "Federal Capital Territory",
+      "Ekiti",
+      "Ogun",
+      "Gombe",
+      "Delta",
+      "Oyo",
+      "Lagos",
+      "Plateau",
+      "Kwara",
+      "Jigawa",
+      "Kaduna"
+    ],
+    "population_40plus": "unknown: source file has totals only",
+    "population_ogun_above_lagos": true,
+    "ndhs_bp_sugar": "self-reported diagnosis, ages 15-49; partly measures access to testing",
+    "ndhs_state_confidence_intervals": "not available from API; FR395 Appendix B has state sampling errors only for a few indicators, not insurance or wealth"
+  }
+}

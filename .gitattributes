@@ -1,0 +1,7 @@
+* text=auto
+data/processed/* text eol=lf
+data/manual/* text eol=lf
+data/register/* text eol=lf
+*.gpkg binary
+*.zip binary
+*.png binary

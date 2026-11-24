@@ -1,0 +1,64 @@
+# Weekly data update for the Nigeria Health Atlas (CLAUDE.md section 7).
+#
+# Every Monday (and whenever started by hand from the Actions tab):
+#   1. installs the requirements
+#   2. runs python pipeline/run_all.py (fetch -> clean -> join -> score -> model -> charts -> validate)
+#   3. checks every app page still renders
+#   4. commits ONLY if a source published something new.
+# The fetch steps save a new dated raw file only when the content changed (World Bank, DHS API,
+# a new NBS CPI release, geoBoundaries). Most sources here change rarely, so most weeks end with
+# "No new data" and no commit. If any check fails, the run turns red and nothing is committed.
+
+name: Weekly data update
+
+on:
+  schedule:
+    - cron: "23 6 * * 1"    # 06:23 UTC (07:23 in Lagos) every Monday
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-data-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      OPENBLAS_NUM_THREADS: "1"
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.15"   # the version the pipeline is built and tested with
+          cache: pip
+
+      - name: Install requirements
+        run: pip install -r requirements.txt
+
+      - name: Tests
+        run: python -m pytest -q
+
+      - name: Run the pipeline (fails, and keeps the old data, if any check fails)
+        run: python pipeline/run_all.py
+
+      - name: Check the app still renders
+        run: python tests/smoke_test_app.py
+
+      - name: Commit, only if a source published new data
+        run: |
+          if [ -z "$(git status --porcelain -- data/raw)" ]; then
+            echo "No new data this week: nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/raw data/processed exports
+          git commit -m "Weekly data update: $(date -u +%Y-%m-%d)"
+          git push

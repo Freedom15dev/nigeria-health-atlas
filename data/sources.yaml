@@ -1,0 +1,137 @@
+# Every source used in the project. One entry per source.
+# "to verify" means I have not yet confirmed this detail on the publisher's own page.
+
+grid3_hf_v2:
+  name: GRID3 NGA - Health Facilities v2.0
+  publisher: GRID3 (Geo-Referenced Infrastructure and Demographic Data for Development)
+  url: https://data.humdata.org/dataset/a3b971e7-2f6e-4d1c-b4b2-87698545e5ca
+  raw_file: data/raw/grid3_nga_health_facilities_v2_0_2026-11-24.gpkg
+  date_accessed: 2026-11-24
+  data_as_of: 2024-11-11   # last_updated field in the file
+  licence: to verify (not confirmed on the dataset page)
+  fields_used: [state, lga, facility_name, facility_level, ownership, ownership_type, latitude, longitude, geocoordinates_source, last_updated]
+  notes: >
+    GRID3 describes its facility data as non-exhaustive and non-validated.
+    v3.0 (August 2026) covers only 24 states, so v2.0 is used for all 37 for consistency.
+    81% of coordinates are sourced from eHealth Africa (geocoordinates_source = GRID3_EHEALTH),
+    so GRID3 v2.0 and the eHealth Africa dataset are not independent.
+
+ehealthafrica_hf:
+  name: "Nigeria: Health facilities"
+  publisher: eHealth Africa (via the Humanitarian Data Exchange)
+  url: https://data.humdata.org/dataset/3b4a119a-309c-4d3f-900f-18a1f6ca2dfa
+  raw_file: data/raw/ehealthafrica_nga_health_facilities_2026-11-24.csv
+  date_accessed: 2026-11-24
+  data_as_of: 2018-12-18 to 2020-07-04   # range of the timestamp field
+  licence: to verify
+  fields_used: [name, type, functional_status, lga_name, state_name, timestamp]
+  notes: Cross-check only. The file has no coordinates, so duplicates cannot be checked by distance.
+
+grid3_pop_v3:
+  name: GRID3 / WorldPop NGA population v3.0 (admin-level totals, scaled to UN projections)
+  publisher: GRID3 and WorldPop
+  url: https://grid3.org/geospatial-data-nigeria   # exact download page to verify
+  raw_file: data/raw/grid3_worldpop_nga_population_v3_0_admin_2026-11-24.zip
+  date_accessed: 2026-11-24
+  data_as_of: 2025 estimates
+  licence: to verify
+  fields_used: [statename, population]
+  notes: >
+    Modelled estimates (no census since 2006). Totals only: no age-sex groups in this file,
+    so population aged 40+ is unknown for now. The mastergrid .tif in data/raw is not used.
+
+ndhs2024_api:
+  name: Nigeria Demographic and Health Survey 2024 (NG2024DHS), state-level indicators
+  publisher: The DHS Program (ICF), National Population Commission, Federal Ministry of Health
+  url: https://api.dhsprogram.com/rest/dhs/data?surveyIds=NG2024DHS&breakdown=subnational
+  raw_file: data/raw/dhs_NG2024DHS_state_<pull date>.json
+  date_accessed: set by pipeline/fetch_dhs.py
+  data_as_of: fieldwork 2023-12-01 to 2024-05-01; published 2025-10-15
+  licence: to verify (DHS Program terms of use)
+  fields_used: [IndicatorId, Indicator, CharacteristicLabel, Value, DenominatorWeighted, DenominatorUnweighted]
+  notes: The API returns no confidence intervals at state level.
+
+ndhs2024_fr395:
+  name: Nigeria Demographic and Health Survey 2024, Final Report (FR395)
+  publisher: National Population Commission, Federal Ministry of Health and Social Welfare, ICF
+  url: https://dhsprogram.com/pubs/pdf/FR395/FR395.pdf
+  raw_file: data/raw/ndhs2024_fr395_final_report_2026-11-24.pdf
+  date_accessed: 2026-11-24
+  data_as_of: fieldwork 2023-12-01 to 2024-05-01; published October 2025
+  licence: to verify
+  fields_used: [Tables 19.1.1, 19.1.2, 19.2.1, 19.2.2 - state rows]
+  notes: >
+    Blood pressure and blood sugar are self-reported ("ever told by a health worker"), not measured,
+    and cover ages 15-49 only. They partly measure access to testing.
+    Transcribed by pipeline/transcribe_ndhs_pdf.py into data/manual/ndhs2024_state.csv.
+
+wdi:
+  name: World Development Indicators (Nigeria)
+  publisher: World Bank
+  url: https://api.worldbank.org/v2/country/NGA/indicator/
+  raw_file: data/raw/wdi_nga_<pull date>.json
+  date_accessed: set by pipeline/fetch_wdi.py
+  data_as_of: latest year per indicator
+  licence: CC BY 4.0
+  fields_used: [SH.XPD.OOPC.CH.ZS, SH.XPD.CHEX.PC.CD, SH.XPD.GHED.CH.ZS, PA.NUS.FCRF]
+  notes: National only. Never spread across states.
+
+geoboundaries_adm1:
+  name: geoBoundaries NGA ADM1 (state boundaries), simplified geometry, gbOpen release
+  publisher: geoBoundaries (William & Mary geoLab); boundaries originally from GRID3 Nigeria state boundaries
+  url: https://www.geoboundaries.org/api/current/gbOpen/NGA/ADM1/
+  download_url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/NGA/ADM1/geoBoundaries-NGA-ADM1_simplified.geojson
+  raw_file: data/raw/geoboundaries_nga_adm1_simplified_2026-11-24.geojson (+ geoboundaries_nga_adm1_metadata_2026-11-24.json)
+  date_accessed: 2026-11-24
+  data_as_of: boundary year 2022; source updated 2023-02-26; geoBoundaries build 2023-12-12
+  licence: CC BY 4.0 (boundaryLicense field in the geoBoundaries API metadata; licence source data.grid3.org)
+  attribution: "Boundaries: geoBoundaries (Runfola et al. 2020), from GRID3 Nigeria state boundaries, CC BY 4.0"
+  fields_used: [shapeName, shapeISO, geometry]
+  notes: >
+    37 shapes. All 37 shapeName values join to data/lookups/states.csv (checked by
+    pipeline/fetch_geoboundaries.py and tests); "Abuja Federal Capital Territory" shows as "FCT".
+    Simplified geometry, for display only: not for measuring area or distance.
+
+money_matters_monthly:
+  name: Monthly inflation and naira series, reused from the Money Matters project (naija-money-dashboard)
+  publisher: Central Bank of Nigeria (inflation feed GetAllInflationRates; exchange rates GetAllExchangeRates), cleaned by Money Matters
+  url: https://www.cbn.gov.ng/api/
+  raw_file: data/raw/money_matters_panel_<pull date>.csv (+ money_matters_panel_meta_<pull date>.json)
+  date_accessed: set by pipeline/fetch_monthly.py (copied from Money Matters' processed panel)
+  data_as_of: latest month in the panel (see meta.json)
+  licence: to verify (CBN website terms)
+  fields_used: [month, inflation, food_inflation, core_inflation, usd_ngn, price_index]
+  notes: >
+    Same cleaning and caveats as Money Matters: June 2025 interpolated; 2025 inflation as revised
+    by NBS in January 2026 (rebased series); naira rate is the CBN daily rate averaged by month, with
+    one-day typos removed. price_index is rebuilt by Money Matters from year-on-year rates (an
+    approximation, not NBS's published index). The health component of NBS CPI is not in this panel.
+
+nbs_cpi:
+  name: Consumer Price Index, monthly release (composite CPI, Table 2), National Bureau of Statistics
+  publisher: National Bureau of Statistics (NBS), Nigeria
+  url: https://microdata.nigerianstat.gov.ng/index.php/catalog/154
+  catalog_json: https://microdata.nigerianstat.gov.ng/index.php/metadata/export/154/json
+  raw_file: data/raw/nbs_cpi_<release>_<pull date>.zip (+ release JSON)
+  date_accessed: set by pipeline/fetch_nbs_cpi.py
+  data_as_of: latest monthly release (see the release JSON in data/raw)
+  licence: none stated in the catalog metadata (rights field empty); cited as NBS
+  fields_used: [Table2 All Items, Table2 Health. (COICOP 06)]
+  notes: >
+    Index levels, base 2024 = 100, January 2023 onward. From January 2025 NBS uses a new basket
+    (COICOP 2018, health weight 6.06%); the 2023-2024 values are the old 2009-basket index rescaled by
+    NBS, so the series is a splice of two baskets. The health index jumps about 10% in March 2025, just
+    after the switch. Year-on-year rates here are computed from one workbook, and can differ from rates
+    NBS published at the time (NBS revised the 2024 comparison values in December 2025).
+
+headline_figures:
+  name: Home page headline figures (hand-entered, one row per figure and source)
+  publisher: various (see data/manual/headline_figures.csv, one source and date per row)
+  url: data/manual/headline_figures.csv
+  date_accessed: 2026-11-24
+  licence: n/a (figures quoted from the sources listed per row)
+  fields_used: [card, role, figure, unit, qualifier, label, line, source, source_date, url]
+  notes: >
+    Every row verified against the source page on 2026-11-24 (verification_note column). Three figures
+    rest on news reports of documents not yet found (NHA 2023-24, the World Bank programme document,
+    the IARC 2025 assessment).

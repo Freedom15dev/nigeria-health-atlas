@@ -1,0 +1,223 @@
+state,IndicatorId,Indicator,Value,DenominatorWeighted,DenominatorUnweighted,CILow,CIHigh,source_id,raw_file,pulled
+Abia,AH_HINS_M_ANY,Any health insurance,3.9,122,235,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Adamawa,AH_HINS_M_ANY,Any health insurance,1.1,276,309,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Akwa Ibom,AH_HINS_M_ANY,Any health insurance,2.7,178,232,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Anambra,AH_HINS_M_ANY,Any health insurance,3.5,191,292,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Bauchi,AH_HINS_M_ANY,Any health insurance,1.7,570,327,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Bayelsa,AH_HINS_M_ANY,Any health insurance,12.6,100,265,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Benue,AH_HINS_M_ANY,Any health insurance,2.8,285,284,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Borno,AH_HINS_M_ANY,Any health insurance,1.5,246,204,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Cross River,AH_HINS_M_ANY,Any health insurance,2.2,140,248,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Delta,AH_HINS_M_ANY,Any health insurance,6.2,249,226,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Ebonyi,AH_HINS_M_ANY,Any health insurance,1.9,189,272,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Edo,AH_HINS_M_ANY,Any health insurance,4.9,197,274,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Ekiti,AH_HINS_M_ANY,Any health insurance,3.6,68,149,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Enugu,AH_HINS_M_ANY,Any health insurance,2.1,135,222,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Federal Capital Territory,AH_HINS_M_ANY,Any health insurance,6.5,267,299,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Gombe,AH_HINS_M_ANY,Any health insurance,2.1,202,371,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Imo,AH_HINS_M_ANY,Any health insurance,4.4,212,310,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Jigawa,AH_HINS_M_ANY,Any health insurance,6.4,330,346,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kaduna,AH_HINS_M_ANY,Any health insurance,5.6,705,418,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kano,AH_HINS_M_ANY,Any health insurance,6.6,1029,521,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Katsina,AH_HINS_M_ANY,Any health insurance,4.3,479,302,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kebbi,AH_HINS_M_ANY,Any health insurance,0.8,231,336,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kogi,AH_HINS_M_ANY,Any health insurance,1.5,206,322,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kwara,AH_HINS_M_ANY,Any health insurance,4.4,275,353,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Lagos,AH_HINS_M_ANY,Any health insurance,8.0,523,344,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Nasarawa,AH_HINS_M_ANY,Any health insurance,6.1,301,340,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Niger,AH_HINS_M_ANY,Any health insurance,1.1,489,343,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Ogun,AH_HINS_M_ANY,Any health insurance,5.2,321,246,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Ondo,AH_HINS_M_ANY,Any health insurance,6.3,188,233,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Osun,AH_HINS_M_ANY,Any health insurance,5.3,179,190,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Oyo,AH_HINS_M_ANY,Any health insurance,4.7,281,244,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Plateau,AH_HINS_M_ANY,Any health insurance,3.1,284,344,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Rivers,AH_HINS_M_ANY,Any health insurance,6.1,366,339,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Sokoto,AH_HINS_M_ANY,Any health insurance,2.4,357,395,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Taraba,AH_HINS_M_ANY,Any health insurance,2.2,232,256,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Yobe,AH_HINS_M_ANY,Any health insurance,1.0,193,230,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Zamfara,AH_HINS_M_ANY,Any health insurance,0.4,329,255,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Abia,AH_HINS_W_NON,No health insurance [Women],98.2,418,824,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Adamawa,AH_HINS_W_NON,No health insurance [Women],98.9,932,1113,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Akwa Ibom,AH_HINS_W_NON,No health insurance [Women],97.3,570,753,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Anambra,AH_HINS_W_NON,No health insurance [Women],95.0,707,1037,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Bauchi,AH_HINS_W_NON,No health insurance [Women],98.2,1838,1144,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Bayelsa,AH_HINS_W_NON,No health insurance [Women],89.9,317,828,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Benue,AH_HINS_W_NON,No health insurance [Women],97.5,1008,963,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Borno,AH_HINS_W_NON,No health insurance [Women],98.3,1073,904,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Cross River,AH_HINS_W_NON,No health insurance [Women],97.2,524,880,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Delta,AH_HINS_W_NON,No health insurance [Women],96.9,1010,957,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Ebonyi,AH_HINS_W_NON,No health insurance [Women],99.0,950,1370,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Edo,AH_HINS_W_NON,No health insurance [Women],93.6,661,921,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Ekiti,AH_HINS_W_NON,No health insurance [Women],97.3,276,569,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Enugu,AH_HINS_W_NON,No health insurance [Women],97.9,502,832,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Federal Capital Territory,AH_HINS_W_NON,No health insurance [Women],92.1,764,830,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Gombe,AH_HINS_W_NON,No health insurance [Women],94.9,610,1142,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Imo,AH_HINS_W_NON,No health insurance [Women],95.5,704,1005,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Jigawa,AH_HINS_W_NON,No health insurance [Women],98.2,1258,1293,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kaduna,AH_HINS_W_NON,No health insurance [Women],95.7,2420,1462,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kano,AH_HINS_W_NON,No health insurance [Women],95.1,3660,1884,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Katsina,AH_HINS_W_NON,No health insurance [Women],97.3,1778,1177,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kebbi,AH_HINS_W_NON,No health insurance [Women],98.9,925,1342,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kogi,AH_HINS_W_NON,No health insurance [Women],96.5,604,977,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kwara,AH_HINS_W_NON,No health insurance [Women],98.5,790,1007,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Lagos,AH_HINS_W_NON,No health insurance [Women],91.5,1586,1015,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Nasarawa,AH_HINS_W_NON,No health insurance [Women],95.7,963,1149,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Niger,AH_HINS_W_NON,No health insurance [Women],98.8,1845,1308,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Ogun,AH_HINS_W_NON,No health insurance [Women],95.2,1288,999,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Ondo,AH_HINS_W_NON,No health insurance [Women],96.2,603,759,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Osun,AH_HINS_W_NON,No health insurance [Women],95.2,627,674,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Oyo,AH_HINS_W_NON,No health insurance [Women],94.3,1260,1099,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Plateau,AH_HINS_W_NON,No health insurance [Women],98.5,1093,1357,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Rivers,AH_HINS_W_NON,No health insurance [Women],98.8,1333,1195,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Sokoto,AH_HINS_W_NON,No health insurance [Women],99.0,1238,1361,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Taraba,AH_HINS_W_NON,No health insurance [Women],99.1,806,950,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Yobe,AH_HINS_W_NON,No health insurance [Women],97.6,954,1085,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Zamfara,AH_HINS_W_NON,No health insurance [Women],99.8,1154,885,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Abia,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,36.0,1841,3546,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Adamawa,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,10.9,4402,5210,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Akwa Ibom,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,33.4,2737,3465,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Anambra,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,33.2,3180,4418,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Bauchi,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,13.3,9872,6198,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Bayelsa,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,32.1,1312,3367,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Benue,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,20.7,4391,4051,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Borno,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,8.2,5725,4697,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Cross River,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,27.7,2075,3368,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Delta,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,26.9,4068,3834,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Ebonyi,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,13.3,3696,5165,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Edo,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,29.0,2775,3672,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Ekiti,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,37.2,1321,2740,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Enugu,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,39.0,2100,3405,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Federal Capital Territory,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,23.1,3133,3432,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Gombe,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,14.8,3081,5507,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Imo,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,38.2,2986,4185,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Jigawa,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,5.3,6400,6353,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kaduna,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,23.4,11417,6637,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kano,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,21.8,16204,8088,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Katsina,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,13.8,10194,6506,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kebbi,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,5.7,4677,6558,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kogi,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,20.3,2854,4464,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kwara,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,28.3,3736,4564,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Lagos,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,11.1,6952,4327,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Nasarawa,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,29.5,4224,4777,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Niger,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,12.8,8750,6008,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Ogun,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,27.7,5808,4362,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Ondo,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,35.3,2742,3349,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Osun,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,39.7,3226,3246,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Oyo,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,38.6,5323,4468,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Plateau,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,14.4,4486,5360,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Rivers,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,32.0,4974,4410,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Sokoto,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,8.9,5953,6324,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Taraba,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,11.6,4069,4689,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Yobe,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,11.9,4973,5684,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Zamfara,HC_WIXQ_P_4TH,Population in the fourth wealth quintile,12.6,5741,4243,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Abia,HC_WIXQ_P_HGH,Population in the highest wealth quintile,38.0,1841,3546,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Adamawa,HC_WIXQ_P_HGH,Population in the highest wealth quintile,3.1,4402,5210,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Akwa Ibom,HC_WIXQ_P_HGH,Population in the highest wealth quintile,16.9,2737,3465,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Anambra,HC_WIXQ_P_HGH,Population in the highest wealth quintile,51.4,3180,4418,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Bauchi,HC_WIXQ_P_HGH,Population in the highest wealth quintile,5.1,9872,6198,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Bayelsa,HC_WIXQ_P_HGH,Population in the highest wealth quintile,35.0,1312,3367,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Benue,HC_WIXQ_P_HGH,Population in the highest wealth quintile,12.8,4391,4051,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Borno,HC_WIXQ_P_HGH,Population in the highest wealth quintile,2.7,5725,4697,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Cross River,HC_WIXQ_P_HGH,Population in the highest wealth quintile,17.0,2075,3368,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Delta,HC_WIXQ_P_HGH,Population in the highest wealth quintile,50.7,4068,3834,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Ebonyi,HC_WIXQ_P_HGH,Population in the highest wealth quintile,4.9,3696,5165,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Edo,HC_WIXQ_P_HGH,Population in the highest wealth quintile,58.1,2775,3672,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Ekiti,HC_WIXQ_P_HGH,Population in the highest wealth quintile,29.3,1321,2740,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Enugu,HC_WIXQ_P_HGH,Population in the highest wealth quintile,22.7,2100,3405,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Federal Capital Territory,HC_WIXQ_P_HGH,Population in the highest wealth quintile,59.0,3133,3432,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Gombe,HC_WIXQ_P_HGH,Population in the highest wealth quintile,8.2,3081,5507,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Imo,HC_WIXQ_P_HGH,Population in the highest wealth quintile,38.5,2986,4185,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Jigawa,HC_WIXQ_P_HGH,Population in the highest wealth quintile,1.5,6400,6353,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kaduna,HC_WIXQ_P_HGH,Population in the highest wealth quintile,9.9,11417,6637,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kano,HC_WIXQ_P_HGH,Population in the highest wealth quintile,11.3,16204,8088,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Katsina,HC_WIXQ_P_HGH,Population in the highest wealth quintile,4.1,10194,6506,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kebbi,HC_WIXQ_P_HGH,Population in the highest wealth quintile,1.4,4677,6558,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kogi,HC_WIXQ_P_HGH,Population in the highest wealth quintile,10.6,2854,4464,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kwara,HC_WIXQ_P_HGH,Population in the highest wealth quintile,25.3,3736,4564,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Lagos,HC_WIXQ_P_HGH,Population in the highest wealth quintile,86.4,6952,4327,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Nasarawa,HC_WIXQ_P_HGH,Population in the highest wealth quintile,22.5,4224,4777,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Niger,HC_WIXQ_P_HGH,Population in the highest wealth quintile,8.8,8750,6008,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Ogun,HC_WIXQ_P_HGH,Population in the highest wealth quintile,51.4,5808,4362,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Ondo,HC_WIXQ_P_HGH,Population in the highest wealth quintile,43.3,2742,3349,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Osun,HC_WIXQ_P_HGH,Population in the highest wealth quintile,40.7,3226,3246,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Oyo,HC_WIXQ_P_HGH,Population in the highest wealth quintile,38.4,5323,4468,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Plateau,HC_WIXQ_P_HGH,Population in the highest wealth quintile,7.5,4486,5360,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Rivers,HC_WIXQ_P_HGH,Population in the highest wealth quintile,46.7,4974,4410,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Sokoto,HC_WIXQ_P_HGH,Population in the highest wealth quintile,4.3,5953,6324,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Taraba,HC_WIXQ_P_HGH,Population in the highest wealth quintile,3.8,4069,4689,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Yobe,HC_WIXQ_P_HGH,Population in the highest wealth quintile,2.2,4973,5684,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Zamfara,HC_WIXQ_P_HGH,Population in the highest wealth quintile,1.9,5741,4243,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Abia,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,39.8,418,824,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Adamawa,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,48.3,932,1113,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Akwa Ibom,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,22.4,570,753,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Anambra,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,31.5,707,1037,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Bauchi,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,25.9,1838,1144,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Bayelsa,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,39.2,317,828,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Benue,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,26.0,1008,963,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Borno,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,36.3,1073,904,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Cross River,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,6.5,524,880,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Delta,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,20.9,1010,957,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Ebonyi,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,38.2,950,1370,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Edo,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,16.1,661,921,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Ekiti,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,29.7,276,569,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Enugu,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,23.7,502,832,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Federal Capital Territory,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,9.4,764,830,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Gombe,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,12.5,610,1142,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Imo,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,21.2,704,1005,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Jigawa,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,32.0,1258,1293,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kaduna,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,30.8,2420,1462,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kano,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,13.2,3660,1884,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Katsina,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,22.0,1778,1177,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kebbi,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,43.0,925,1342,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kogi,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,21.6,604,977,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kwara,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,23.9,790,1007,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Lagos,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,2.9,1586,1015,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Nasarawa,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,18.7,963,1149,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Niger,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,30.5,1845,1308,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Ogun,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,27.9,1288,999,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Ondo,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,6.6,603,759,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Osun,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,18.1,627,674,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Oyo,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,15.8,1260,1099,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Plateau,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,60.0,1093,1357,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Rivers,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,21.2,1333,1195,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Sokoto,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,48.2,1238,1361,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Taraba,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,20.0,806,950,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Yobe,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,27.5,954,1085,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Zamfara,RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility,7.3,1154,885,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Abia,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,75.6,418,824,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Adamawa,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,72.1,932,1113,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Akwa Ibom,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,51.8,570,753,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Anambra,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,77.1,707,1037,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Bauchi,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,51.0,1838,1144,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Bayelsa,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,61.0,317,828,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Benue,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,44.5,1008,963,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Borno,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,60.3,1073,904,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Cross River,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,33.0,524,880,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Delta,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,46.1,1010,957,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Ebonyi,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,52.6,950,1370,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Edo,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,43.3,661,921,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Ekiti,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,60.2,276,569,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Enugu,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,63.1,502,832,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Federal Capital Territory,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,40.0,764,830,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Gombe,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,54.1,610,1142,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Imo,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,60.8,704,1005,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Jigawa,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,69.8,1258,1293,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kaduna,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,42.6,2420,1462,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kano,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,24.7,3660,1884,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Katsina,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,27.5,1778,1177,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kebbi,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,54.1,925,1342,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kogi,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,50.6,604,977,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Kwara,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,39.5,790,1007,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Lagos,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,15.5,1586,1015,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Nasarawa,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,43.6,963,1149,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Niger,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,54.5,1845,1308,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Ogun,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,47.9,1288,999,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Ondo,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,13.1,603,759,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Osun,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,45.4,627,674,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Oyo,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,29.3,1260,1099,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Plateau,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,76.0,1093,1357,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Rivers,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,59.3,1333,1195,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Sokoto,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,61.5,1238,1361,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Taraba,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,60.0,806,950,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Yobe,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,59.2,954,1085,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
+Zamfara,RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment,54.6,1154,885,,,ndhs2024_api,dhs_NG2024DHS_state_2026-11-24.json,2026-11-24
