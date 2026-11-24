@@ -11,7 +11,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import app_tables  # noqa: E402
 import build  # noqa: E402
+import build_story  # noqa: E402
 import clean  # noqa: E402
+import distance  # noqa: E402
 import export_charts  # noqa: E402
 import fetch_dhs  # noqa: E402
 import fetch_geoboundaries  # noqa: E402
@@ -38,6 +40,8 @@ def main() -> None:
         step()
     print("[clean]")
     steps = clean.main()
+    print("[distance]")
+    distance.main()
     print("[join_states]")
     join_states.main()
     print("[build]")
@@ -50,6 +54,8 @@ def main() -> None:
     app_tables.main()
     print("[export_charts]")
     export_charts.main()
+    print("[build_story]")
+    build_story.main()
     print("[validate]")
     validate.main()
 

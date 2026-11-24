@@ -19,8 +19,8 @@ if "sel_state" not in st.session_state:
     st.session_state.sel_state = halima["state"]
 
 ui.opening("Where is specialist care missing in Nigeria?")
-st.markdown(story.halima_intro(ui.assumptions()) +
-            " How far is the nearest working dialysis centre, and who pays for it?")
+st.markdown(story.halima_intro(ui.assumptions()) + " " +
+            story.distance_sentence(ui.csv("state_dialysis_distance.csv"), halima["state"]))
 st.html('<div class="small-grey">Halima is an illustration, not a real person.</div>')
 
 # ---------- four headline cards ----------

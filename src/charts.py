@@ -32,6 +32,33 @@ def link_words(r: float, a: str, b: str) -> str:
     return f"No clear link between {a} and {b}"
 
 
+# ---------- chart 0: Halima's distance (beat 1) ----------
+
+def distance_to_dialysis(sd: pd.DataFrame, highlight: str, band: int = 100) -> go.Figure:
+    """Share of each state's people living more than `band` km (straight line) from a dialysis unit the
+    register names as working. Highlighted state (Halima's) in orange."""
+    col = f"share_beyond_{band}km_pct"
+    d = sd.sort_values(col)
+    n_most = int((d[col] >= 80).sum())
+    h = d[d.state == highlight].iloc[0]
+    fig = go.Figure(go.Bar(
+        x=d[col], y=d.state.map(short), orientation="h",
+        marker_color=[ORANGE if s == highlight else GREEN for s in d.state],
+        text=[f"{v:.0f}%" for v in d[col]], textposition="outside", cliponaxis=False,
+        textfont=dict(size=10, color=NAVY),
+        customdata=d[["median_km_population_weighted"]],
+        hovertemplate="%{y}: %{x:.0f}% live over " + str(band) + " km away<br>half live over %{customdata[0]:.0f} km"
+                      "<extra></extra>"))
+    style(fig, title=f"In {n_most} states, at least 8 in 10 people live more than {band} km from a dialysis unit "
+                     "known to work",
+          subtitle=(f"Share of people living more than {band} km (straight line) from a unit the register names as "
+                    f"working. {short(highlight)} (orange): {h[col]:.0f}%.<br>An upper bound: the register names "
+                    "some working units, not all; roads are longer than straight lines."),
+          source="Kidney register; GRID3 facilities and GRID3/WorldPop population v3.0", height=950,
+          x_title=f"% of people beyond {band} km", x_grid=True)
+    fig.update_xaxes(range=[0, 115])
+    return fig
+
 # ---------- chart 1 ----------
 
 def facilities_per_100k(panel: pd.DataFrame, highlight: list[str] | None = None) -> go.Figure:

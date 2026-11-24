@@ -1,0 +1,28 @@
+state,facility_name,grid3_globalid,grid3_name,grid3_lga,latitude,longitude,match,note
+Adamawa,"Adamawa State Specialist Hospital, Yola",037a0165-5f1d-4777-9e5e-e4b6b44bb5b2,Yola Hospital Specialist,Yola North,9.2767,12.44554,name match,GRID3 name 'Yola Hospital Specialist'
+Bauchi,Abubakar Tafawa Balewa University Teaching Hospital,511abd41-c82c-456f-9371-b367050c12e8,Bauchi Hospital Specialist,Bauchi,10.33416,9.84215,proxy,"PROXY: ATBUTH is not in GRID3 (eHealth Africa lists it, without coordinates); location of Bauchi State Specialist Hospital in the same city used"
+Benue,"Benue State University Teaching Hospital, Makurdi",67cfbd7d-620e-4eb5-b434-c7b8abc42716,Benue State University Teaching Hospital,Makurdi,7.725058,8.568779,name match,exact name
+Ebonyi,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",9931a75a-77c5-46f5-b155-171483040a26,David Umahi Federal University Teaching Uburu Hospital,Ohaozara,6.03116,7.71889,name match,"exact name, words reordered"
+Edo,University of Benin Teaching Hospital,bdca7057-1482-4e8b-8d07-9fc74373aa43,University Of Benin Teaching Hospital,Egor,6.390686,5.613098,name match,exact name
+Ekiti,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",9ba2833e-ce2a-4777-aeff-2d356723efc5,Ekiti State University Teaching Hospital,Ado Ekiti,7.642693,5.221673,name match,exact name
+Ekiti,"Federal Teaching Hospital, Ekiti (source says Ado-Ekiti; likely Ido-Ekiti, unverified)",f50966b0-dc1c-43f0-8874-75a3053cba16,Ido Ekiti Federal Teaching Hospital,Ido-Osi,7.843696,5.186992,unverified,UNVERIFIED: register is unsure whether this is Ido-Ekiti; GRID3 Federal Teaching Hospital Ido-Ekiti used
+Federal Capital Territory,"National Hospital, Abuja",040c5b54-5251-4fa8-90cf-39b38e98d362,National (Abuja) Hospital,Abuja Municipal Area Council,9.03911,7.46329,name match,GRID3 name 'National (Abuja) Hospital'
+Imo,"Federal Teaching Hospital, Owerri",0f83f92f-577f-4bca-ae1e-042bc7375057,Federal (Fmc) Owerri Medical Center,Owerri Municipal,5.502686,7.022888,name match,GRID3 name 'Federal (Fmc) Owerri Medical Center' (the hospital's former name)
+Jigawa,"Fatima Abubakar Dialysis Centre, Hadejia",uuid:76da513a-57e5-4b99-b645-79a5e72a8e35,Hadejia General Hospital,Hadejia,12.445661,10.047729,proxy,PROXY: not in GRID3; Hadejia General Hospital in the same town used
+Jigawa,Gumel General Hospital,27e2aa08-974b-45e1-9a3a-6ae8c5139108,Gumel General Hospital,Gumel,12.622479,9.379511,name match,exact name
+Jigawa,Hadejia General Hospital,uuid:76da513a-57e5-4b99-b645-79a5e72a8e35,Hadejia General Hospital,Hadejia,12.445661,10.047729,name match,exact name
+Kaduna,"St. Gerard's Catholic Hospital, Kaduna",030d6c54-e648-480a-86e4-adeef76e256b,St Gerard Catholic Hospital,Kaduna South,10.46675,7.4205,name match,GRID3 name 'St Gerard Catholic Hospital'
+Kano,Aminu Kano Teaching Hospital,98a6b181-dd19-40c6-b373-993ed479a6da,Aminu Kano Teaching Hospital,Tarauni,11.962811,8.550969,name match,exact name
+Kano,Muhammad Abdullahi Wase Specialist Hospital,f96a13e7-07f3-47e6-b2d2-e8c577df392f,Mohammed Abdullahi Wase General Hospital,Nasarawa,11.99695,8.548496,name match,GRID3 name 'Mohammed Abdullahi Wase General Hospital'
+Kebbi,"Federal Medical Centre, Birnin Kebbi",e357f8e4-588c-40cb-ac84-6ccc8b287395,Birnin Kebbi Federal Medical Center,Birnin Kebbi,12.43483,4.18853,name match,GRID3 name 'Birnin Kebbi Federal Medical Center'
+Kogi,"Federal Medical Centre, Lokoja",fe73d2bf-a798-4bd3-a33f-976a5126571d,Lokoja Federal Medical Center,Lokoja,7.799316,6.741089,name match,GRID3 name 'Lokoja Federal Medical Center'
+Kogi,"Kogi Specialist Hospital, Lokoja",500627d6-fbb0-41e4-bab3-2d607be20b54,Kogi State Lokoja Hospital Specialist,Lokoja,7.79398,6.73129,name match,GRID3 name 'Kogi State Lokoja Hospital Specialist'
+Kwara,"General Hospital, Ilorin",27fb9cb7-ea35-4671-aa7d-de675fce4797,Ilorin General Hospital,Ilorin West,8.47916,4.53435,name match,GRID3 name 'Ilorin General Hospital'
+Kwara,University of Ilorin Teaching Hospital,05370a7f-2d98-40fc-8edd-4d99636739b5,University Of Ilorin Teaching Hospital,Ilorin East,8.539917,4.647705,name match,exact name
+Lagos,"Alimosho General Hospital, Igando",aa82a377-808a-432a-8f3c-9e20b3d99c5e,Alimosho General Hospital,Alimosho,6.561627,3.250607,name match,exact name
+Lagos,Gbagada General Hospital,3504c08f-3c77-4ffc-81e6-1ad87ce521ef,Gbagada General Hospital,Kosofe,6.552124,3.387878,name match,exact name
+Lagos,"Lagos State University Teaching Hospital (LASUTH), Ikeja",f9315884-9d2f-424f-a694-5f098dbe63e7,Lagos State University Teaching Hospital,Ikeja,6.59158,3.342762,name match,exact name
+Nasarawa,"Dalhatu Araf Specialist Hospital, Lafia",93625ce5-1c15-4abe-9ab4-3570089ab13a,Dalhatu Araf Hospital Specialist,Lafia,8.50061,8.523631,name match,GRID3 name 'Dalhatu Araf Hospital Specialist'
+Oyo,"University College Hospital, Ibadan",80fc6839-e13a-42ea-8802-97ec05ba6f2d,University College Hospital,Ibadan North,7.402868,3.902252,name match,exact name
+Sokoto,Usmanu Danfodiyo University Teaching Hospital,b6c4d64e-1d38-4d8b-a61e-329b290e66a2,Usman Danfodio University Teaching Hospital,Wamako,13.02664,5.219999,name match,GRID3 spelling 'Usman Danfodio'
+Yobe,"Yobe State University Teaching Hospital (YSUTH), Damaturu",257c056d-6bd4-4834-9523-795f8e6ff316,Damaturu Specialist Hospital,Damaturu,11.72982,11.956283,name match,GRID3 name 'Damaturu Specialist Hospital' (the hospital before it became YSUTH; assumed same site)

@@ -1,0 +1,253 @@
+# Nigeria Health Atlas
+
+**Where specialist care is missing in Nigeria, why it's missing, and what one centre could change.**
+
+**Live app: {app_url}**
+
+I wanted to answer one practical question with public data: if you wanted to bring specialist care to
+people who can't reach it, where in Nigeria would you look first, what is actually missing there, who can
+pay, and what would one centre deliver?
+
+I started with kidney care, because the maths of dialysis is simple: a machine, a few hours, two or three
+times a week, for life. Then I did the same for cancer care (radiotherapy). Every number on this page is
+filled in by code that reads dated public sources. Where sources disagree, I kept every figure.
+
+I expected the gap to be mostly about missing machines. The data showed something messier: published counts
+don't agree with each other, most sources never say why a unit isn't working, and when they do, the most
+common reason is **{k_top_gap}** (power, water, consumables, maintenance, payment), not a missing machine.
+
+---
+
+## 1. The patient
+
+**How far is Halima from a dialysis unit that works, and what does it cost her family?**
+
+Halima is {halima_age}, a {halima_job} in {halima_state}. Her kidneys have failed. Without a transplant she
+needs **haemodialysis** (a machine filters her blood) {sessions_lo} to {sessions_hi} times a week, for life.
+*Halima is an illustration, not a real person.* I chose her state from the data rather than in advance:
+{halima_state} ranks {h_rank} of {n_units} on my scorecard, with a supply-gap score of {h_gap} out of 100 and an
+ability-to-pay score of just {h_pay}. Only {h_insured} of people there have any health insurance.
+
+The nearest units the evidence says are working are {h_nearest_units}. Measured in a straight line from
+the middle of each local government area (LGA), half of {halima_state}'s people live more than
+**{h_median_km} km** from one, {h_beyond50} live more than {band_a} km away, and {h_beyond100} more than
+{band_b} km. Halima would make that trip {sessions_lo} to {sessions_hi} times a week.
+
+![Share of each state's people living more than {band_b} km from a dialysis unit known to work](exports/chart0_distance_to_dialysis.png)
+
+She isn't the worst off. In {n_states_80} states ({states_80}), at least 8 in 10 people live more than
+{band_b} km from a unit the register names as working. Nationally, it's {nat_beyond100} of people.
+
+Then the bill. At a public hospital, a session costs about **{price_oop}**, all of it paid by the family.
+Two sessions a week comes to **{year_cost_lo} a year**; three comes to {year_cost_hi}. At the {price_sub}
+subsidised price available at some federal centres, it's {year_sub_lo} to {year_sub_hi}. Private hospitals
+charge {private_price_range} a session.
+
+{income_sentence}
+
+{poverty_sentence}
+
+> **Under the hood.** Distances are straight lines from an LGA's centre (the middle of its health
+> facilities in GRID3) to the nearest of {n_units_located} working units I could locate, in {n_unit_states}
+> states. That makes them an *upper bound*: the register names some working units, not all, and roads are
+> longer than straight lines. One unit isn't in GRID3 (the teaching hospital in {halima_state}), so I used a
+> hospital in the same city. Prices come from the register's cost evidence, with dates.
+
+---
+
+## 2. The gap
+
+**Which states have the fewest hospitals per person?**
+
+**Per 100,000 people** means: if the state had 100,000 people, how many hospitals would they share. I
+counted secondary and tertiary facilities (general hospitals and above), where specialist care can sit.
+
+![Facilities per 100,000 people by state](exports/chart1_facilities_per_100k.png)
+
+The national figure is **{fac_national}** per 100,000. {fac_high_state} has {fac_high}; {fac_low_state} has
+{fac_low}, about {fac_ratio} times fewer. The five lowest are {fac_lowest5}. {halima_state} has {h_fac}.
+
+For dialysis specifically, my hand-built register found a public unit reported working in {k_public_yes}
+of {n_units} states. In {k_public_no}, the only reports say it isn't working, and in {k_public_unknown} there
+is no evidence either way. *No evidence* is not the same as *no unit*: it means nobody I could find has written
+it down.
+
+For a decision-maker, the point is that the gap is concentrated. {low10_north} states with the fewest hospitals per
+person are in the three northern zones. The same money buys very different coverage depending
+on where it goes.
+
+> **Under the hood.** GRID3 calls its facility list *non-exhaustive and non-validated*: it can miss,
+> duplicate or keep closed facilities. I dropped {grid3_dupes} duplicates (same name and area, under {dedup_m} m
+> apart). Against a second list (eHealth Africa), {crosscheck_flags} states differ by more than {crosscheck_pct}%.
+> Population figures are modelled (Nigeria has had no census since {census_year}), so I round rates to one decimal place.
+
+---
+
+## 3. The cause
+
+**Is the gap equipment, workforce or systems?**
+
+This is the question that matters most for anyone trying to fix it, and the one the data answers least.
+For each fact in the register I only recorded a cause if the source states one:
+
+- **equipment**: a broken or missing machine
+- **workforce**: no nephrologist (kidney specialist) or trained dialysis nurse
+- **systems**: power, water treatment, maintenance, consumables supply, referral or payment problems
+
+![Kidney register facts per state, coloured by gap type](exports/chart4_register_gap_types.png)
+
+Of {k_state_facts} state-level kidney facts, only **{k_known}** say what the gap is. Among those, systems
+problems come up {k_systems} times, equipment {k_equipment} times and workforce {k_workforce} times. In
+{halima_state}, the teaching hospital's unit runs on a standby generator, and its manager put the workforce
+problem plainly: "{h_quote}" ({h_quote_src}).
+
+Cancer care looks similar. Of {c_state_facts} state-level radiotherapy facts, {c_known} give a cause: systems
+{c_systems}, equipment {c_equipment}, workforce {c_workforce}.
+
+What this means: buying a machine fixes one of three problems. A unit also needs steady power, clean water,
+a supply chain for consumables, maintenance and trained staff, and the public evidence rarely says which one
+is missing in a given place. That has to be checked on the ground, unit by unit.
+
+> **Under the hood.** "Unknown" means the source doesn't say, not that nothing is wrong. {k_unknown} of
+> {k_rows} kidney rows and {c_unknown} of {c_rows} cancer rows have no stated cause. {k_news} of the kidney
+> rows come from news reports, labelled as such. {n_checked_ok} of {n_checked} quotes spot-checked against
+> their pages matched.
+
+---
+
+## 4. Who pays
+
+**Where need is high, can people pay?**
+
+**Out-of-pocket** means paid by the patient or family at the point of care, not through insurance or the
+government. Published estimates of Nigeria's out-of-pocket share of health spending run from **{oop_min} to
+{oop_max}** ({oop_n} figures, different years and methods; all on the Under the hood page). For dialysis, a
+{dialysis_oop_year} survey found **{dialysis_oop}** paid out of pocket. Only {insured_nat} of adults aged 15 to 49 had any health
+insurance in the NDHS 2024 survey.
+
+I built a state scorecard with three parts: **need** (people, plus self-reported high blood pressure and
+blood sugar), **supply gap** (fewer hospitals per person = bigger gap) and **ability to pay** (insurance and
+household wealth). Each part is a percentile rank from 0 to 100, so one extreme state can't squash the rest.
+
+I expected the states with the greatest need to have the least ability to pay. The data showed something
+more specific.
+
+![Need against ability to pay, one dot per state](exports/chart2_need_vs_ability_to_pay.png)
+
+Need and ability to pay actually move *together* (rank correlation **{r_need_pay}**; +1 would mean the two
+rankings line up exactly). Part of that is how need is measured: diagnoses are self-reported, and people who
+can pay get tested more. But the **supply gap** moves the other way: rank correlation **{r_gap_pay}**. The
+states with the fewest hospitals are the least able to pay. {orange_corner} states sit in the high-need,
+low-ability-to-pay corner, including {halima_state}.
+
+That is the tension that makes public-private partnerships (PPPs) relevant: a **PPP** is an arrangement where
+a private partner and a public hospital share the investment, the work and the money. Where patients can't
+pay the full price, someone else has to: insurance, a subsidy or a long-term investor.
+
+With equal weights, the top five states are {top5}; the bottom five are {bottom5}. I re-ran the score
+{n_weightings} times with different weights, and {n_robust} states stay in the top 10 in at least {robust_pct}% of runs:
+{robust_states}.
+
+> **Under the hood.** A screening tool, not investment advice. The out-of-pocket share is national only; I
+> never spread it across states. NDHS state figures are survey estimates with margins of error. With need
+> measured by population alone, {need_pop_only_unchanged} of the top 10 stay the same.
+
+---
+
+## 5. What a centre could do
+
+**What would one dialysis centre in a high-gap state deliver?**
+
+I modelled one illustrative centre inside a public hospital: {k_machines} machines, two shifts, six days a
+week. **Capacity used** is the share of available session slots actually filled. The **payer mix** is who
+pays for each session (family, subsidy, insurance, employer).
+
+![Centre model: patients treated and break-even, low / base / high and with a weaker naira](exports/chart6_centre_model_scenarios.png)
+
+In the base case it treats **{k_patients} people** ({k_sessions} sessions a year) at {k_used} capacity used.
+But the money doesn't add up at public prices. It receives about **{k_price}** a session on average and needs
+**{k_breakeven}** to break even. Consumables, power and water alone cost {k_variable} a session, because
+dialysers and bloodlines are imported and priced in dollars ({k_fx} naira per US$, World Bank {k_fx_year}).
+It {k_result} a year. Only the optimistic scenario pays back its {k_capex} set-up cost, in about
+{k_high_payback} years, and a naira {shock_a} weaker stretches that to {k_high20_payback}.
+
+I also tested two general PPP structures (illustrative only, not any real organisation's terms): a fee per
+session paid to the partner, or a revenue share. They move the shortfall between the partner (about
+{ppp_partner} a year) and the hospital ({ppp_hospital}); they don't remove it. Closing the gap needs a higher
+tariff, a larger insured or subsidised share at a fuller price, cheaper supplies, or outside funding.
+
+**And cancer care?** One radiotherapy centre with a single **linac** (linear accelerator, the machine that
+delivers radiation) could treat about **{c_patients} patients a year** ({c_fractions} daily treatments). It
+receives about {c_price} a course and needs {c_breakeven}; it covers its running costs once {c_be_used} of
+its slots are filled. It is closer to viable than the dialysis centre, but its {c_capex} set-up cost is far
+larger, and the optimistic case pays back in about {c_high_payback} years.
+
+![Radiotherapy centre model](exports/chart6c_cancer_centre_model_scenarios.png)
+
+> **Under the hood.** An illustrative model using public data and stated assumptions. Not investment advice.
+> {k_assumed} of {k_inputs} dialysis inputs (and {c_assumed} of {c_inputs} radiotherapy inputs) are still
+> assumptions to verify. The input that moves the dialysis result most is {k_driver}, which
+> {k_driver_sourced}. For radiotherapy it's {c_driver}. Both models are checked against a case worked by hand.
+
+---
+
+## 6. The honest limits
+
+**Where is the data thin, and where do sources disagree?**
+
+![Published national dialysis counts disagree](exports/chart4c_national_counts_disagree.png)
+
+- **Dialysis centres:** published national counts run from {k_centres_min} to {k_centres_max}+, a
+  {k_spread}-fold spread.
+- **Radiotherapy machines:** published counts of *working* machines run from {c_work_min} to {c_work_max},
+  against an estimated {c_need} needed ({c_need_src}). My register can name {c_named_machines} working
+  machines, in {c_named_states} states; {c_states_evidence} of {n_units} states have any radiotherapy evidence
+  at all.
+- **Causes:** most sources don't say why a unit isn't working.
+- **People:** population is modelled, not counted. Population aged 40 and over, which I wanted as a measure
+  of kidney-disease risk, isn't published by state, so need uses total population.
+- **Money:** Nigeria has no published average household income, so I use the minimum wage and poverty rates
+  as yardsticks.
+
+The spread between counts is itself a finding. Before any money moves, someone has to visit each unit and
+check what works, what doesn't, and why. Public data can tell you where to look first. It can't do that check.
+
+![Published radiotherapy counts disagree](exports/chart4f_cancer_national_counts_disagree.png)
+
+---
+
+## How it's built
+
+```
+config/         centre-model assumptions (value, range and source for every input) and story settings
+data/raw/       untouched downloads, dated
+data/manual/    hand-entered tables, with page numbers or source URLs
+data/register/  the hand-built specialist register (one row per fact, per source)
+data/lookups/   state names as each source spells them; facility levels; dialysis unit locations
+data/processed/ what the app reads
+pipeline/       fetch, clean, join, score, model, validate (python pipeline/run_all.py)
+src/            scoring, centre model, charts, story numbers
+story/          this page's template: every number is a placeholder filled by code
+app/            the Streamlit app (seven pages)
+notebooks/      one walk-through notebook per phase
+exports/        the chart pack (PNG) and tables
+```
+
+```bash
+pip install -r requirements.txt
+python pipeline/run_all.py        # fetch -> clean -> join -> score -> model -> charts -> story -> validate
+streamlit run app/Home.py
+python -m pytest
+```
+
+A GitHub Action re-runs the pipeline every Monday and commits only when a source has published something new.
+
+**Sources:** GRID3 health facilities and population (with WorldPop), the Nigeria Demographic and Health
+Survey 2024, the World Bank, the Central Bank of Nigeria, the National Bureau of Statistics, geoBoundaries,
+and hand-built registers of dialysis and radiotherapy capacity from peer-reviewed, government and news
+sources. Full list, with licences and access dates, in [`data/sources.yaml`](data/sources.yaml) and on the app's
+Under the hood page. Code: MIT licence. Data: each source keeps its own licence.
+
+Freedom Oboh · data analyst, Lagos · numbers as of {built}
+
+**This is a learning project using public data. It is not investment, medical or financial advice.**

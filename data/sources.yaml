@@ -149,3 +149,15 @@ specialist_register:
     pipeline/curate_cancer.py (cancer, phase 6). Price and cost facts are kept separately in
     kidney_cost_evidence.csv and cancer_cost_evidence.csv (inputs to the centre models).
     20 quotes spot-checked against their pages by an independent check (data/register/verification_log.csv).
+
+income_benchmarks:
+  name: Income and poverty yardsticks (minimum wage; NBS poverty and consumption figures)
+  publisher: "National Bureau of Statistics (NLSS 2018/19, Consumption Expenditure Pattern 2019, MPI 2022); minimum wage via ThisDay and the 2024 Amendment Bill text"
+  url: data/manual/income_benchmarks.csv
+  date_accessed: 2026-11-24
+  licence: n/a (figures quoted from the sources listed per row)
+  fields_used: [measure, geography, value, unit, reference_year, source, source_date, url, quote]
+  notes: >
+    NBS publishes no average household income or spending per household in naira, so the story uses
+    the minimum wage as a yardstick, plus poverty headcounts. 2018/19 figures are at 2018/19 prices and
+    exclude Borno. The minimum wage's exact commencement date differs between sources (noted per row).

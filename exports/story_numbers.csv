@@ -1,0 +1,135 @@
+key,value
+app_url,https://nigeria-health-atlas.streamlit.app/
+band_a,50
+band_b,100
+bottom5,"Ekiti, Cross River, Enugu, Kebbi and Ebonyi"
+built,2026-11-24
+c_assumed,11
+c_be_used,87%
+c_breakeven,"₦907,833"
+c_capex,₦4.6bn
+c_driver,maintenance % of equipment per year
+c_equipment,6
+c_fractions,"15,600"
+c_high_payback,4
+c_inputs,22
+c_known,17
+c_named_machines,10
+c_named_states,5
+c_need,120
+c_need_src,IARC 2025 via BusinessDay
+c_net,−₦68.5m
+c_patients,780
+c_peer,53%
+c_price,"₦820,000"
+c_rows,100
+c_state_facts,64
+c_states_evidence,16
+c_systems,8
+c_unknown,69
+c_work_max,'fewer than 20'
+c_work_min,4
+c_workforce,3
+census_year,2006
+cost_vs_wage_lo,5.6
+cost_vs_wage_sub,1.5
+crosscheck_flags,4
+crosscheck_pct,20
+dedup_m,100
+dialysis_oop,98%
+dialysis_oop_year,2022
+fac_high,8.6
+fac_high_state,Anambra
+fac_low,0.4
+fac_low_state,Katsina
+fac_lowest5,"Katsina, Jigawa, Yobe, Bauchi and Kano"
+fac_national,2.4
+fac_ratio,21
+grid3_dupes,14
+h_beyond100,21%
+h_beyond50,73%
+h_fac,0.7
+h_gap,90
+h_insured,1.8%
+h_max_km,126
+h_median_km,72
+h_nearest_units,"Abubakar Tafawa Balewa University Teaching Hospital and Fatima Abubakar Dialysis Centre, Hadejia"
+h_need,76
+h_pay,25
+h_quote,"We run a morning/evening shift, and we are few."
+h_quote_src,"gazettengr.com, 2025-10-06"
+h_rank,10
+halima_age,52
+halima_job,trader
+halima_state,Bauchi
+income_sentence,"For scale: the national minimum wage is ₦70,000 a month (set in 2024, still the rate in October 2026 according to ThisDay). Twice-weekly dialysis at ₦45,000 a session costs 5.6 times a full year of minimum-wage pay; at the subsidised price, 1.5 times. Halima is a trader, not a wage earner, and her family's actual income is unknown, so this is a yardstick, not her budget."
+insured_nat,3.9%
+k_assumed,14
+k_breakeven,"₦61,452"
+k_capex,₦607m
+k_centres_max,200
+k_centres_min,80
+k_driver,consumables per session (US$)
+k_driver_sourced,is an assumption with no public source yet
+k_equipment,15
+k_fx,"1,518"
+k_fx_year,2025
+k_high20_payback,20 years
+k_high_payback,8
+k_inputs,21
+k_known,40
+k_machines,10
+k_news,74%
+k_patients,45
+k_price,"₦41,700"
+k_public_no,2
+k_public_unknown,16
+k_public_yes,19
+k_result,loses about ₦92.4m
+k_rows,178
+k_sessions,"4,680"
+k_spread,2.5
+k_state_facts,154
+k_systems,20
+k_top_gap,systems
+k_unknown,134
+k_used,75%
+k_variable,"₦36,368"
+k_workforce,5
+low10_north,All 10
+min_wage,"₦70,000"
+min_wage_source,"set in 2024, still the rate in October 2026 according to ThisDay"
+n_checked,20
+n_checked_ok,20
+n_robust,9
+n_states_80,7
+n_states_only,36
+n_unit_states,19
+n_units,37
+n_units_located,27
+n_weightings,319
+nat_beyond100,27%
+need_pop_only_unchanged,8
+oop_max,75%
+oop_min,58%
+oop_n,4
+orange_corner,5
+poverty_sentence,"And money is tight where Halima lives: in Bauchi, 61.5% of people lived below the national poverty line (₦137,430 per person per year) in 2019, against 40.1% nationally; and 73.9% were multidimensionally poor (poor in health, education and living standards, not just income) in 2022, against 63.0% nationally (NBS)."
+ppp_hospital,−₦95m
+ppp_partner,₦2.6m
+price_oop,"₦45,000"
+price_sub,"₦12,000"
+private_price_range,₦50k–80k
+r_gap_pay,−0.52
+r_need_pay,+0.53
+robust_pct,80
+robust_states,"Kano, Edo, Ogun, Ondo, Rivers, Kaduna, Nasarawa, Delta and Lagos"
+sessions_hi,3
+sessions_lo,2
+shock_a,20%
+states_80,"Gombe, Borno, Taraba, Zamfara, Cross River, Plateau and Katsina"
+top5,"Kano, Edo, Ogun, Delta and Ondo"
+year_cost_hi,₦7m
+year_cost_lo,₦4.7m
+year_sub_hi,₦1.9m
+year_sub_lo,₦1.2m

@@ -26,6 +26,11 @@ def main() -> None:
         "chart3_scorecard_top5_bottom5": charts.scorecard_ends(sc),
         "chart3b_scorecard_stress_test": charts.stress_chart(st),
     }
+    dist = PROCESSED / "state_dialysis_distance.csv"
+    if dist.exists():
+        import yaml
+        halima = yaml.safe_load((ROOT / "config" / "story.yaml").read_text(encoding="utf-8"))["halima"]["state"]
+        figs["chart0_distance_to_dialysis"] = charts.distance_to_dialysis(pd.read_csv(dist), halima)
     reg = PROCESSED / "register_kidney_by_state.csv"
     if reg.exists():
         by_state = pd.read_csv(reg)

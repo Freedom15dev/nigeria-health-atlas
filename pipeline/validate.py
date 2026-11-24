@@ -16,6 +16,7 @@ Rules:
     between 0 and 100, and the "screening tool, not investment advice" label on every row.
 12. Headline figures (Home page): cards 1-4 each have main figures; every row has a number,
     source, source date, URL and verification note.
+14. Income benchmarks: every row has a number, source, date, URL and quote.
 13. App inputs exist: the state map joins all 37 states; the monthly series and NBS health CPI
     are present and not empty.
 """
@@ -181,6 +182,17 @@ def check_headline_figures(path=MANUAL / "headline_figures.csv") -> list[str]:
     return e
 
 
+def check_income(path=MANUAL / "income_benchmarks.csv") -> list[str]:
+    if not path.exists():
+        return []
+    i = pd.read_csv(path, dtype=str, keep_default_na=False)
+    e = [f"income_benchmarks: empty {c} in rows {list(i.index[i[c].str.strip() == ''])}"
+         for c in ("measure", "geography", "value", "source", "source_date", "url", "quote") if (i[c].str.strip() == "").any()]
+    if pd.to_numeric(i.value, errors="coerce").isna().any():
+        e.append("income_benchmarks: non-numeric value")
+    return e
+
+
 def check_app_inputs() -> list[str]:
     import json
     e = []
@@ -190,7 +202,7 @@ def check_app_inputs() -> list[str]:
     names = {f["properties"]["state"] for f in json.loads(geo.read_text(encoding="utf-8"))["features"]}
     if names != set(load_states().state):
         e.append(f"state map does not match the lookup: {sorted(names ^ set(load_states().state))}")
-    for name in ("monthly_prices.csv", "nbs_cpi_health.csv", "facility_counts.csv", "register_kidney_rows.csv",
+    for name in ("state_dialysis_distance.csv", "lga_dialysis_distance.csv", "monthly_prices.csv", "nbs_cpi_health.csv", "facility_counts.csv", "register_kidney_rows.csv",
                  "headline_figures.csv", "sources.csv", "states.csv"):
         if not (PROCESSED / name).exists() or pd.read_csv(PROCESSED / name).empty:
             e.append(f"{name} missing or empty")
@@ -206,8 +218,8 @@ def run_all_checks() -> list[str]:
     errors += check_pillars(panel)
     errors += check_dictionary(panel, dictionary, sources)
     for f in sorted(MANUAL.glob("*.csv")):
-        if f.name == "headline_figures.csv":
-            continue  # different layout: checked by check_headline_figures
+        if f.name in ("headline_figures.csv", "income_benchmarks.csv"):
+            continue  # different layout: checked by check_headline_figures / check_income
         errors += check_manual(pd.read_csv(f), f.name, sources)
     errors += check_ranges(panel)
     errors += check_population_total()
@@ -217,6 +229,7 @@ def run_all_checks() -> list[str]:
         errors += [f"{name}: {e}" for e in check_payer_mix(CONFIG / name) + check_assumptions(CONFIG / name)]
     errors += check_scorecard()
     errors += check_headline_figures()
+    errors += check_income()
     errors += check_app_inputs()
     return errors
 

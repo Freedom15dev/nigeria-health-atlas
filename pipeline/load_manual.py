@@ -30,11 +30,14 @@ def load_ndhs_manual() -> pd.DataFrame:
     return pd.read_csv(MANUAL / "ndhs2024_state.csv")
 
 
+OWN_LAYOUT = {"headline_figures.csv", "income_benchmarks.csv"}
+
+
 def main() -> None:
     sources = load_sources()
     errors = []
-    # headline_figures.csv has its own layout (one row per quoted figure) and its own check in validate.py
-    files = [f for f in sorted(MANUAL.glob("*.csv")) if f.name != "headline_figures.csv"]
+    # these files have their own layout (one row per quoted figure) and their own check in validate.py
+    files = [f for f in sorted(MANUAL.glob("*.csv")) if f.name not in OWN_LAYOUT]
     if not (MANUAL / "ndhs2024_state.csv").exists():
         sys.exit("data/manual/ndhs2024_state.csv missing: run pipeline/transcribe_ndhs_pdf.py")
     for f in files:

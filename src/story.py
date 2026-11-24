@@ -62,6 +62,13 @@ def halima_intro(assumptions: dict) -> str:
             f"for her family.")
 
 
+def distance_sentence(dist: pd.DataFrame, state: str) -> str:
+    """Halima's distance, from data/processed/state_dialysis_distance.csv (straight line, upper bound)."""
+    d = dist.set_index("state").loc[state]
+    return (f"Half of {short_state(state)}'s people live more than {d.median_km_population_weighted:.0f} km (straight "
+            f"line) from a dialysis unit known to work, and {d.share_beyond_100km_pct:.0f}% more than 100 km.")
+
+
 # ---------- headline cards (Home) ----------
 
 def headline_cards(hf: pd.DataFrame) -> list[dict]:

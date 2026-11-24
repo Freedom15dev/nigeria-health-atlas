@@ -1,0 +1,775 @@
+state,lga,population,match,latitude,longitude,grid3_lga,nearest_unit,nearest_unit_state,km_straight_line
+Abia,Aba North,253274.6159,exact,5.1167391665,7.35802869748,Aba North,"Federal Teaching Hospital, Owerri",Imo,57.0
+Abia,Aba South,277440.3471,exact,5.0930083,7.360998333,Aba South,"Federal Teaching Hospital, Owerri",Imo,59.0
+Abia,Arochukwu,142898.5043,exact,5.4261,7.891005,Arochukwu,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,70.0
+Abia,Bende,223490.5912,exact,5.663556667,7.62347283208,Bende,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,42.0
+Abia,Ikwuano,140460.4009,exact,5.396776,7.567755,Ikwuano,"Federal Teaching Hospital, Owerri",Imo,61.0
+Abia,Isiala-Ngwa North,235324.5937,exact,5.379495833,7.4099541835,Isiala-Ngwa North,"Federal Teaching Hospital, Owerri",Imo,45.0
+Abia,Isiala-Ngwa South,212718.3697,exact,5.290081667,7.394897461,Isiala-Ngwa South,"Federal Teaching Hospital, Owerri",Imo,47.0
+Abia,Isuikwuato,165505.6846,exact,5.7678283335,7.464903333500001,Isuikwuato,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,41.0
+Abia,Obi Nwga,430171.8479,closest spelling,5.1330716665,7.4265651165,Obi Ngwa,"Federal Teaching Hospital, Owerri",Imo,61.0
+Abia,Ohafia,232642.7513,exact,5.646305185105,7.8243100000000005,Ohafia,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,44.0
+Abia,Osisioma Ngwa,447598.0172,exact,5.1553225000000005,7.3302274999999995,Osisioma Ngwa,"Federal Teaching Hospital, Owerri",Imo,51.0
+Abia,Ugwunagbo,100958.3379,exact,5.02901,7.3278,Ugwunagbo,"Federal Teaching Hospital, Owerri",Imo,63.0
+Abia,Ukwa East,94231.21036,exact,4.94343965,7.4067067,Ukwa East,"Federal Teaching Hospital, Owerri",Imo,75.0
+Abia,Ukwa West,146464.7078,exact,4.9355364999999995,7.2706075,Ukwa West,"Federal Teaching Hospital, Owerri",Imo,69.0
+Abia,Umuahia North,377491.7528,exact,5.530099,7.496496667,Umuahia North,"Federal Teaching Hospital, Owerri",Imo,53.0
+Abia,Umuahia South,251792.0382,exact,5.481701667,7.442956667,Umuahia South,"Federal Teaching Hospital, Owerri",Imo,47.0
+Abia,Umu-Nneochi,191705.4793,exact,5.97269,7.3925333,Umunneochi,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,37.0
+Adamawa,Demsa,285015.9596,exact,9.42916063599,12.04632568,Demsa,"Adamawa State Specialist Hospital, Yola",Adamawa,47.0
+Adamawa,Fufore,443009.2323,exact,9.137360425,12.650789575000001,Fufore,"Adamawa State Specialist Hospital, Yola",Adamawa,27.0
+Adamawa,Ganye,310190.1724,exact,8.457133,12.034729,Ganye,"Adamawa State Specialist Hospital, Yola",Adamawa,102.0
+Adamawa,Girei,250603.9252,exact,9.36905064,12.480875,Girei,"Adamawa State Specialist Hospital, Yola",Adamawa,11.0
+Adamawa,Gombi,290857.9657,exact,10.16027832,12.58583,Gombi,"Adamawa State Specialist Hospital, Yola",Adamawa,99.0
+Adamawa,Guyuk,251727.2952,exact,9.88559,11.91592708,Guyuk,"Adamawa State Specialist Hospital, Yola",Adamawa,89.0
+Adamawa,Hong,304189.8986,exact,10.251384999999999,12.977838819999999,Hong,"Adamawa State Specialist Hospital, Yola",Adamawa,123.0
+Adamawa,Jada,315352.8397,exact,8.6760478515,12.192468224999999,Jada,"Adamawa State Specialist Hospital, Yola",Adamawa,72.0
+Adamawa,Lamurde,197983.142,exact,9.56824,11.79098213,Lamurde,"Adamawa State Specialist Hospital, Yola",Adamawa,79.0
+Adamawa,Madagali,245470.8309,exact,10.79099,13.52512,Madagali,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,200.0
+Adamawa,Maiha,188095.1494,exact,10.01611328,13.18585,Maiha,"Adamawa State Specialist Hospital, Yola",Adamawa,116.0
+Adamawa,Mayo-Belwa,313080.9377,exact,9.0571741115,11.926194939999998,Mayo-Belwa,"Adamawa State Specialist Hospital, Yola",Adamawa,62.0
+Adamawa,Michika,262407.8205,exact,10.576882325,13.402069999999998,Michika,"Adamawa State Specialist Hospital, Yola",Adamawa,179.0
+Adamawa,Mubi North,292263.7052,exact,10.327161851,13.30798,Mubi North,"Adamawa State Specialist Hospital, Yola",Adamawa,150.0
+Adamawa,Mubi South,266029.6536,exact,10.200725,13.277015,Mubi South,"Adamawa State Specialist Hospital, Yola",Adamawa,137.0
+Adamawa,Numan,165014.7349,exact,9.461321084,12.024075,Numan,"Adamawa State Specialist Hospital, Yola",Adamawa,51.0
+Adamawa,Shelleng,248189.2092,exact,9.878217,12.05463,Shelleng,"Adamawa State Specialist Hospital, Yola",Adamawa,79.0
+Adamawa,Song,381421.7986,exact,9.796753333,12.518825,Song,"Adamawa State Specialist Hospital, Yola",Adamawa,58.0
+Adamawa,Toungo,101975.0274,exact,8.121168242500001,11.994689999999999,Toungo,"Adamawa State Specialist Hospital, Yola",Adamawa,138.0
+Adamawa,Yola North,323369.6308,exact,9.26874506,12.44654775715,Yola North,"Adamawa State Specialist Hospital, Yola",Adamawa,1.0
+Adamawa,Yola South,570232.5274,exact,9.214294434,12.43811035,Yola South,"Adamawa State Specialist Hospital, Yola",Adamawa,7.0
+Akwa Ibom,Abak,196901.5075,exact,5.00556,7.7900546075,Abak,"Federal Teaching Hospital, Owerri",Imo,101.0
+Akwa Ibom,Eastern Obolo,38295.61355,exact,4.534041348425,7.7359725,Eastern Obolo,"Federal Teaching Hospital, Owerri",Imo,134.0
+Akwa Ibom,Eket,256972.6301,exact,4.649675,7.940785,Eket,"Federal Teaching Hospital, Owerri",Imo,139.0
+Akwa Ibom,Esit Eket,50760.14575,exact,4.658182036435,8.079612899499999,Esit Eket,"Federal Teaching Hospital, Owerri",Imo,150.0
+Akwa Ibom,Essien Udim,213603.232,exact,5.117807398769999,7.703313265,Essien Udim,"Federal Teaching Hospital, Owerri",Imo,87.0
+Akwa Ibom,Etim Ekpo,118328.2977,exact,4.95748,7.58002,Etim Ekpo,"Federal Teaching Hospital, Owerri",Imo,86.0
+Akwa Ibom,Etinan,83153.1968,exact,4.8233266695,7.837385,Etinan,"Federal Teaching Hospital, Owerri",Imo,118.0
+Akwa Ibom,Ibeno,92166.67022,exact,4.549479587,7.974993522,Ibeno,"Federal Teaching Hospital, Owerri",Imo,150.0
+Akwa Ibom,Ibesikpo Asutan,230920.9042,exact,4.926696777,7.94109,Ibesikpo Asutan,"Federal Teaching Hospital, Owerri",Imo,120.0
+Akwa Ibom,Ibiono Ibom,159402.1975,exact,5.18511042812,7.88636,Ibiono Ibom,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,96.0
+Akwa Ibom,Ika,63587.92733,exact,5.0176569155,7.54466,Ika,"Federal Teaching Hospital, Owerri",Imo,79.0
+Akwa Ibom,Ikono,99275.57832,exact,5.189585,7.7849900000000005,Ikono,"Federal Teaching Hospital, Owerri",Imo,91.0
+Akwa Ibom,Ikot Abasi,133576.7497,exact,4.58243,7.609456667,Ikot Abasi,"Federal Teaching Hospital, Owerri",Imo,121.0
+Akwa Ibom,Ikot Ekpene,284961.86,exact,5.1809,7.71638,Ikot Ekpene,"Federal Teaching Hospital, Owerri",Imo,85.0
+Akwa Ibom,Ini,95885.70035,exact,5.363400146,7.731141794445,Ini,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,74.0
+Akwa Ibom,Itu,173480.1571,exact,5.138529302,7.97147,Itu,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,103.0
+Akwa Ibom,Mbo,71203.34484,exact,4.651489258,8.26365117058,Mbo,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,165.0
+Akwa Ibom,Mkpat Enin,122239.9178,exact,4.693535000000001,7.759815692,Mkpat Enin,"Federal Teaching Hospital, Owerri",Imo,121.0
+Akwa Ibom,Nsit Atai,68606.67933,exact,4.822665,8.029585,Nsit Atai,"Federal Teaching Hospital, Owerri",Imo,135.0
+Akwa Ibom,Nsit Ibom,122391.6627,exact,4.88204,7.89076,Nsit Ibom,"Federal Teaching Hospital, Owerri",Imo,118.0
+Akwa Ibom,Nsit Ubium,94412.39028,exact,4.76335,7.944483706,Nsit Ubium,"Federal Teaching Hospital, Owerri",Imo,131.0
+Akwa Ibom,Obot Akara,132695.4711,exact,5.259673062,7.61612,Obot Akara,"Federal Teaching Hospital, Owerri",Imo,71.0
+Akwa Ibom,Okobo,78328.04075,exact,4.8253699999999995,8.126854999999999,Okobo,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,141.0
+Akwa Ibom,Onna,70111.02463,exact,4.63816,7.85358,Onna,"Federal Teaching Hospital, Owerri",Imo,133.0
+Akwa Ibom,Oron,118063.8133,exact,4.80392,8.232479999999999,Oron,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,148.0
+Akwa Ibom,Oruk Anam,230764.5055,exact,4.839224951,7.6945800775,Oruk Anam,"Federal Teaching Hospital, Owerri",Imo,105.0
+Akwa Ibom,Udung Uko,21318.44428,exact,4.75663,8.23557925781,Udung Uko,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,153.0
+Akwa Ibom,Ukanafun,121945.3303,exact,4.877753333,7.575460839,Ukanafun,"Federal Teaching Hospital, Owerri",Imo,93.0
+Akwa Ibom,Uruan,118328.8199,exact,5.004547200999999,8.020685,Uruan,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,119.0
+Akwa Ibom,Urue Offong/Oruko,46706.54911,exact,4.746180000000001,8.1651965,Urue-Offong/Oruko,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,151.0
+Akwa Ibom,Uyo,572625.5854,exact,5.0247,7.92449463832,Uyo,"Federal Teaching Hospital, Owerri",Imo,113.0
+Anambra,Aguata,526036.6287,exact,5.98535,7.08222,Aguata,"Federal Teaching Hospital, Owerri",Imo,54.0
+Anambra,Anambra East,199567.4377,exact,6.33012,6.868641667,Anambra East,"Federal Teaching Hospital, Owerri",Imo,94.0
+Anambra,Anambra West,81723.42979,exact,6.40789795,6.74964497938,Anambra West,"Federal Teaching Hospital, Owerri",Imo,105.0
+Anambra,Anaocha,329481.276,exact,6.09099831,7.01811,Anaocha,"Federal Teaching Hospital, Owerri",Imo,65.0
+Anambra,Awka North,155154.0569,exact,6.3018377,7.04677,Awka North,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,80.0
+Anambra,Awka South,441171.8249,exact,6.209472657,7.06805,Awka South,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,75.0
+Anambra,Ayamelum,77443.41463,exact,6.51979,6.95868535233,Ayamelum,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,100.0
+Anambra,Dunukofia,189511.5436,exact,6.190312311,6.9507474755,Dunukofia,"Federal Teaching Hospital, Owerri",Imo,77.0
+Anambra,Ekwusigo,230715.6709,exact,5.9727916665,6.8490641775,Ekwusigo,"Federal Teaching Hospital, Owerri",Imo,56.0
+Anambra,Idemili North,463866.0555,exact,6.13025,6.84235,Idemili North,"Federal Teaching Hospital, Owerri",Imo,73.0
+Anambra,Idemili South,343204.8038,exact,6.061995,6.933103333,Idemili South,"Federal Teaching Hospital, Owerri",Imo,63.0
+Anambra,Ihiala,556979.1468,exact,5.857981666500001,6.862757037,Ihiala,"Federal Teaching Hospital, Owerri",Imo,43.0
+Anambra,Njikoka,159596.6717,exact,6.1796875,6.99810791,Njikoka,"Federal Teaching Hospital, Owerri",Imo,75.0
+Anambra,Nnewi North,360625.2096,exact,6.02124,6.91608,Nnewi North,"Federal Teaching Hospital, Owerri",Imo,59.0
+Anambra,Nnewi South,422369.7036,exact,5.95232771695,6.968156192,Nnewi South,"Federal Teaching Hospital, Owerri",Imo,50.0
+Anambra,Ogbaru,211801.1249,exact,6.111383485365,6.77436295,Ogbaru,"Federal Teaching Hospital, Owerri",Imo,73.0
+Anambra,Onitsha North,237813.011,exact,6.151071103,6.796965,Onitsha North,"Federal Teaching Hospital, Owerri",Imo,76.0
+Anambra,Onitsha South,70505.49974,exact,6.1400232,6.780273437,Onitsha South,"Federal Teaching Hospital, Owerri",Imo,76.0
+Anambra,Orumba North,231406.0649,exact,6.06236,7.136374786,Orumba North,"Federal Teaching Hospital, Owerri",Imo,63.0
+Anambra,Orumba South,197389.7497,exact,5.99728776,7.2371,Orumba South,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,53.0
+Anambra,Oyi,302302.3614,exact,6.21235611,6.91366,Oyi,"Federal Teaching Hospital, Owerri",Imo,80.0
+Bauchi,Alkaleri,530181.5468,exact,9.95702297,10.27782123,Alkaleri,Abubakar Tafawa Balewa University Teaching Hospital,Bauchi,64.0
+Bauchi,Bauchi,1201327.0,exact,10.29177942195,9.840595954515,Bauchi,Abubakar Tafawa Balewa University Teaching Hospital,Bauchi,5.0
+Bauchi,Bogoro,89466.12945,exact,9.612931045,9.571026856235001,Bogoro,Abubakar Tafawa Balewa University Teaching Hospital,Bauchi,86.0
+Bauchi,Dambam,232821.8427,exact,11.649208965,10.76669399745,Dambam,"Fatima Abubakar Dialysis Centre, Hadejia",Jigawa,118.0
+Bauchi,Darazo,503920.6054,exact,11.141552888149999,10.548084925,Darazo,Abubakar Tafawa Balewa University Teaching Hospital,Bauchi,118.0
+Bauchi,Dass,107870.9489,exact,10.00440763,9.50759917,Dass,Abubakar Tafawa Balewa University Teaching Hospital,Bauchi,52.0
+Bauchi,Gamawa,464253.789,exact,12.10659,10.5961,Gamawa,"Fatima Abubakar Dialysis Centre, Hadejia",Jigawa,71.0
+Bauchi,Ganjuwa,768482.7817,exact,10.766459935,9.948291074,Ganjuwa,Abubakar Tafawa Balewa University Teaching Hospital,Bauchi,49.0
+Bauchi,Giade,295089.1653,exact,11.42492676,10.24381,Giade,"Fatima Abubakar Dialysis Centre, Hadejia",Jigawa,115.0
+Bauchi,Itas/Gadau,366464.9301,exact,11.85283649965,9.975974390000001,Itas/Gadau,"Fatima Abubakar Dialysis Centre, Hadejia",Jigawa,66.0
+Bauchi,Jama'Are,125242.6405,exact,11.6688625404,9.927068109970001,Jama'Are,"Fatima Abubakar Dialysis Centre, Hadejia",Jigawa,87.0
+Bauchi,Katagum,604337.1252,exact,11.669125,10.22477181,Katagum,"Fatima Abubakar Dialysis Centre, Hadejia",Jigawa,88.0
+Bauchi,Kirfi,273944.0775,exact,10.40501007,10.43607119,Kirfi,Abubakar Tafawa Balewa University Teaching Hospital,Bauchi,65.0
+Bauchi,Misau,428540.1897,exact,11.40289307,10.49448,Misau,"Fatima Abubakar Dialysis Centre, Hadejia",Jigawa,126.0
+Bauchi,Ningi,713899.7958,exact,11.07866369,9.44549,Ningi,Abubakar Tafawa Balewa University Teaching Hospital,Bauchi,93.0
+Bauchi,Shira,374231.6904,exact,11.46060181,10.01037,Shira,"Fatima Abubakar Dialysis Centre, Hadejia",Jigawa,110.0
+Bauchi,Tafawa-Balewa,336340.6157,exact,9.75494269422,9.54477903,Tafawa-Balewa,Abubakar Tafawa Balewa University Teaching Hospital,Bauchi,72.0
+Bauchi,Toro,798800.5276,exact,10.21996,9.13221527,Toro,Abubakar Tafawa Balewa University Teaching Hospital,Bauchi,79.0
+Bauchi,Warji,136152.189,exact,11.166956500000001,9.749500478445,Warji,Abubakar Tafawa Balewa University Teaching Hospital,Bauchi,93.0
+Bauchi,Zaki,430009.4076,exact,12.27058,10.31729,Zaki,"Fatima Abubakar Dialysis Centre, Hadejia",Jigawa,35.0
+Bayelsa,Brass,132042.9675,exact,4.32006,6.2639,Brass,"Federal Teaching Hospital, Owerri",Imo,156.0
+Bayelsa,Ekeremor,249647.6274,exact,5.0233254590000005,5.778710524,Ekeremor,"Federal Teaching Hospital, Owerri",Imo,148.0
+Bayelsa,Kolokuma/Opokuma,133589.8091,exact,5.09458,6.296306205,Kolokuma/Opokuma,"Federal Teaching Hospital, Owerri",Imo,92.0
+Bayelsa,Nembe,64903.99739,exact,4.562881667,6.356323242,Nembe,"Federal Teaching Hospital, Owerri",Imo,128.0
+Bayelsa,Ogbia,236460.9408,exact,4.787527793000001,6.327121158764999,Ogbia,"Federal Teaching Hospital, Owerri",Imo,111.0
+Bayelsa,Sagbama,233276.2939,exact,5.13398735,6.1259506315,Sagbama,"Federal Teaching Hospital, Owerri",Imo,107.0
+Bayelsa,Southern Ijaw,288675.0538,exact,4.721496582,6.03612698057,Southern Ijaw,"Federal Teaching Hospital, Owerri",Imo,140.0
+Bayelsa,Yenegoa,1184856.986,closest spelling,4.946530705000001,6.311876123,Yenagoa,"Federal Teaching Hospital, Owerri",Imo,100.0
+Benue,Ado,148330.0692,exact,6.800897256,8.054095,Ado,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,93.0
+Benue,Agatu,93521.11009,exact,7.8724761999999995,7.848114805,Agatu,"Benue State University Teaching Hospital, Makurdi",Benue,81.0
+Benue,Apa,137248.2168,exact,7.6116875,7.8739083335,Apa,"Benue State University Teaching Hospital, Makurdi",Benue,78.0
+Benue,Buruku,525010.082,exact,7.35963,9.195922851,Buruku,"Benue State University Teaching Hospital, Makurdi",Benue,80.0
+Benue,Gboko,793376.9231,exact,7.3377,8.9958,Gboko,"Benue State University Teaching Hospital, Makurdi",Benue,64.0
+Benue,Guma,256819.5255,exact,7.91028,8.75014,Guma,"Benue State University Teaching Hospital, Makurdi",Benue,29.0
+Benue,Gwer East,446132.3963,exact,7.37398,8.470520019,Gwer East,"Benue State University Teaching Hospital, Makurdi",Benue,41.0
+Benue,Gwer West,146702.2981,exact,7.59062,8.20135,Gwer West,"Benue State University Teaching Hospital, Makurdi",Benue,43.0
+Benue,Katsina-Ala,796505.2185,exact,7.249243333,9.521018333,Katsina-Ala,"Benue State University Teaching Hospital, Makurdi",Benue,118.0
+Benue,Konshisha,586764.7088,exact,7.00745,8.747891599345,Konshisha,"Benue State University Teaching Hospital, Makurdi",Benue,82.0
+Benue,Kwande,725473.2621,exact,6.865982344,9.3008273695,Kwande,"Benue State University Teaching Hospital, Makurdi",Benue,125.0
+Benue,Logo,443010.5863,exact,7.685823333,9.33653,Logo,"Benue State University Teaching Hospital, Makurdi",Benue,85.0
+Benue,Makurdi,704853.5475,exact,7.7198541665,8.5353,Makurdi,"Benue State University Teaching Hospital, Makurdi",Benue,4.0
+Benue,Obi,119055.4514,exact,7.00113,8.318195,Obi,"Benue State University Teaching Hospital, Makurdi",Benue,85.0
+Benue,Ogbadibo,264161.2861,exact,7.0434530375,7.6610416665,Ogbadibo,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,113.0
+Benue,Ohimini,128624.3352,exact,7.278555,7.9442737515,Ohimini,"Benue State University Teaching Hospital, Makurdi",Benue,85.0
+Benue,Oju,218965.0243,exact,6.843553333,8.402536667,Oju,"Benue State University Teaching Hospital, Makurdi",Benue,100.0
+Benue,Okpokwu,232705.2793,exact,7.08482,7.81934,Okpokwu,"Benue State University Teaching Hospital, Makurdi",Benue,109.0
+Benue,Oturkpo,388734.4105,closest spelling,7.2380434765,8.0721741665,Otukpo,"Benue State University Teaching Hospital, Makurdi",Benue,77.0
+Benue,Tarka,109340.6882,exact,7.6074425,8.876515833500001,Tarka,"Benue State University Teaching Hospital, Makurdi",Benue,36.0
+Benue,Ukum,935724.404,exact,7.565155,9.61647,Ukum,"Benue State University Teaching Hospital, Makurdi",Benue,117.0
+Benue,Ushongo,418542.7458,exact,7.070129394,9.0228133,Ushongo,"Benue State University Teaching Hospital, Makurdi",Benue,88.0
+Benue,Vandeikya,447607.5137,exact,6.8023616,9.075927734,Vandeikya,"Benue State University Teaching Hospital, Makurdi",Benue,117.0
+Borno,Abadam,80384.58084,exact,13.56936500045,13.3378502911,Abadam,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,254.0
+Borno,Askira Uba,245196.7917,exact,10.6323430004,13.1276449998,Askira/Uba,"Adamawa State Specialist Hospital, Yola",Adamawa,168.0
+Borno,Bama,199920.6945,exact,11.50943750015,13.9011028275,Bama,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,213.0
+Borno,Bayo,234872.0945,exact,10.38045083515,11.66860325,Bayo,"Adamawa State Specialist Hospital, Yola",Adamawa,149.0
+Borno,Biu,450925.6966,exact,10.655136499849998,12.17913916485,Biu,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,122.0
+Borno,Chibok,110736.122,exact,10.854225000149999,12.853345000000001,Chibok,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,138.0
+Borno,Damboa,176532.5568,exact,11.14802,12.7577,Damboa,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,109.0
+Borno,Dikwa,87596.22564,exact,12.0282845,13.9251795201,Dikwa,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,217.0
+Borno,Gubio,206460.4051,exact,12.51030099985,12.784771999850001,Gubio,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,125.0
+Borno,Guzamala,62746.88397,exact,12.6884468,13.334018438,Guzamala,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,184.0
+Borno,Gwoza,228713.0998,exact,11.1076600003,13.71833,Gwoza,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,204.0
+Borno,Hawul,253980.5821,exact,10.49884,12.25661,Hawul,"Adamawa State Specialist Hospital, Yola",Adamawa,137.0
+Borno,Jere,866216.1325,exact,11.8340429999,13.1856500002,Jere,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,134.0
+Borno,Kaga,116623.5668,exact,11.6287549999,12.51017599975,Kaga,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,61.0
+Borno,Kala Balge,40813.80573,exact,12.1058599996,14.4659828,Kala/Balge,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,276.0
+Borno,Konduga,270898.8578,exact,11.7719,13.07757126,Konduga,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,122.0
+Borno,Kukawa,85386.56146,exact,13.02199850005,13.799147500099998,Kukawa,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,246.0
+Borno,Kwaya Kusar,158091.0968,exact,10.430633549549999,11.930370000349999,Kwaya Kusar,"Adamawa State Specialist Hospital, Yola",Adamawa,140.0
+Borno,Mafa,131460.4151,exact,11.8851899996,13.3669790004,Mafa,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,155.0
+Borno,Magumeri,176213.6932,exact,12.15589,12.7846249998,Magumeri,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,102.0
+Borno,Maiduguri,1103203.631,exact,11.839129999850002,13.14796000015,Maiduguri,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,130.0
+Borno,Marte,30137.00541,exact,12.3324599995,13.8264399996,Marte,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,214.0
+Borno,Mobbar,228943.3465,exact,13.1053199997,12.5705650003,Mobbar,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,167.0
+Borno,Monguno,216349.6245,exact,12.6712699997,13.61617,Monguno,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,209.0
+Borno,Ngala,135286.3864,exact,12.37014,14.1879900003,Ngala,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,253.0
+Borno,Nganzai,86859.12114,exact,12.4854200005,13.2141899996,Nganzai,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,161.0
+Borno,Shani,285029.2587,exact,10.17468262,11.9627560003,Shani,"Adamawa State Specialist Hospital, Yola",Adamawa,113.0
+Cross River,Abi,56366.26474,exact,5.8920383,8.021105,Abi,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,37.0
+Cross River,Akamkpa,182207.531,exact,5.344671399999999,8.361880863500001,Akamkpa,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,104.0
+Cross River,Akpabuyo,122817.207,exact,4.916687012,8.47089,Akpabuyo,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,149.0
+Cross River,Bakassi,34080.31936,exact,4.82656115,8.5049535,Bakassi,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,160.0
+Cross River,Bekwarra,104036.678,exact,6.692966667,8.903873333,Bekwarra,"Benue State University Teaching Hospital, Makurdi",Benue,121.0
+Cross River,Biase,90933.82502,exact,5.58721335,8.051020537,Biase,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,62.0
+Cross River,Boki,140135.8551,exact,6.437256154345,8.9200928955,Boki,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,140.0
+Cross River,Calabar Municipal,280337.9952,exact,4.9855054,8.3404348,Calabar Municipal,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,135.0
+Cross River,Calabar South,247819.2209,exact,4.944653333,8.32526,Calabar South,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,138.0
+Cross River,Etung,57056.67045,exact,5.897060833499999,8.82859343729,Etung,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,124.0
+Cross River,Ikom,216730.5661,exact,6.051213333,8.650573333,Ikom,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,103.0
+Cross River,Obanliku,96096.82526,exact,6.55078795273,9.24770783208,Obanliku,"Benue State University Teaching Hospital, Makurdi",Benue,151.0
+Cross River,Obubra,121254.3207,exact,6.005578333,8.33762,Obubra,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,68.0
+Cross River,Obudu,125629.1936,exact,6.607446859,9.123059307,Obudu,"Benue State University Teaching Hospital, Makurdi",Benue,139.0
+Cross River,Odukpani,212603.3874,exact,5.110107422,8.23210815417,Odukpani,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,117.0
+Cross River,Ogoja,184872.3262,exact,6.570566667,8.7910260675,Ogoja,"Benue State University Teaching Hospital, Makurdi",Benue,131.0
+Cross River,Yakurr,109280.1096,exact,5.827997326365001,8.121887207,Yakurr,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,50.0
+Cross River,Yala,184135.1013,exact,6.673814826365,8.6203363335,Yala,"Benue State University Teaching Hospital, Makurdi",Benue,117.0
+Delta,Aniocha North,188595.0644,exact,6.3517954979999995,6.477508544999999,Aniocha North,University of Benin Teaching Hospital,Edo,96.0
+Delta,Aniocha South,276748.6106,exact,6.178100586,6.515686035,Aniocha South,"Federal Teaching Hospital, Owerri",Imo,94.0
+Delta,Bomadi,181063.8291,exact,5.2137756345,5.83972168,Bomadi,University of Benin Teaching Hospital,Edo,133.0
+Delta,Burutu,185938.4279,exact,5.175292969,5.673655,Burutu,University of Benin Teaching Hospital,Edo,135.0
+Delta,Ethiope East,343317.0129,exact,5.74029541,6.00337,Ethiope East,University of Benin Teaching Hospital,Edo,84.0
+Delta,Ethiope West,405474.4538,exact,5.935913085499999,5.725975,Ethiope West,University of Benin Teaching Hospital,Edo,52.0
+Delta,Ika North East,334663.0445,exact,6.245727539,6.21809,Ika North East,University of Benin Teaching Hospital,Edo,69.0
+Delta,Ika South,373392.6468,exact,6.238460976500001,6.1733795705,Ika South,University of Benin Teaching Hospital,Edo,64.0
+Delta,Isoko North,301478.3136,exact,5.54095,6.22424,Isoko North,"Federal Teaching Hospital, Owerri",Imo,88.0
+Delta,Isoko South,443381.4532,exact,5.43813,6.206481934,Isoko South,"Federal Teaching Hospital, Owerri",Imo,91.0
+Delta,Ndokwa East,172362.0893,exact,5.640950088,6.4677734375,Ndokwa East,"Federal Teaching Hospital, Owerri",Imo,63.0
+Delta,Ndokwa West,306494.067,exact,5.704803467,6.358215332,Ndokwa West,"Federal Teaching Hospital, Owerri",Imo,77.0
+Delta,Okpe,251658.203,exact,5.634505,5.80585587,Okpe,University of Benin Teaching Hospital,Edo,87.0
+Delta,Oshimili North,342861.0443,exact,6.2727328905,6.6433105465,Oshimili North,"Federal Teaching Hospital, Owerri",Imo,95.0
+Delta,Oshimili South,257126.8577,exact,6.196289062,6.725280762,Oshimili South,"Federal Teaching Hospital, Owerri",Imo,84.0
+Delta,Patani,96246.67094,exact,5.18359375,6.1539001465,Patani,"Federal Teaching Hospital, Owerri",Imo,103.0
+Delta,Sapele,407717.7126,exact,5.889099121,5.678283691,Sapele,University of Benin Teaching Hospital,Edo,56.0
+Delta,Udu,453958.6539,exact,5.49726,5.81237,Udu,University of Benin Teaching Hospital,Edo,102.0
+Delta,Ughelli North,791337.4202,exact,5.524719238,6.01441,Ughelli North,University of Benin Teaching Hospital,Edo,106.0
+Delta,Ughelli South,366468.1866,exact,5.38692,5.875915527,Ughelli South,University of Benin Teaching Hospital,Edo,115.0
+Delta,Ukwuani,199503.069,exact,5.84552002,6.186523437,Ukwuani,University of Benin Teaching Hospital,Edo,88.0
+Delta,Uvwie,404374.8365,exact,5.5604729200000005,5.7777799805,Uvwie,University of Benin Teaching Hospital,Edo,94.0
+Delta,Warri North,118901.4598,exact,5.837280273499999,5.2012075499999995,Warri North,University of Benin Teaching Hospital,Edo,77.0
+Delta,Warri South,453134.9113,exact,5.527099609,5.750488281,Warri South,University of Benin Teaching Hospital,Edo,97.0
+Delta,Warri South-West,56674.35066,exact,5.5451118455,5.355869111500001,Warri South West,University of Benin Teaching Hospital,Edo,98.0
+Ebonyi,Abakaliki,271381.9722,exact,6.30714,8.115945,Abakaliki,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,54.0
+Ebonyi,Afikpo North,159529.7914,exact,5.8885383335,7.9374084475,Afikpo North,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,29.0
+Ebonyi,Afikpo South,89065.40412,exact,5.8073541665,7.846310833,Afikpo South,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,29.0
+Ebonyi,Ebonyi,253018.045,exact,6.34803190829,8.109927,Ebonyi,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,56.0
+Ebonyi,Ezza North,139517.651,exact,6.27981666048,8.0064625,Ezza North,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,42.0
+Ebonyi,Ezza South,166772.7828,exact,6.14286,8.022341667,Ezza South,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,36.0
+Ebonyi,Ikwo,243362.0761,exact,6.078615833500001,8.1589783335,Ikwo,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,49.0
+Ebonyi,Ishielu,188629.6296,exact,6.39123,7.80757,Ishielu,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,41.0
+Ebonyi,Ivo,97341.73142,exact,5.920948333,7.56992,Ivo,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,21.0
+Ebonyi,Izzi,373948.7596,exact,6.4356383335,8.2344558335,Izzi,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,73.0
+Ebonyi,Ohaozara,120586.6698,exact,6.03249165,7.79928958,Ohaozara,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,9.0
+Ebonyi,Ohaukwu,291599.0356,exact,6.479464999999999,7.974938333500001,Ohaukwu,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,57.0
+Ebonyi,Onicha,173154.5949,exact,6.11730957,7.830513333,Onicha,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,16.0
+Edo,Akoko-Edo,256984.0918,exact,7.3388441115,6.1213008,Akoko-Edo,"Kogi Specialist Hospital, Lokoja",Kogi,84.0
+Edo,Egor,573303.6998,exact,6.36713,5.60354,Egor,University of Benin Teaching Hospital,Edo,3.0
+Edo,Esan Central,155913.7992,exact,6.7384787,6.2380675194999995,Esan Central,University of Benin Teaching Hospital,Edo,79.0
+Edo,Esan North-East,369234.6845,exact,6.7195,6.326721192,Esan North-East,University of Benin Teaching Hospital,Edo,87.0
+Edo,Esan South-East,229061.0816,exact,6.5573324214349995,6.3979058205,Esan South-East,University of Benin Teaching Hospital,Edo,89.0
+Edo,Esan West,366657.722,exact,6.74161,6.1398123,Esan West,University of Benin Teaching Hospital,Edo,70.0
+Edo,Etsako Central,87932.19084,exact,7.03315,6.499511719,Etsako Central,"Kogi Specialist Hospital, Lokoja",Kogi,88.0
+Edo,Etsako East,193389.8921,exact,7.18998741545,6.542809999999999,Etsako East,"Kogi Specialist Hospital, Lokoja",Kogi,70.0
+Edo,Etsako West,389162.5059,exact,7.071716308,6.28276,Etsako West,"Kogi Specialist Hospital, Lokoja",Kogi,94.0
+Edo,Iguegben,115478.6001,closest spelling,6.529876268020001,6.241053040364999,Igueben,University of Benin Teaching Hospital,Edo,71.0
+Edo,Ikpoba-Okha,1135550.642,exact,6.31525,5.65796,Ikpoba-Okha,University of Benin Teaching Hospital,Edo,10.0
+Edo,Oredo,682237.7731,exact,6.331195,5.6209172565,Oredo,University of Benin Teaching Hospital,Edo,7.0
+Edo,Orhionmwon,232770.7579,exact,6.154878333,6.028320313,Orhionmwon,University of Benin Teaching Hospital,Edo,53.0
+Edo,Ovia North-East,557346.2072,exact,6.53801,5.549072265,Ovia North-East,University of Benin Teaching Hospital,Edo,18.0
+Edo,Ovia South-West,318196.6407,exact,6.553012383,5.30683958,Ovia South-West,University of Benin Teaching Hospital,Edo,38.0
+Edo,Owan East,148664.5261,exact,7.0500016665,6.049007851500001,Owan East,University of Benin Teaching Hospital,Edo,88.0
+Edo,Owan West,113152.2059,exact,6.9095077830000005,5.9239,Owan West,University of Benin Teaching Hospital,Edo,67.0
+Edo,Uhunmwonde,708847.1591,closest spelling,6.394104004,5.878775,Uhunmwode,University of Benin Teaching Hospital,Edo,29.0
+Ekiti,Ado-Ekiti,826210.8702,exact,7.63050166667,5.22388,Ado Ekiti,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",Ekiti,1.0
+Ekiti,Efon,70743.52997,exact,7.65954,4.92418825798,Efon,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",Ekiti,33.0
+Ekiti,Ekiti East,129510.1375,exact,7.7606955765,5.7245853805,Ekiti East,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",Ekiti,57.0
+Ekiti,Ekiti South-West,136122.6299,exact,7.54739666667,5.09675666667,Ekiti South West,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",Ekiti,17.0
+Ekiti,Ekiti West,153168.2915,exact,7.702682296855,5.01181166667,Ekiti West,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",Ekiti,24.0
+Ekiti,Emure,63930.8543,exact,7.436161666665,5.463340833335,Emure,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",Ekiti,35.0
+Ekiti,Gbonyin,94245.16189,no match,,,,,,
+Ekiti,Ido-Osi,220148.4577,exact,7.8433872565,5.1865752999999994,Ido-Osi,"Federal Teaching Hospital, Ekiti (source says Ado-Ekiti; likely Ido-Ekiti, unverified)",Ekiti,0.0
+Ekiti,Ijero,204882.9506,exact,7.83672,5.072145,Ijero,"Federal Teaching Hospital, Ekiti (source says Ado-Ekiti; likely Ido-Ekiti, unverified)",Ekiti,13.0
+Ekiti,Ikere,213553.3115,exact,7.498926666665,5.228295833335,Ikere,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",Ekiti,16.0
+Ekiti,Ikole,193774.3377,exact,7.796774404500001,5.516456666665,Ikole,"Federal Teaching Hospital, Ekiti (source says Ado-Ekiti; likely Ido-Ekiti, unverified)",Ekiti,37.0
+Ekiti,Ilejemeje,35771.30707,exact,7.952365,5.23978,Ilejemeje,"Federal Teaching Hospital, Ekiti (source says Ado-Ekiti; likely Ido-Ekiti, unverified)",Ekiti,13.0
+Ekiti,Irepodun/Ifelodun,256789.4839,exact,7.682487786335,5.2036853865,Irepodun/Ifelodun,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",Ekiti,5.0
+Ekiti,Ise/Orun,121504.8559,exact,7.46356833333,5.419974,Ise/Orun,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",Ekiti,30.0
+Ekiti,Moba,139915.3954,exact,7.988504166665001,5.122453333335001,Moba,"Federal Teaching Hospital, Ekiti (source says Ado-Ekiti; likely Ido-Ekiti, unverified)",Ekiti,18.0
+Ekiti,Oye,200181.8537,exact,7.802614166665,5.340023333335,Oye,"Federal Teaching Hospital, Ekiti (source says Ado-Ekiti; likely Ido-Ekiti, unverified)",Ekiti,17.0
+Enugu,Aninri,115531.4614,exact,6.096279166665,7.607749166665,Aninri,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,14.0
+Enugu,Awgu,226342.3864,exact,6.11131,7.4668883,Awgu,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,29.0
+Enugu,Enugu East,461304.4629,exact,6.48227,7.51979717,Enugu East,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,55.0
+Enugu,Enugu North,281541.7158,exact,6.4457317,7.50124848066,Enugu North,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,52.0
+Enugu,Enugu South,267447.7957,exact,6.41386333333,7.49541,Enugu South,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,49.0
+Enugu,Ezeagu,285128.5282,exact,6.39042,7.2787067,Ezeagu,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,63.0
+Enugu,Igbo-Etiti,213362.7256,exact,6.68267,7.402709961,Igbo-Etiti,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,80.0
+Enugu,Igbo-Eze North,465232.4665,exact,6.994323731,7.45971166667,Igbo-Eze North,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,111.0
+Enugu,Igbo-Eze-South,341150.4162,exact,6.919677735,7.40233,Igbo-Eze South,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,105.0
+Enugu,Isi-Uzo,190013.0285,exact,6.70631,7.71759,Isi-Uzo,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,75.0
+Enugu,Nkanu East,238030.6888,exact,6.341125488,7.65353,Nkanu East,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,35.0
+Enugu,Nkanu West,152491.4306,exact,6.320726959665,7.541860595999999,Nkanu West,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,38.0
+Enugu,Nsukka,593364.4397,exact,6.8422374999999995,7.3906075,Nsukka,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,97.0
+Enugu,Oji-River,232993.6803,exact,6.151397705,7.29444,Oji River,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,49.0
+Enugu,Udenu,435247.9563,exact,6.867303333335,7.520445485145,Udenu,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,96.0
+Enugu,Udi,455987.7394,exact,6.42994833333,7.40367,Udi,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,56.0
+Enugu,Uzo-Uwani,149800.8933,exact,6.74304,7.16949,Uzo-Uwani,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,100.0
+Federal Capital Territory,Abaji,95454.50694,exact,8.51497656239,6.92603,Abaji,"Federal Medical Centre, Lokoja",Kogi,82.0
+Federal Capital Territory,Bwari,678617.2065,exact,9.16565,7.3776311,Bwari,"National Hospital, Abuja",Federal Capital Territory,17.0
+Federal Capital Territory,Gwagwalada,404447.3565,exact,9.056887214385,7.08495,Gwagwalada,"National Hospital, Abuja",Federal Capital Territory,42.0
+Federal Capital Territory,Kuje,270028.3827,exact,8.829165459,7.23662,Kuje,"National Hospital, Abuja",Federal Capital Territory,34.0
+Federal Capital Territory,Kwali,161799.4665,exact,8.77543245047,6.994323731,Kwali,"National Hospital, Abuja",Federal Capital Territory,59.0
+Federal Capital Territory,Municipal Area Council,2125558.73,closest spelling,9.0262,7.46879,Abuja Municipal Area Council,"National Hospital, Abuja",Federal Capital Territory,2.0
+Gombe,Akko,960215.3339,exact,10.10273667,11.14971924,Akko,Abubakar Tafawa Balewa University Teaching Hospital,Bauchi,145.0
+Gombe,Balanga,425520.9823,exact,9.858703613,11.6689142,Balanga,"Adamawa State Specialist Hospital, Yola",Adamawa,107.0
+Gombe,Billiri,228048.6533,exact,9.87436,11.1775756,Billiri,"Adamawa State Specialist Hospital, Yola",Adamawa,154.0
+Gombe,Dukku,341744.349,exact,10.843002755,10.775990835,Dukku,Abubakar Tafawa Balewa University Teaching Hospital,Bauchi,117.0
+Gombe,Funakaye,346360.3708,exact,10.84635,11.41156833,Funakaye,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,115.0
+Gombe,Gombe,443464.0549,exact,10.28836195,11.16941445,Gombe,Abubakar Tafawa Balewa University Teaching Hospital,Bauchi,145.0
+Gombe,Kaltungo,253515.4975,exact,9.84950715,11.36164823,Kaltungo,"Adamawa State Specialist Hospital, Yola",Adamawa,135.0
+Gombe,Kwami,420058.4123,exact,10.4673947,11.2774917,Kwami,Abubakar Tafawa Balewa University Teaching Hospital,Bauchi,158.0
+Gombe,Nafada,158250.5459,exact,11.054768039999999,11.264391085,Nafada,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,106.0
+Gombe,Shomgom,161496.036,closest spelling,9.635835,11.168134165,Shongom,"Adamawa State Specialist Hospital, Yola",Adamawa,146.0
+Gombe,Yamaltu/Deba,738758.9788,exact,10.239139725000001,11.44582,Yamaltu/Deba,"Adamawa State Specialist Hospital, Yola",Adamawa,153.0
+Imo,Aboh-Mbaise,302538.5366,exact,5.47003709365,7.2481024,Aboh-Mbaise,"Federal Teaching Hospital, Owerri",Imo,25.0
+Imo,Ahiazu-Mbaise,247023.1339,exact,5.54189720426,7.27400174608,Ahiazu-Mbaise,"Federal Teaching Hospital, Owerri",Imo,28.0
+Imo,Ehime-Mbano,271125.7821,exact,5.63865,7.276871667,Ehime-Mbano,"Federal Teaching Hospital, Owerri",Imo,32.0
+Imo,Ezinihitte,210171.3457,closest spelling,5.488077564385,7.320288698000001,Ezinihitte-Mbaise,"Federal Teaching Hospital, Owerri",Imo,33.0
+Imo,Ideato North,313629.3384,exact,5.8836321195,7.10932786147,Ideato North,"Federal Teaching Hospital, Owerri",Imo,43.0
+Imo,Ideato South,95041.84371,exact,5.81382,7.142089844,Ideato South,"Federal Teaching Hospital, Owerri",Imo,37.0
+Imo,Ihitte/Uboma,118976.1407,exact,5.618043094295,7.36701441148,Ihitte/Uboma,"Federal Teaching Hospital, Owerri",Imo,40.0
+Imo,Ikeduru,278501.7973,exact,5.563720704,7.140930175,Ikeduru,"Federal Teaching Hospital, Owerri",Imo,15.0
+Imo,Isiala Mbano,257206.3476,exact,5.667958328825,7.18241791,Isiala Mbano,"Federal Teaching Hospital, Owerri",Imo,25.0
+Imo,Isu,134438.1676,exact,5.688293457,7.053393333,Isu,"Federal Teaching Hospital, Owerri",Imo,21.0
+Imo,Mbatoli,426121.3854,closest spelling,5.5903341215,7.035079502,Mbaitoli,"Federal Teaching Hospital, Owerri",Imo,10.0
+Imo,Ngor-Okpala,266870.0194,exact,5.333443574,7.156311035,Ngor-Okpala,"Federal Teaching Hospital, Owerri",Imo,24.0
+Imo,Njaba,157062.7004,exact,5.69749517098,7.001318752,Njaba,"Federal Teaching Hospital, Owerri",Imo,22.0
+Imo,Nkwerre,94809.36836,exact,5.75986926,7.100672285,Nkwerre,"Federal Teaching Hospital, Owerri",Imo,30.0
+Imo,Nwangele,149830.3125,exact,5.715515137,7.1307557,Nwangele,"Federal Teaching Hospital, Owerri",Imo,27.0
+Imo,Obowo,168895.4854,exact,5.56784,7.358886719,Obowo,"Federal Teaching Hospital, Owerri",Imo,38.0
+Imo,Oguta,246017.0933,exact,5.62890625,6.86699695411,Oguta,"Federal Teaching Hospital, Owerri",Imo,22.0
+Imo,Ohaji/Egbema,318113.1078,exact,5.37928819312,6.880310059,Ohaji/Egbema,"Federal Teaching Hospital, Owerri",Imo,21.0
+Imo,Okigwe,195686.744,exact,5.825286865,7.3424849283,Okigwe,"David Umahi Federal University Teaching Hospital (DUFUTH), Uburu",Ebonyi,48.0
+Imo,Onuimo,63903.92208,exact,5.752587064,7.24632,Onuimo,"Federal Teaching Hospital, Owerri",Imo,37.0
+Imo,Orlu,364364.5194,exact,5.791503906,7.03209483545,Orlu,"Federal Teaching Hospital, Owerri",Imo,32.0
+Imo,Orsu,183387.732,exact,5.82554140986,6.967628345215,Orsu,"Federal Teaching Hospital, Owerri",Imo,36.0
+Imo,Oru East,247075.6877,exact,5.743947881,6.9458944165,Oru East,"Federal Teaching Hospital, Owerri",Imo,28.0
+Imo,Oru West,283578.2273,exact,5.753723144,6.90381415593,Oru West,"Federal Teaching Hospital, Owerri",Imo,31.0
+Imo,Owerri Municipal,330244.4694,exact,5.485473633,7.03112793,Owerri Municipal,"Federal Teaching Hospital, Owerri",Imo,2.0
+Imo,Owerri North,428841.8547,exact,5.50158,7.073730469,Owerri North,"Federal Teaching Hospital, Owerri",Imo,6.0
+Imo,Owerri West,438676.3561,exact,5.430722733395,6.9949816375000005,Owerri West,"Federal Teaching Hospital, Owerri",Imo,9.0
+Jigawa,Auyo,160525.2567,exact,12.36292995,9.9763948,Auyo,"Fatima Abubakar Dialysis Centre, Hadejia",Jigawa,12.0
+Jigawa,Babura,355351.0403,exact,12.59829585,8.84707989999,Babura,Gumel General Hospital,Jigawa,58.0
+Jigawa,Biriniwa,196058.7913,closest spelling,12.788379249999998,10.071204999599999,Birniwa,"Fatima Abubakar Dialysis Centre, Hadejia",Jigawa,38.0
+Jigawa,Birnin Kudu,593076.0739,exact,11.4513301,9.4916996,Birnin Kudu,Aminu Kano Teaching Hospital,Kano,117.0
+Jigawa,Buji,179794.821,exact,11.5553949995,9.7105577,Buji,"Fatima Abubakar Dialysis Centre, Hadejia",Jigawa,106.0
+Jigawa,Dutse,562536.7327,exact,11.7296883506,9.334849888880001,Dutse,Aminu Kano Teaching Hospital,Kano,89.0
+Jigawa,Gagarawa,117916.4221,exact,12.4866590003,9.5293964,Gagarawa,Gumel General Hospital,Jigawa,22.0
+Jigawa,Garki,342635.1255,exact,12.3935573002,9.028204,Garki,Gumel General Hospital,Jigawa,46.0
+Jigawa,Gumel,127996.6823,exact,12.6289395005,9.38652619997,Gumel,Gumel General Hospital,Jigawa,1.0
+Jigawa,Guri,170561.1078,exact,12.661897,10.470100550000002,Guri,"Fatima Abubakar Dialysis Centre, Hadejia",Jigawa,52.0
+Jigawa,Gwaram,496510.4525,exact,11.19543165,9.95563885,Gwaram,Abubakar Tafawa Balewa University Teaching Hospital,Bauchi,97.0
+Jigawa,Gwiwa,207156.7317,exact,12.7509081502,8.284754804999999,Gwiwa,Muhammad Abdullahi Wase Specialist Hospital,Kano,89.0
+Jigawa,Hadejia,138753.9853,exact,12.4486523,10.0467799995,Hadejia,"Fatima Abubakar Dialysis Centre, Hadejia",Jigawa,0.0
+Jigawa,Jahun,427861.1214,exact,12.0729,9.53859645,Jahun,Gumel General Hospital,Jigawa,64.0
+Jigawa,Kafin Hausa,382850.7587,exact,12.1947709,9.9868173,Kafin Hausa,"Fatima Abubakar Dialysis Centre, Hadejia",Jigawa,29.0
+Jigawa,Kaugama,216341.8624,exact,12.429787099999999,9.732265550000001,Kaugama,"Fatima Abubakar Dialysis Centre, Hadejia",Jigawa,34.0
+Jigawa,Kazaure,295173.279,exact,12.6464365,8.4220759,Kazaure,Muhammad Abdullahi Wase Specialist Hospital,Kano,74.0
+Jigawa,Kiri Kasama,206449.0473,closest spelling,12.5658055,10.202518400199999,Kiri Kasamma,"Fatima Abubakar Dialysis Centre, Hadejia",Jigawa,21.0
+Jigawa,Kiyawa,365153.0465,exact,11.8526499995,9.5726617119,Kiyawa,"Fatima Abubakar Dialysis Centre, Hadejia",Jigawa,84.0
+Jigawa,Maigatari,190945.2504,exact,12.73335636085,9.519543349765001,Maigatari,Gumel General Hospital,Jigawa,20.0
+Jigawa,Malam Madori,264091.0687,exact,12.4928487,9.9635483,Malam Madori,"Fatima Abubakar Dialysis Centre, Hadejia",Jigawa,11.0
+Jigawa,Miga,207149.9673,exact,12.206793105,9.69779845109,Miga,"Fatima Abubakar Dialysis Centre, Hadejia",Jigawa,46.0
+Jigawa,Ringim,517139.7914,exact,12.1503715,9.0812657,Ringim,Muhammad Abdullahi Wase Specialist Hospital,Kano,60.0
+Jigawa,Roni,188290.0988,exact,12.600435870150001,8.307851424999999,Roni,Muhammad Abdullahi Wase Specialist Hospital,Kano,72.0
+Jigawa,Sule Tankarkar,306069.4689,exact,12.6418609998,9.23016499966,Sule-Tankarkar,Gumel General Hospital,Jigawa,16.0
+Jigawa,Taura,287539.6591,exact,12.26907405,9.36419285,Taura,Gumel General Hospital,Jigawa,39.0
+Jigawa,Yankwashi,141522.5271,exact,12.7430597688,8.54330222487,Yankwashi,Muhammad Abdullahi Wase Specialist Hospital,Kano,83.0
+Kaduna,Birnin Gwari,345811.5093,exact,10.7087560003,6.62735383,Birnin Gwari,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,91.0
+Kaduna,Chikun,1194547.25,exact,10.460136665,7.42069633343,Chikun,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,1.0
+Kaduna,Giwa,480863.2564,exact,11.20365,7.45344399977,Giwa,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,82.0
+Kaduna,Igabi,1347174.039,exact,10.752831915000002,7.648245166744999,Igabi,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,40.0
+Kaduna,Ikara,366987.4551,exact,11.216375450000001,8.159161499785,Ikara,Aminu Kano Teaching Hospital,Kano,93.0
+Kaduna,Jaba,197915.1303,exact,9.48446499995,8.013810500209999,Jaba,"National Hospital, Abuja",Federal Capital Territory,78.0
+Kaduna,Jema'A,469843.2671,exact,9.4866915,8.29254315,Jema'A,"National Hospital, Abuja",Federal Capital Territory,104.0
+Kaduna,Kachia,387292.589,exact,9.79872,7.80569,Kachia,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,85.0
+Kaduna,Kaduna North,584465.4254,exact,10.53433,7.445,Kaduna North,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,8.0
+Kaduna,Kaduna South,534277.7902,exact,10.49528,7.4125717,Kaduna South,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,3.0
+Kaduna,Kagarko,362057.9038,exact,9.47081,7.7689401,Kagarko,"National Hospital, Abuja",Federal Capital Territory,59.0
+Kaduna,Kajuru,161716.3084,exact,10.27182,7.77184662117,Kajuru,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,44.0
+Kaduna,Kaura,276707.9645,exact,9.640725499915,8.433235,Kaura,"National Hospital, Abuja",Federal Capital Territory,126.0
+Kaduna,Kauru,338979.103,exact,10.34451,8.280592,Kauru,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,95.0
+Kaduna,Kubau,533683.2273,exact,10.89957167,8.31577500038,Kubau,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,109.0
+Kaduna,Kudan,246620.9567,exact,11.2731934,7.7393508,Kudan,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,96.0
+Kaduna,Lere,533562.2468,exact,10.402789949999999,8.597038900000001,Lere,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,129.0
+Kaduna,Makarfi,292758.6072,exact,11.32985624,7.9155272885,Makarfi,Aminu Kano Teaching Hospital,Kano,99.0
+Kaduna,Sabon Gari,506040.5998,exact,11.1325397,7.720648333,Sabon Gari,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,81.0
+Kaduna,Sanga,249090.6969,exact,9.22642378632,8.5137717,Sanga,"Dalhatu Araf Specialist Hospital, Lafia",Nasarawa,81.0
+Kaduna,Soba,516110.0593,exact,10.995261,7.99030300024,Soba,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,86.0
+Kaduna,Zangon Kataf,512352.1084,exact,9.78716,8.290600833500001,Zangon Kataf,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,122.0
+Kaduna,Zaria,794330.8163,exact,11.062586815,7.70569665,Zaria,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,73.0
+Kano,Ajingi,336338.3008,exact,11.982865524,9.03043199996,Ajingi,Aminu Kano Teaching Hospital,Kano,52.0
+Kano,Albasu,326189.0969,exact,11.65075149985,9.05861965011,Albasu,Aminu Kano Teaching Hospital,Kano,65.0
+Kano,Bagwai,346838.8634,exact,12.0852217769,8.177066500205001,Bagwai,Muhammad Abdullahi Wase Specialist Hospital,Kano,42.0
+Kano,Bebeji,424937.3402,exact,11.59107,8.30781,Bebeji,Aminu Kano Teaching Hospital,Kano,49.0
+Kano,Bichi,567703.6653,exact,12.2487130346,8.27359999972,Bichi,Muhammad Abdullahi Wase Specialist Hospital,Kano,41.0
+Kano,Bunkure,318371.5326,exact,11.6791883083,8.58578911584,Bunkure,Aminu Kano Teaching Hospital,Kano,32.0
+Kano,Dala,453247.7434,exact,12.0108108252,8.5049182285,Dala,Muhammad Abdullahi Wase Specialist Hospital,Kano,5.0
+Kano,Dambatta,524034.8276,closest spelling,12.426821999849999,8.599392528965,Danbatta,Muhammad Abdullahi Wase Specialist Hospital,Kano,48.0
+Kano,Dawakin Kudu,565274.7398,exact,11.8413214998,8.635301376485,Dawakin Kudu,Aminu Kano Teaching Hospital,Kano,16.0
+Kano,Dawakin Tofa,477272.4766,exact,12.13539902865,8.38659187695,Dawakin Tofa,Muhammad Abdullahi Wase Specialist Hospital,Kano,23.0
+Kano,Doguwa,235341.2323,exact,10.73411985905,8.642698511755,Doguwa,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,137.0
+Kano,Fagge,371072.5681,exact,12.027201000049999,8.52918,Fagge,Muhammad Abdullahi Wase Specialist Hospital,Kano,4.0
+Kano,Gabasawa,378924.7735,exact,12.1654788216,8.859358499719999,Gabasawa,Muhammad Abdullahi Wase Specialist Hospital,Kano,39.0
+Kano,Garko,345616.7695,exact,11.6014559998,8.81328600042,Garko,Aminu Kano Teaching Hospital,Kano,49.0
+Kano,Garun Malam,225307.943,closest spelling,11.6833929995,8.411442,Garum Mallam,Aminu Kano Teaching Hospital,Kano,35.0
+Kano,Gaya,429921.6927,exact,11.8201815,8.99270326082,Gaya,Aminu Kano Teaching Hospital,Kano,51.0
+Kano,Gezawa,623015.7514,exact,12.039829499949999,8.718343999905,Gezawa,Muhammad Abdullahi Wase Specialist Hospital,Kano,19.0
+Kano,Gwale,668183.6387,exact,11.9837885746,8.49059,Gwale,Muhammad Abdullahi Wase Specialist Hospital,Kano,6.0
+Kano,Gwarzo,373403.1473,exact,11.89349542525,7.936713763015,Gwarzo,Aminu Kano Teaching Hospital,Kano,67.0
+Kano,Kabo,289657.7435,exact,11.8909499995,8.16561271435,Kabo,Aminu Kano Teaching Hospital,Kano,43.0
+Kano,Kano Municipal,319552.2246,exact,11.9884649998,8.51810323785,Kano Municipal,Muhammad Abdullahi Wase Specialist Hospital,Kano,3.0
+Kano,Karaye,240470.7237,exact,11.781866913,8.001765436060001,Karaye,Aminu Kano Teaching Hospital,Kano,63.0
+Kano,Kibiya,246348.2305,exact,11.5322110001,8.67354866256,Kibiya,Aminu Kano Teaching Hospital,Kano,50.0
+Kano,Kiru,485064.8101,exact,11.629521394400001,8.173081000020002,Kiru,Aminu Kano Teaching Hospital,Kano,55.0
+Kano,Kumbotso,1280768.549,exact,11.9319534624,8.51973820296,Kumbotso,Aminu Kano Teaching Hospital,Kano,5.0
+Kano,Kunchi,235100.7644,exact,12.4358879998,8.2676799997,Kunchi,Muhammad Abdullahi Wase Specialist Hospital,Kano,58.0
+Kano,Kura,292768.0897,exact,11.77768010705,8.45799150001,Kura,Aminu Kano Teaching Hospital,Kano,23.0
+Kano,Madobi,284081.7477,exact,11.81970306465,8.360831593995,Madobi,Aminu Kano Teaching Hospital,Kano,26.0
+Kano,Makoda,260846.2461,exact,12.370258,8.492258561789999,Makoda,Muhammad Abdullahi Wase Specialist Hospital,Kano,42.0
+Kano,Minjibir,475894.8444,exact,12.1877423512,8.6153126399,Minjibir,Muhammad Abdullahi Wase Specialist Hospital,Kano,22.0
+Kano,Nassarawa,920829.7989,closest spelling,12.007645,8.566870570175,Nasarawa,Muhammad Abdullahi Wase Specialist Hospital,Kano,2.0
+Kano,Rano,310382.4157,exact,11.52197,8.56178,Rano,Aminu Kano Teaching Hospital,Kano,49.0
+Kano,Rimin Gado,200382.5332,exact,11.9582633209,8.27594306502,Rimin Gado,Aminu Kano Teaching Hospital,Kano,30.0
+Kano,Rogo,388574.2612,exact,11.5105726647,7.8258981,Rogo,Aminu Kano Teaching Hospital,Kano,94.0
+Kano,Shanono,292302.1793,exact,12.05111064985,7.9788379999500005,Shanono,Muhammad Abdullahi Wase Specialist Hospital,Kano,62.0
+Kano,Sumaila,509900.1644,exact,11.37196,8.94865700039,Sumaila,Aminu Kano Teaching Hospital,Kano,79.0
+Kano,Takai,458116.9482,exact,11.4874550004,9.15407506697,Takai,Aminu Kano Teaching Hospital,Kano,84.0
+Kano,Tarauni,391002.1881,exact,11.963102686300001,8.553824500000001,Tarauni,Aminu Kano Teaching Hospital,Kano,0.0
+Kano,Tofa,218580.8782,exact,12.03424,8.30731212963,Tofa,Muhammad Abdullahi Wase Specialist Hospital,Kano,27.0
+Kano,Tsanyawa,253486.8871,exact,12.29716333,8.01796504303,Tsanyawa,Muhammad Abdullahi Wase Specialist Hospital,Kano,67.0
+Kano,Tudun Wada,435538.3642,exact,11.282290401449998,8.414142723489999,Tudun Wada,Aminu Kano Teaching Hospital,Kano,77.0
+Kano,Ungogo,1342727.275,exact,12.0610669593,8.482749543234998,Ungogo,Muhammad Abdullahi Wase Specialist Hospital,Kano,10.0
+Kano,Warawa,257928.8887,exact,11.9069294652,8.76261233086,Warawa,Aminu Kano Teaching Hospital,Kano,24.0
+Kano,Wudil,389830.7679,exact,11.79315650015,8.84796197,Wudil,Aminu Kano Teaching Hospital,Kano,37.0
+Katsina,Bakori,358745.9693,exact,11.607608115,7.4171758333349995,Bakori,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,127.0
+Katsina,Batagarawa,346678.5242,exact,12.90176333,7.58782999978,Batagarawa,Muhammad Abdullahi Wase Specialist Hospital,Kano,145.0
+Katsina,Batsari,259864.4406,exact,12.800876006,7.265686,Batsari,Muhammad Abdullahi Wase Specialist Hospital,Kano,166.0
+Katsina,Baure,331600.1621,exact,12.80758899985,8.771391800235001,Baure,Gumel General Hospital,Jigawa,69.0
+Katsina,Bindawa,248001.3719,exact,12.702495,7.888708333,Bindawa,Muhammad Abdullahi Wase Specialist Hospital,Kano,106.0
+Katsina,Charanchi,242842.0514,exact,12.652074718,7.6942775001,Charanchi,Muhammad Abdullahi Wase Specialist Hospital,Kano,118.0
+Katsina,Dan Musa,234619.7149,exact,12.22953,7.3383945,Dan Musa,Muhammad Abdullahi Wase Specialist Hospital,Kano,134.0
+Katsina,Dandume,286217.7027,exact,11.43759,7.208217,Dandume,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,110.0
+Katsina,Danja,296343.987,exact,11.381155,7.56143399984,Danja,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,103.0
+Katsina,Daura,326488.0884,exact,13.0204167,8.31595137007,Daura,Muhammad Abdullahi Wase Specialist Hospital,Kano,117.0
+Katsina,Dutsi,222340.4204,exact,12.9118210002,8.13777500044,Dutsi,Muhammad Abdullahi Wase Specialist Hospital,Kano,111.0
+Katsina,Dutsin Ma,333701.6174,exact,12.44358262375,7.5057821664999995,Dutsin-Ma,Muhammad Abdullahi Wase Specialist Hospital,Kano,124.0
+Katsina,Faskari,333559.4094,exact,11.68194100005,7.12741000019,Faskari,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,139.0
+Katsina,Funtua,463116.3059,exact,11.5092323,7.31037,Funtua,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,117.0
+Katsina,Ingawa,292932.1037,exact,12.64388,8.06260701088,Ingawa,Muhammad Abdullahi Wase Specialist Hospital,Kano,89.0
+Katsina,Jibia,274059.9117,exact,13.052527500250001,7.307288333,Jibia,Muhammad Abdullahi Wase Specialist Hospital,Kano,179.0
+Katsina,Kafur,399682.9907,exact,11.6531910057,7.67296,Kafur,Aminu Kano Teaching Hospital,Kano,102.0
+Katsina,Kaita,261045.8044,exact,13.15835502,7.75098299963,Kaita,Muhammad Abdullahi Wase Specialist Hospital,Kano,155.0
+Katsina,Kankara,363890.8762,exact,11.92521,7.42949000019,Kankara,Muhammad Abdullahi Wase Specialist Hospital,Kano,122.0
+Katsina,Kankia,292420.4836,exact,12.456170835,7.7963758335,Kankia,Muhammad Abdullahi Wase Specialist Hospital,Kano,96.0
+Katsina,Katsina,685423.5724,exact,12.98756111865,7.609319499834999,Katsina,Muhammad Abdullahi Wase Specialist Hospital,Kano,150.0
+Katsina,Kurfi,219386.3697,exact,12.65555,7.4702366,Kurfi,Muhammad Abdullahi Wase Specialist Hospital,Kano,138.0
+Katsina,Kusada,197567.8128,exact,12.47072,7.9551715065,Kusada,Muhammad Abdullahi Wase Specialist Hospital,Kano,83.0
+Katsina,Mai'Adua,351011.7746,exact,13.163217485,8.224479724875,Mai'Adua,Muhammad Abdullahi Wase Specialist Hospital,Kano,134.0
+Katsina,Malumfashi,418053.0405,exact,11.8043655502,7.62028099982,Malumfashi,Aminu Kano Teaching Hospital,Kano,103.0
+Katsina,Mani,368746.8543,exact,12.86038,7.88581,Mani,Muhammad Abdullahi Wase Specialist Hospital,Kano,120.0
+Katsina,Mashi,361038.402,exact,13.1314518351,7.982277333380001,Mashi,Muhammad Abdullahi Wase Specialist Hospital,Kano,140.0
+Katsina,Matazu,173149.6013,exact,12.2362381652,7.64831150037,Matazu,Muhammad Abdullahi Wase Specialist Hospital,Kano,101.0
+Katsina,Musawa,273309.0342,exact,12.110926235,7.7452707735,Musawa,Muhammad Abdullahi Wase Specialist Hospital,Kano,88.0
+Katsina,Rimi,306836.2081,exact,12.8449796654,7.7302133335,Rimi,Muhammad Abdullahi Wase Specialist Hospital,Kano,130.0
+Katsina,Sabuwa,188185.1992,exact,11.3195355003,7.0957766499999995,Sabuwa,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,101.0
+Katsina,Safana,263628.0386,exact,12.58848167,7.270378333,Safana,Muhammad Abdullahi Wase Specialist Hospital,Kano,154.0
+Katsina,Sandamu,246059.102,exact,12.87988,8.36508599988,Sandamu,Muhammad Abdullahi Wase Specialist Hospital,Kano,100.0
+Katsina,Zango,302395.9636,exact,12.931410835,8.5414066665,Zango,Gumel General Hospital,Jigawa,97.0
+Kebbi,Aleiro,65949.34037,exact,12.2874264967,4.45175,Aleiro,"Federal Medical Centre, Birnin Kebbi",Kebbi,33.0
+Kebbi,Arewa Dandi,200396.9256,no match,,,,,,
+Kebbi,Argungu,209546.2808,exact,12.7032480005,4.47391900002,Argungu,"Federal Medical Centre, Birnin Kebbi",Kebbi,43.0
+Kebbi,Augie,118562.6004,exact,12.8616979996,4.62935100013,Augie,Usmanu Danfodiyo University Teaching Hospital,Sokoto,67.0
+Kebbi,Bagudu,346785.0927,closest spelling,11.46344,4.07755899971,Bagudo,"Federal Medical Centre, Birnin Kebbi",Kebbi,109.0
+Kebbi,Birnin Kebbi,372239.7595,exact,12.4596496202,4.19938,Birnin Kebbi,"Federal Medical Centre, Birnin Kebbi",Kebbi,3.0
+Kebbi,Bunza,135675.9499,exact,12.16725,4.006578611409999,Bunza,"Federal Medical Centre, Birnin Kebbi",Kebbi,36.0
+Kebbi,Dandi,134121.8788,exact,11.7934684998,3.76380450003,Dandi,"Federal Medical Centre, Birnin Kebbi",Kebbi,85.0
+Kebbi,Fakai,128593.2998,exact,11.5290589997,4.96749400038,Fakai,"Federal Medical Centre, Birnin Kebbi",Kebbi,132.0
+Kebbi,Gwandu,165923.6579,exact,12.4874803435,4.57734550016,Gwandu,"Federal Medical Centre, Birnin Kebbi",Kebbi,43.0
+Kebbi,Jega,204491.6802,exact,12.2174583065,4.374592500035,Jega,"Federal Medical Centre, Birnin Kebbi",Kebbi,32.0
+Kebbi,Kalgo,96051.09486,exact,12.34985,4.04680099981,Kalgo,"Federal Medical Centre, Birnin Kebbi",Kebbi,18.0
+Kebbi,Koko-Besse,175300.7415,exact,11.42308,4.43361599964,Koko/Besse,"Federal Medical Centre, Birnin Kebbi",Kebbi,116.0
+Kebbi,Maiyama,171772.9564,exact,12.0382189996,4.3140510004,Maiyama,"Federal Medical Centre, Birnin Kebbi",Kebbi,46.0
+Kebbi,Ngaski,234716.5703,exact,10.423383213400001,4.7457107624549995,Ngaski,University of Ilorin Teaching Hospital,Kwara,210.0
+Kebbi,Sakaba,139720.0345,exact,11.19227,5.4705,Sakaba,"Federal Medical Centre, Birnin Kebbi",Kebbi,196.0
+Kebbi,Shanga,206682.4499,exact,11.1459851103,4.60338,Shanga,"Federal Medical Centre, Birnin Kebbi",Kebbi,150.0
+Kebbi,Suru,164400.8646,exact,11.770911,4.12540500022,Suru,"Federal Medical Centre, Birnin Kebbi",Kebbi,74.0
+Kebbi,Wasagu-Danko,346489.1899,no match,,,,,,
+Kebbi,Yauri,150080.3518,exact,10.8273639999,4.73869072768,Yauri,"Federal Medical Centre, Birnin Kebbi",Kebbi,189.0
+Kebbi,Zuru,248074.0565,exact,11.439628499849999,5.23531150035,Zuru,"Federal Medical Centre, Birnin Kebbi",Kebbi,159.0
+Kogi,Adavi,259279.1166,exact,7.57997,6.23285,Adavi,"Kogi Specialist Hospital, Lokoja",Kogi,60.0
+Kogi,Ajaokuta,232702.1544,exact,7.54018,6.63873,Ajaokuta,"Kogi Specialist Hospital, Lokoja",Kogi,30.0
+Kogi,Ankpa,450372.5202,exact,7.4450291664999995,7.635645,Ankpa,"Federal Medical Centre, Lokoja",Kogi,106.0
+Kogi,Bassa,111821.9443,exact,7.8195800779999995,7.053965293,Bassa,"Federal Medical Centre, Lokoja",Kogi,35.0
+Kogi,Dekina,610378.6277,exact,7.56185,7.16285,Dekina,"Federal Medical Centre, Lokoja",Kogi,53.0
+Kogi,Ibaji,130277.1933,exact,6.8430410355,6.726765,Ibaji,"Kogi Specialist Hospital, Lokoja",Kogi,106.0
+Kogi,Idah,101756.6853,exact,7.1093704295,6.740015,Idah,"Kogi Specialist Hospital, Lokoja",Kogi,76.0
+Kogi,Igalamela-Odolu,219326.066,exact,7.142272484,6.855459590755,Igalamela-Odolu,"Kogi Specialist Hospital, Lokoja",Kogi,74.0
+Kogi,Ijumu,185858.6373,exact,7.84299783995,5.988195,Ijumu,"Kogi Specialist Hospital, Lokoja",Kogi,82.0
+Kogi,Kabba/Bunu,231476.9158,exact,7.837033333,6.08484,Kabba/Bunu,"Kogi Specialist Hospital, Lokoja",Kogi,71.0
+Kogi,Kogi,99152.5749,exact,8.14589,6.82541,Kogi,"Federal Medical Centre, Lokoja",Kogi,40.0
+Kogi,Lokoja,360316.7035,exact,7.8488159185,6.7162785,Lokoja,"Federal Medical Centre, Lokoja",Kogi,6.0
+Kogi,Mopa-Muro,67741.43418,exact,8.1141011525,5.894405,Mopa-Muro,"Federal Teaching Hospital, Ekiti (source says Ado-Ekiti; likely Ido-Ekiti, unverified)",Ekiti,84.0
+Kogi,Ofu,339504.3401,exact,7.3276,6.982727051,Ofu,"Kogi Specialist Hospital, Lokoja",Kogi,59.0
+Kogi,Ogori/Magongo,21791.2467,closest spelling,7.45966,6.16753,Ogori/Mangongo,"Kogi Specialist Hospital, Lokoja",Kogi,72.0
+Kogi,Okehi,152394.7437,exact,7.60178928295,6.187915,Okehi,"Kogi Specialist Hospital, Lokoja",Kogi,64.0
+Kogi,Okene,143118.0313,exact,7.546081543,6.2356,Okene,"Kogi Specialist Hospital, Lokoja",Kogi,61.0
+Kogi,Olamaboro,418815.6838,exact,7.20727,7.556091308,Olamaboro,"Federal Medical Centre, Lokoja",Kogi,111.0
+Kogi,Omala,110676.8591,exact,7.76585,7.51496,Omala,"Federal Medical Centre, Lokoja",Kogi,85.0
+Kogi,Yagba East,133357.4743,exact,8.18287,5.7803129685000005,Yagba East,"Federal Teaching Hospital, Ekiti (source says Ado-Ekiti; likely Ido-Ekiti, unverified)",Ekiti,75.0
+Kogi,Yagba West,99320.20056,exact,8.24313,5.55512,Yagba West,"Federal Teaching Hospital, Ekiti (source says Ado-Ekiti; likely Ido-Ekiti, unverified)",Ekiti,60.0
+Kwara,Asa,268017.1798,exact,8.393800449,4.4643859865,Asa,"General Hospital, Ilorin",Kwara,12.0
+Kwara,Baruten,437930.3135,exact,9.170073926,3.235195,Baruten,"General Hospital, Ilorin",Kwara,162.0
+Kwara,Edu,335094.1335,exact,8.8947143555,5.1513165235,Edu,University of Ilorin Teaching Hospital,Kwara,68.0
+Kwara,Ekiti,87301.18357,exact,8.07715,5.24944,Ekiti,"Federal Teaching Hospital, Ekiti (source says Ado-Ekiti; likely Ido-Ekiti, unverified)",Ekiti,27.0
+Kwara,Ifelodun,356705.199,exact,8.414123535,4.88671875,Ifelodun,University of Ilorin Teaching Hospital,Kwara,30.0
+Kwara,Ilorin East,279732.4503,exact,8.518821826,4.592320957,Ilorin East,University of Ilorin Teaching Hospital,Kwara,7.0
+Kwara,Ilorin South,580656.0329,exact,8.489865,4.5884253125,Ilorin South,"General Hospital, Ilorin",Kwara,6.0
+Kwara,Ilorin West,640238.2071,exact,8.486999511499999,4.5324672459999995,Ilorin West,"General Hospital, Ilorin",Kwara,1.0
+Kwara,Irepodun,299576.1529,exact,8.1605,4.90175,Irepodun,"Federal Teaching Hospital, Ekiti (source says Ado-Ekiti; likely Ido-Ekiti, unverified)",Ekiti,47.0
+Kwara,Isin,90584.50709,exact,8.25383,5.020507813,Isin,"Federal Teaching Hospital, Ekiti (source says Ado-Ekiti; likely Ido-Ekiti, unverified)",Ekiti,49.0
+Kwara,Kaiama,356081.5379,exact,9.497924805,3.94797,Kaiama,"General Hospital, Ilorin",Kwara,130.0
+Kwara,Moro,252624.7994,exact,8.74707,4.696899414,Moro,University of Ilorin Teaching Hospital,Kwara,24.0
+Kwara,Offa,262283.0252,exact,8.150482178,4.7162749999999996,Offa,"General Hospital, Ilorin",Kwara,42.0
+Kwara,Oke Ero,87039.82661,exact,8.09208,5.14202,Oke-Ero,"Federal Teaching Hospital, Ekiti (source says Ado-Ekiti; likely Ido-Ekiti, unverified)",Ekiti,28.0
+Kwara,Oyun,160452.053,exact,8.15498,4.66283,Oyun,"General Hospital, Ilorin",Kwara,39.0
+Kwara,Pategi,192870.7431,exact,8.72481,5.75326,Pategi,"Federal Teaching Hospital, Ekiti (source says Ado-Ekiti; likely Ido-Ekiti, unverified)",Ekiti,116.0
+Lagos,Agege,225286.3831,exact,6.620641667,3.31352,Agege,"Lagos State University Teaching Hospital (LASUTH), Ikeja",Lagos,5.0
+Lagos,Ajeromi/Ifelodun,181949.6492,exact,6.455505371,3.34045,Ajeromi/Ifelodun,Gbagada General Hospital,Lagos,12.0
+Lagos,Alimosho,2355623.559,exact,6.5834802851624,3.2661841835,Alimosho,"Alimosho General Hospital, Igando",Lagos,3.0
+Lagos,Amuwo Odofin,501288.1943,exact,6.45925,3.28412,Amuwo Odofin,"Alimosho General Hospital, Igando",Lagos,12.0
+Lagos,Apapa,158643.7491,exact,6.4574797655000005,3.3605983335,Apapa,Gbagada General Hospital,Lagos,11.0
+Lagos,Badagry,875408.1138,exact,6.438769799999999,2.9521100000000002,Badagry,"Alimosho General Hospital, Igando",Lagos,36.0
+Lagos,Epe,396179.3359,exact,6.622205833500001,3.9740790625,Epe,Gbagada General Hospital,Lagos,65.0
+Lagos,Eti Osa,1110722.615,exact,6.44413,3.50574,Eti-Osa,Gbagada General Hospital,Lagos,18.0
+Lagos,Ibeju Lekki,670445.2781,exact,6.46861,3.77768,Ibeju/Lekki,Gbagada General Hospital,Lagos,44.0
+Lagos,Ifako/Ijaye,530707.8619,exact,6.659878333,3.3237097672,Ifako/Ijaye,"Lagos State University Teaching Hospital (LASUTH), Ikeja",Lagos,8.0
+Lagos,Ikeja,390393.6009,exact,6.6011050335,3.3507358335,Ikeja,"Lagos State University Teaching Hospital (LASUTH), Ikeja",Lagos,1.0
+Lagos,Ikorodu,2039135.994,exact,6.62211620115655,3.5158108335,Ikorodu,Gbagada General Hospital,Lagos,16.0
+Lagos,Kosofe,603115.4141,exact,6.59537,3.38967724954,Kosofe,Gbagada General Hospital,Lagos,5.0
+Lagos,Lagos Island,57027.28985,exact,6.45386,3.394599388,Lagos Island,Gbagada General Hospital,Lagos,11.0
+Lagos,Lagos Mainland,269905.384,exact,6.4995383335,3.3803099999999997,Lagos Mainland,Gbagada General Hospital,Lagos,6.0
+Lagos,Mushin,254072.5863,exact,6.528966667,3.34964,Mushin,Gbagada General Hospital,Lagos,5.0
+Lagos,Ojo,872979.4035,exact,6.468659,3.1769669,Ojo,"Alimosho General Hospital, Igando",Lagos,13.0
+Lagos,Oshodi/Isolo,596537.8042,exact,6.53832,3.32002,Oshodi/Isolo,"Lagos State University Teaching Hospital (LASUTH), Ikeja",Lagos,6.0
+Lagos,Shomolu,210048.3363,exact,6.538598333,3.38339,Shomolu,Gbagada General Hospital,Lagos,2.0
+Lagos,Surulere,283385.3774,exact,6.497575332,3.347068467,Surulere,Gbagada General Hospital,Lagos,8.0
+Nasarawa,Akwanga,207588.5718,exact,8.98864739885,8.35302,Akwanga,"Dalhatu Araf Specialist Hospital, Lafia",Nasarawa,57.0
+Nasarawa,Awe,163462.664,exact,8.27869105232,9.141785,Awe,"Dalhatu Araf Specialist Hospital, Lafia",Nasarawa,72.0
+Nasarawa,Doma,247239.7481,exact,8.38090883684,8.34274367608,Doma,"Dalhatu Araf Specialist Hospital, Lafia",Nasarawa,24.0
+Nasarawa,Karu,988891.3785,exact,9.01267,7.675330107500001,Karu,"National Hospital, Abuja",Federal Capital Territory,23.0
+Nasarawa,Keana,80072.37287,exact,8.228124999999999,8.680017464065,Keana,"Dalhatu Araf Specialist Hospital, Lafia",Nasarawa,35.0
+Nasarawa,Keffi,223094.1853,exact,8.8455181714,7.87561271635,Keffi,"National Hospital, Abuja",Federal Capital Territory,50.0
+Nasarawa,Kokona,212618.2861,exact,8.82254,8.08832,Kokona,"Dalhatu Araf Specialist Hospital, Lafia",Nasarawa,60.0
+Nasarawa,Lafia,569634.7437,exact,8.54562900386,8.555296499179999,Lafia,"Dalhatu Araf Specialist Hospital, Lafia",Nasarawa,6.0
+Nasarawa,Nasarawa,401935.5857,exact,8.511365766665,7.70937,Nasarawa,"National Hospital, Abuja",Federal Capital Territory,65.0
+Nasarawa,Nasarawa Egon,147656.2436,closest spelling,8.71248,8.40529674503,Nasarawa Eggon,"Dalhatu Araf Specialist Hospital, Lafia",Nasarawa,27.0
+Nasarawa,Obi,138700.9157,exact,8.394287109,8.66278442813,Obi,"Dalhatu Araf Specialist Hospital, Lafia",Nasarawa,19.0
+Nasarawa,Toto,126570.9922,exact,8.3880424073,7.237370175400001,Toto,"National Hospital, Abuja",Federal Capital Territory,77.0
+Nasarawa,Wamba,91091.02954,exact,8.97966789859,8.65285,Wamba,"Dalhatu Araf Specialist Hospital, Lafia",Nasarawa,55.0
+Niger,Agaie,235267.3251,exact,8.997664492,6.3753939079999995,Agaie,"National Hospital, Abuja",Federal Capital Territory,120.0
+Niger,Agwara,115293.9368,exact,10.695785787,4.508728028,Agwara,"Federal Medical Centre, Birnin Kebbi",Kebbi,196.0
+Niger,Bida,450051.8123,exact,9.073913574,6.00273,Bida,University of Ilorin Teaching Hospital,Kwara,160.0
+Niger,Borgu,337974.3419,exact,10.096245,4.440178096,Borgu,University of Ilorin Teaching Hospital,Kwara,175.0
+Niger,Bosso,404805.0504,exact,9.64155,6.47668457,Bosso,"National Hospital, Abuja",Federal Capital Territory,127.0
+Niger,Chanchaga,487903.2912,exact,9.613891602,6.543884277,Chanchaga,"National Hospital, Abuja",Federal Capital Territory,119.0
+Niger,Edati,158815.0337,exact,9.072082519,5.654547,Edati,University of Ilorin Teaching Hospital,Kwara,125.0
+Niger,Gbako,181735.2357,exact,9.289123535,6.02918,Gbako,"National Hospital, Abuja",Federal Capital Territory,160.0
+Niger,Gurara,119488.4304,exact,9.304535,7.024075703465,Gurara,"National Hospital, Abuja",Federal Capital Territory,57.0
+Niger,Katcha,274304.7412,exact,8.991684252,6.23126,Katcha,"National Hospital, Abuja",Federal Capital Territory,135.0
+Niger,Kontagora,344597.057,exact,10.392671895,5.4696499395,Kontagora,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,213.0
+Niger,Lapai,233231.9076,exact,8.654042256,6.622215000000001,Lapai,"Federal Medical Centre, Lokoja",Kogi,96.0
+Niger,Lavun,280339.4948,exact,9.22268,5.71642,Lavun,University of Ilorin Teaching Hospital,Kwara,140.0
+Niger,Magama,371701.8819,exact,10.319359521500001,4.962921142500001,Magama,University of Ilorin Teaching Hospital,Kwara,201.0
+Niger,Mariga,401814.2129,exact,10.665034165000002,5.82439877,Mariga,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,176.0
+Niger,Mashegu,439523.0134,exact,9.91759,5.24531,Mashegu,University of Ilorin Teaching Hospital,Kwara,167.0
+Niger,Mokwa,308330.167,exact,9.210327149,5.215698242,Mokwa,University of Ilorin Teaching Hospital,Kwara,97.0
+Niger,Munya,192758.7839,closest spelling,9.73838814215,6.97739,Muya,"National Hospital, Abuja",Federal Capital Territory,94.0
+Niger,Paikoro,275146.6286,exact,9.4438496665,6.778435107,Paikoro,"National Hospital, Abuja",Federal Capital Territory,88.0
+Niger,Rafi,349424.5824,exact,10.186166095499999,6.25098535,Rafi,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,132.0
+Niger,Rijau,333809.4128,exact,11.110451812,5.262725,Rijau,"Federal Medical Centre, Birnin Kebbi",Kebbi,188.0
+Niger,Shiroro,406150.0372,exact,9.902071287144999,6.724865183,Shiroro,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,99.0
+Niger,Suleja,183301.2729,exact,9.18546,7.17957,Suleja,"National Hospital, Abuja",Federal Capital Territory,35.0
+Niger,Tafa,264250.9987,exact,9.25675,7.238155,Tafa,"National Hospital, Abuja",Federal Capital Territory,35.0
+Niger,Wushishi,153201.6019,exact,9.686523438,6.07319,Wushishi,"National Hospital, Abuja",Federal Capital Territory,169.0
+Ogun,Abeokuta North,487998.8443,exact,7.16429415,3.3159658335,Abeokuta North,"Lagos State University Teaching Hospital (LASUTH), Ikeja",Lagos,64.0
+Ogun,Abeokuta South,419519.5419,exact,7.152182602,3.3553458335000004,Abeokuta South,"Lagos State University Teaching Hospital (LASUTH), Ikeja",Lagos,62.0
+Ogun,Ado Odo/Ota,3234546.365,exact,6.68265,3.21375,Ado Odo/Ota,"Alimosho General Hospital, Igando",Lagos,14.0
+Ogun,Ewekoro,421446.9942,exact,6.9334383835,3.21090105,Ewekoro,"Lagos State University Teaching Hospital (LASUTH), Ikeja",Lagos,41.0
+Ogun,Ifo,2095264.201,exact,6.712280273,3.303038333,Ifo,"Lagos State University Teaching Hospital (LASUTH), Ikeja",Lagos,14.0
+Ogun,Ijebu East,442234.7468,exact,6.7858724835,4.060840000000001,Ijebu East,"University College Hospital, Ibadan",Oyo,71.0
+Ogun,Ijebu North,361891.6419,exact,6.9692511835,3.99414,Ijebu North,"University College Hospital, Ibadan",Oyo,49.0
+Ogun,Ijebu North East,80934.0783,exact,6.8703226,3.990732874,Ijebu North East,"University College Hospital, Ibadan",Oyo,60.0
+Ogun,Ijebu Ode,395620.8058,exact,6.81997,3.9215219,Ijebu Ode,"University College Hospital, Ibadan",Oyo,65.0
+Ogun,Ikenne,269060.7752,exact,6.9094752,3.6719346,Ikenne,Gbagada General Hospital,Lagos,51.0
+Ogun,Imeko Afon,125031.4394,exact,7.4427952725,2.846654844,Imeko Afon,"Alimosho General Hospital, Igando",Lagos,108.0
+Ogun,Ipokia,406954.4451,exact,6.6259889,2.7735569,Ipokia,"Alimosho General Hospital, Igando",Lagos,53.0
+Ogun,Obafemi Owode,1326938.695,exact,6.869181599999999,3.42716124,Obafemi Owode,"Lagos State University Teaching Hospital (LASUTH), Ikeja",Lagos,32.0
+Ogun,Odeda,339860.9026,exact,7.2323782,3.520336667,Odeda,"University College Hospital, Ibadan",Oyo,46.0
+Ogun,Odogbolu,324550.3697,exact,6.8080136,3.87396085,Odogbolu,Gbagada General Hospital,Lagos,61.0
+Ogun,Ogun Waterside,113236.732,exact,6.5285226,4.3633449,Ogun Waterside,Gbagada General Hospital,Lagos,108.0
+Ogun,Remo North,106067.45,exact,6.984924316,3.6833979,Remo North,"University College Hospital, Ibadan",Oyo,52.0
+Ogun,Shagamu,1218967.871,closest spelling,6.833077871,3.638142,Sagamu,Gbagada General Hospital,Lagos,42.0
+Ogun,Yewa North,302974.3133,exact,7.1098686,2.9549881,Yewa North,"Alimosho General Hospital, Igando",Lagos,69.0
+Ogun,Yewa South,461242.8415,exact,6.7492283,2.9937133785,Yewa South,"Alimosho General Hospital, Igando",Lagos,35.0
+Ondo,Akoko North East,170847.3227,exact,7.525394507565,5.76023,Akoko North East,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",Ekiti,61.0
+Ondo,Akoko North West,145903.4572,exact,7.589111328,5.75706,Akoko North West,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",Ekiti,59.0
+Ondo,Akoko South East,58586.1491,exact,7.44022023249,5.8953,Akoko South East,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",Ekiti,78.0
+Ondo,Akoko South West,230998.2006,exact,7.45133015773,5.762794209,Akoko South West,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",Ekiti,63.0
+Ondo,Akure North,383272.7748,exact,7.282504097815,5.257663838,Akure North,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",Ekiti,40.0
+Ondo,Akure South,641909.8488,exact,7.2416630565,5.186746377,Akure South,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",Ekiti,45.0
+Ondo,Ese Odo,109320.4341,exact,6.285096481,4.910095215,Ese Odo,University of Benin Teaching Hospital,Edo,79.0
+Ondo,Idanre,338495.188,exact,7.09154,5.130380000000001,Idanre,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",Ekiti,62.0
+Ondo,Ifedore,556667.3747,exact,7.346745193525001,5.159515381,Ifedore,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",Ekiti,34.0
+Ondo,Ilaje,317629.275,exact,6.206725,4.79033,Ilaje,University of Benin Teaching Hospital,Edo,93.0
+Ondo,Ile Oluji/Okeigbo,515905.4513,exact,7.2144228945,4.8532191895,Ile-Oluji/Okeigbo,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",Ekiti,63.0
+Ondo,Irele,186525.9936,exact,6.502075195,4.934692383,Irele,University of Benin Teaching Hospital,Edo,76.0
+Ondo,Odigbo,578687.7174,exact,6.74659,4.86750282962,Odigbo,University of Benin Teaching Hospital,Edo,91.0
+Ondo,Okitipupa,368983.5047,exact,6.517476820380001,4.742398113635,Okitipupa,University of Benin Teaching Hospital,Edo,97.0
+Ondo,Ondo East,66501.50916,exact,7.135429209,4.968139583925,Ondo East,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",Ekiti,63.0
+Ondo,Ondo West,436370.9552,exact,7.07447,4.82405760496,Ondo West,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",Ekiti,77.0
+Ondo,Ose,164601.9126,exact,6.93649,5.7680736,Ose,University of Benin Teaching Hospital,Edo,63.0
+Ondo,Owo,387188.9586,exact,7.197995059,5.5859504986,Owo,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",Ekiti,64.0
+Osun,Atakunmosa East,66618.5565,closest spelling,7.44660350284,4.75185116608,Atakumosa East,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",Ekiti,56.0
+Osun,Atakunmosa West,92996.32393,closest spelling,7.590168538395,4.6404766665,Atakumosa West,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",Ekiti,64.0
+Osun,Ayedade,251333.7995,closest spelling,7.470391112845,4.358876533045001,Ayedaade,"University College Hospital, Ibadan",Oyo,51.0
+Osun,Ayedire,101448.1633,exact,7.61774,4.237448333,Ayedire,"University College Hospital, Ibadan",Oyo,44.0
+Osun,Boluwaduro,67175.57731,exact,7.9363525,4.809728833315,Boluwaduro,"Federal Teaching Hospital, Ekiti (source says Ado-Ekiti; likely Ido-Ekiti, unverified)",Ekiti,43.0
+Osun,Boripe,207494.9897,exact,7.90435,4.688812999815,Boripe,"Federal Teaching Hospital, Ekiti (source says Ado-Ekiti; likely Ido-Ekiti, unverified)",Ekiti,55.0
+Osun,Ede North,224022.1265,exact,7.73503,4.43891921577,Ede North,"University College Hospital, Ibadan",Oyo,70.0
+Osun,Ede South,106364.6698,exact,7.704401214275,4.443777793000001,Ede South,"University College Hospital, Ibadan",Oyo,68.0
+Osun,Egbedore,254234.8879,exact,7.80048464564,4.48655,Egbedore,"General Hospital, Ilorin",Kwara,76.0
+Osun,Ejigbo,281624.3768,exact,7.896706025365,4.3078005165,Ejigbo,"General Hospital, Ilorin",Kwara,69.0
+Osun,Ife Central,278490.6147,exact,7.49883,4.55718,Ife Central,"University College Hospital, Ibadan",Oyo,73.0
+Osun,Ife East,413984.8374,exact,7.47211,4.54552562713,Ife East,"University College Hospital, Ibadan",Oyo,71.0
+Osun,Ife North,174653.9486,exact,7.503268333,4.444201667,Ife North,"University College Hospital, Ibadan",Oyo,61.0
+Osun,Ife South,179728.214,exact,7.211786969075,4.614520170585,Ife South,"University College Hospital, Ibadan",Oyo,81.0
+Osun,Ifedayo,36579.04524,exact,7.98040471864,4.978088379,Ifedayo,"Federal Teaching Hospital, Ekiti (source says Ado-Ekiti; likely Ido-Ekiti, unverified)",Ekiti,28.0
+Osun,Ifelodun,179976.5822,exact,7.919065659865,4.660979336,Ifelodun,"Federal Teaching Hospital, Ekiti (source says Ado-Ekiti; likely Ido-Ekiti, unverified)",Ekiti,59.0
+Osun,Ila,156840.9888,exact,8.016087326365,4.90602400195,Ila,"Federal Teaching Hospital, Ekiti (source says Ado-Ekiti; likely Ido-Ekiti, unverified)",Ekiti,36.0
+Osun,Ilesha East,153551.4602,closest spelling,7.61455,4.74730779284,Ilesa East,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",Ekiti,52.0
+Osun,Ilesha West,354803.7987,closest spelling,7.63646684712,4.74032851015,Ilesa West,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",Ekiti,53.0
+Osun,Irepodun,74876.85962,exact,7.842671019695,4.486899058805,Irepodun,"General Hospital, Ilorin",Kwara,71.0
+Osun,Irewole,181159.6202,exact,7.3738525,4.1967441665,Irewole,"University College Hospital, Ibadan",Oyo,33.0
+Osun,Isokan,155877.4539,exact,7.345092774,4.18572288202,Isokan,"University College Hospital, Ibadan",Oyo,32.0
+Osun,Iwo,348050.381,exact,7.638964551925,4.178874808854999,Iwo,"University College Hospital, Ibadan",Oyo,40.0
+Osun,Obokun,176954.7608,exact,7.75886298573,4.741638333,Obokun,"Federal Teaching Hospital, Ekiti (source says Ado-Ekiti; likely Ido-Ekiti, unverified)",Ekiti,50.0
+Osun,Odo Otin,191478.9667,exact,8.02111,4.66576,Odo Otin,"General Hospital, Ilorin",Kwara,53.0
+Osun,Ola Oluwa,76561.08631,exact,7.744722752115,4.2456318674,Ola-Oluwa,"University College Hospital, Ibadan",Oyo,54.0
+Osun,Olorunda,230997.0734,exact,7.801589,4.56621852934,Olorunda,"Federal Teaching Hospital, Ekiti (source says Ado-Ekiti; likely Ido-Ekiti, unverified)",Ekiti,69.0
+Osun,Oriade,222683.64,exact,7.57699726378,4.860976632465,Oriade,"Ekiti State University Teaching Hospital (EKSUTH), Ado-Ekiti",Ekiti,40.0
+Osun,Orolu,64839.72651,exact,7.858090000000001,4.4750791665000005,Orolu,"General Hospital, Ilorin",Kwara,69.0
+Osun,Osogbo,290256.5848,exact,7.76648146,4.5624,Osogbo,"Federal Teaching Hospital, Ekiti (source says Ado-Ekiti; likely Ido-Ekiti, unverified)",Ekiti,69.0
+Oyo,Afijio,129017.5069,exact,7.7482475,3.910665,Afijio,"University College Hospital, Ibadan",Oyo,38.0
+Oyo,Akinyele,546350.1043,exact,7.52848,3.914433333,Akinyele,"University College Hospital, Ibadan",Oyo,14.0
+Oyo,Atiba,130441.0231,exact,7.876949844,3.9364931575,Atiba,"University College Hospital, Ibadan",Oyo,53.0
+Oyo,Atisbo,108351.3841,exact,8.5087905665,3.415420469,Atisbo,"General Hospital, Ilorin",Kwara,123.0
+Oyo,Egbeda,651203.0062,exact,7.39436,3.9784009,Egbeda,"University College Hospital, Ibadan",Oyo,8.0
+Oyo,Ibadan North,295838.6676,exact,7.414255,3.905517579,Ibadan North,"University College Hospital, Ibadan",Oyo,1.0
+Oyo,Ibadan North East,260565.3317,exact,7.38496,3.925431667,Ibadan North East,"University College Hospital, Ibadan",Oyo,3.0
+Oyo,Ibadan North West,183416.7945,exact,7.3970058335,3.8811146715,Ibadan North West,"University College Hospital, Ibadan",Oyo,2.0
+Oyo,Ibadan South East,194538.8457,exact,7.35531,3.901926667,Ibadan South East,"University College Hospital, Ibadan",Oyo,5.0
+Oyo,Ibadan South West,210449.2072,exact,7.3666167,3.87773,Ibadan South West,"University College Hospital, Ibadan",Oyo,5.0
+Oyo,Ibarapa Central,113369.7775,exact,7.4363446485,3.28580808304,Ibarapa Central,"University College Hospital, Ibadan",Oyo,68.0
+Oyo,Ibarapa East,99642.97737,exact,7.551696777,3.44449,Ibarapa East,"University College Hospital, Ibadan",Oyo,53.0
+Oyo,Ibarapa North,83844.02481,exact,7.6639325,3.18559097,Ibarapa North,"University College Hospital, Ibadan",Oyo,84.0
+Oyo,Ido,900723.6989,exact,7.39611,3.81489,Ido,"University College Hospital, Ibadan",Oyo,10.0
+Oyo,Irepo,95767.38552,exact,9.0818883,3.84992,Irepo,"General Hospital, Ilorin",Kwara,101.0
+Oyo,Iseyin,316240.8381,exact,7.968078613,3.591125488,Iseyin,"University College Hospital, Ibadan",Oyo,72.0
+Oyo,Itesiwaju,149545.2454,exact,8.219767,3.4638176,Itesiwaju,"University College Hospital, Ibadan",Oyo,103.0
+Oyo,Iwajowa,104129.3148,exact,7.979688333,3.10572783208,Iwajowa,"University College Hospital, Ibadan",Oyo,109.0
+Oyo,Kajola,133290.656,exact,8.03663,3.352395,Kajola,"University College Hospital, Ibadan",Oyo,93.0
+Oyo,Lagelu,678229.5847,exact,7.44975585,4.0000625,Lagelu,"University College Hospital, Ibadan",Oyo,12.0
+Oyo,Ogbomosho North,583026.9905,exact,8.1374808335,4.248839804999999,Ogbomosho North,"General Hospital, Ilorin",Kwara,49.0
+Oyo,Ogbomosho South,173272.1118,exact,8.1187162425,4.23190665,Ogbomosho South,"General Hospital, Ilorin",Kwara,52.0
+Oyo,Ogo Oluwa,112531.9788,exact,7.977905273,4.165527344,Ogo Oluwa,"General Hospital, Ilorin",Kwara,69.0
+Oyo,Olorunsogo,92098.31451,exact,8.746453427999999,4.1340026855000005,Olorunsogo,"General Hospital, Ilorin",Kwara,53.0
+Oyo,Oluyole,737158.6588,exact,7.32169,3.896484375,Oluyole,"University College Hospital, Ibadan",Oyo,9.0
+Oyo,Ona Ara,482737.1799,exact,7.343213333,3.963061667,Ona Ara,"University College Hospital, Ibadan",Oyo,9.0
+Oyo,Orelope,105286.9024,exact,8.83736585,3.7569885259999998,Orelope,"General Hospital, Ilorin",Kwara,94.0
+Oyo,Ori Ire,236847.9915,exact,8.23794233259,4.175189932,Ori Ire,"General Hospital, Ilorin",Kwara,48.0
+Oyo,Oyo East,143850.1404,exact,7.8430559120000005,3.93925116558,Oyo East,"University College Hospital, Ibadan",Oyo,49.0
+Oyo,Oyo West,333852.5582,exact,7.849548047,3.9184466665,Oyo West,"University College Hospital, Ibadan",Oyo,50.0
+Oyo,Saki East,81717.81863,exact,8.6275558165,3.6195525,Saki East,"General Hospital, Ilorin",Kwara,102.0
+Oyo,Saki West,350561.6861,exact,8.6717833335,3.39470735,Saki West,"General Hospital, Ilorin",Kwara,127.0
+Oyo,Surulere,170319.0685,exact,8.057766667,4.361877441,Surulere,"General Hospital, Ilorin",Kwara,51.0
+Plateau,Barkin Ladi,327455.7997,exact,9.57926,8.94329834,Barkin Ladi,"Dalhatu Araf Specialist Hospital, Lafia",Nasarawa,128.0
+Plateau,Bassa,316086.974,exact,10.01551,8.7684,Bassa,Abubakar Tafawa Balewa University Teaching Hospital,Bauchi,123.0
+Plateau,Bokkos,380008.5048,exact,9.271,8.982996846999999,Bokkos,"Dalhatu Araf Specialist Hospital, Lafia",Nasarawa,99.0
+Plateau,Jos East,97114.91272,exact,9.855775000000001,9.070746435499998,Jos East,Abubakar Tafawa Balewa University Teaching Hospital,Bauchi,100.0
+Plateau,Jos North,747337.3098,exact,9.9269520115,8.887381103500001,Jos North,Abubakar Tafawa Balewa University Teaching Hospital,Bauchi,114.0
+Plateau,Jos South,805583.437,exact,9.7892246975,8.858620013,Jos South,Abubakar Tafawa Balewa University Teaching Hospital,Bauchi,124.0
+Plateau,Kanam,206202.1858,exact,9.4310991015,9.985343635,Kanam,Abubakar Tafawa Balewa University Teaching Hospital,Bauchi,102.0
+Plateau,Kanke,148156.3796,exact,9.373180359,9.59411621,Kanke,Abubakar Tafawa Balewa University Teaching Hospital,Bauchi,110.0
+Plateau,Langtang North,286936.6452,exact,9.137412994,9.8160588185,Langtang North,Abubakar Tafawa Balewa University Teaching Hospital,Bauchi,133.0
+Plateau,Langtang South,158918.8856,exact,8.64774,9.80313,Langtang South,"Dalhatu Araf Specialist Hospital, Lafia",Nasarawa,142.0
+Plateau,Mangu,572080.0849,exact,9.443486904499999,9.167417734499999,Mangu,Abubakar Tafawa Balewa University Teaching Hospital,Bauchi,124.0
+Plateau,Mikang,135345.2911,exact,9.017736465,9.5974246015,Mikang,"Dalhatu Araf Specialist Hospital, Lafia",Nasarawa,131.0
+Plateau,Pankshin,283030.8434,exact,9.315133804,9.40121,Pankshin,Abubakar Tafawa Balewa University Teaching Hospital,Bauchi,123.0
+Plateau,Qua'An Pan,372607.2799,exact,8.8371242385,9.2497875,Qua'An-Pan,"Dalhatu Araf Specialist Hospital, Lafia",Nasarawa,88.0
+Plateau,Riyom,214171.1462,exact,9.60913086,8.70127,Riyom,"Dalhatu Araf Specialist Hospital, Lafia",Nasarawa,125.0
+Plateau,Shendam,443506.6145,exact,8.810913086,9.54017,Shendam,"Dalhatu Araf Specialist Hospital, Lafia",Nasarawa,117.0
+Plateau,Wase,276538.5596,exact,9.10117,10.039811345,Wase,Abubakar Tafawa Balewa University Teaching Hospital,Bauchi,139.0
+Rivers,Abua/Odual,126874.2306,exact,4.84063,6.615826667,Abua/Odual,"Federal Teaching Hospital, Owerri",Imo,86.0
+Rivers,Ahoada East,335437.1781,exact,5.089477539,6.646118164,Ahoada East,"Federal Teaching Hospital, Owerri",Imo,62.0
+Rivers,Ahoada West,158939.7955,exact,5.071105957,6.514892578,Ahoada West,"Federal Teaching Hospital, Owerri",Imo,74.0
+Rivers,Akuku Toru,118621.9195,exact,4.696189172835,6.7716979980000005,Akuku Toru,"Federal Teaching Hospital, Owerri",Imo,94.0
+Rivers,Andoni,115638.809,exact,4.501187949,7.41878692656,Andoni,"Federal Teaching Hospital, Owerri",Imo,120.0
+Rivers,Asari-Toru,51035.90968,exact,4.750375,6.833496094,Asari-Toru,"Federal Teaching Hospital, Owerri",Imo,86.0
+Rivers,Bonny,131436.5433,exact,4.4376831055,7.182800293,Bonny,"Federal Teaching Hospital, Owerri",Imo,120.0
+Rivers,Degema,57489.07306,exact,4.749785,6.887329102,Degema,"Federal Teaching Hospital, Owerri",Imo,85.0
+Rivers,Eleme,309962.827,exact,4.789017084999999,7.1253775,Eleme,"Federal Teaching Hospital, Owerri",Imo,80.0
+Rivers,Emuoha,344085.4347,closest spelling,4.943695068,6.785003661999999,Emohua,"Federal Teaching Hospital, Owerri",Imo,68.0
+Rivers,Etche,496852.8566,exact,5.09483,7.09753666667,Etche,"Federal Teaching Hospital, Owerri",Imo,46.0
+Rivers,Gokana,186565.6011,exact,4.662719727,7.294128418,Gokana,"Federal Teaching Hospital, Owerri",Imo,98.0
+Rivers,Ikwerre,532924.1056,exact,4.997951162,6.9087829595,Ikwerre,"Federal Teaching Hospital, Owerri",Imo,58.0
+Rivers,Khana,377962.3656,exact,4.684692383,7.414916992,Khana,"Federal Teaching Hospital, Owerri",Imo,101.0
+Rivers,Obio/Akpor,1744761.721,exact,4.8497924805,6.9919128415,Obio/Akpor,"Federal Teaching Hospital, Owerri",Imo,73.0
+Rivers,Ogba/Egbema/Ndoni,444294.5947,exact,5.340700099919999,6.657379150500001,Ogba/Egbema/Ndoni,"Federal Teaching Hospital, Owerri",Imo,44.0
+Rivers,Ogu Bolo,47052.49431,exact,4.694091796,7.19632,Ogu/Bolo,"Federal Teaching Hospital, Owerri",Imo,92.0
+Rivers,Okrika,180151.76,exact,4.7486125,7.085510254,Okrika,"Federal Teaching Hospital, Owerri",Imo,84.0
+Rivers,Omumma,94001.36861,exact,5.0594177245,7.22958374,Omumma,"Federal Teaching Hospital, Owerri",Imo,54.0
+Rivers,Opobo/Nkoro,30822.88794,exact,4.512695312,7.528686524,Opobo/Nkoro,"Federal Teaching Hospital, Owerri",Imo,124.0
+Rivers,Oyigbo,325044.2347,exact,4.8640747065,7.152984619,Oyigbo,"Federal Teaching Hospital, Owerri",Imo,72.0
+Rivers,Port-Harcourt,545536.6064,exact,4.7945809375,7.0147981835,Port-Harcourt,"Federal Teaching Hospital, Owerri",Imo,79.0
+Rivers,Tai,108414.813,exact,4.730017442445,7.26661839212,Tai,"Federal Teaching Hospital, Owerri",Imo,90.0
+Sokoto,Binji,93065.41286,exact,13.164035719600001,4.900050999555,Binji,Usmanu Danfodiyo University Teaching Hospital,Sokoto,38.0
+Sokoto,Bodinga,215793.5052,exact,12.8844809996,5.15051999974,Bodinga,Usmanu Danfodiyo University Teaching Hospital,Sokoto,18.0
+Sokoto,Dange Shuni,307053.849,exact,12.9230689998,5.3359966272,Dange-Shuni,Usmanu Danfodiyo University Teaching Hospital,Sokoto,17.0
+Sokoto,Gada,317852.0427,exact,13.70548800015,5.6717419998850005,Gada,Usmanu Danfodiyo University Teaching Hospital,Sokoto,90.0
+Sokoto,Goronyo,206232.5155,exact,13.4454950003,5.675810499795,Goronyo,Usmanu Danfodiyo University Teaching Hospital,Sokoto,68.0
+Sokoto,Gudu,94487.04239,exact,13.4685550005,4.40892599986,Gudu,Usmanu Danfodiyo University Teaching Hospital,Sokoto,101.0
+Sokoto,Gwadabawa,259407.1856,exact,13.39623,5.2989689996,Gwadabawa,Usmanu Danfodiyo University Teaching Hospital,Sokoto,42.0
+Sokoto,Illela,251934.4731,exact,13.66871085585,5.334969500065,Illela,Usmanu Danfodiyo University Teaching Hospital,Sokoto,72.0
+Sokoto,Isa,116943.4002,exact,13.2010569332,6.42442514,Isa,Usmanu Danfodiyo University Teaching Hospital,Sokoto,132.0
+Sokoto,Kebbe,85299.18346,exact,12.0182035,4.728669860365,Kebbe,"Federal Medical Centre, Birnin Kebbi",Kebbi,75.0
+Sokoto,Kware,242639.3492,exact,13.1405300001,5.29718965017,Kware,Usmanu Danfodiyo University Teaching Hospital,Sokoto,15.0
+Sokoto,Rabah,145966.0024,exact,13.0824310001,5.600975500304999,Rabah,Usmanu Danfodiyo University Teaching Hospital,Sokoto,42.0
+Sokoto,Sabon Birni,287384.9566,exact,13.528808739999999,6.29912494365,Sabon Birni,Usmanu Danfodiyo University Teaching Hospital,Sokoto,129.0
+Sokoto,Shagari,153089.489,exact,12.61252899985,5.043614333475,Shagari,Usmanu Danfodiyo University Teaching Hospital,Sokoto,50.0
+Sokoto,Silame,107356.3656,exact,13.0222160002,4.82676299976,Silame,Usmanu Danfodiyo University Teaching Hospital,Sokoto,43.0
+Sokoto,Sokoto North,173741.5496,exact,13.0670169996,5.22522100049,Sokoto North,Usmanu Danfodiyo University Teaching Hospital,Sokoto,5.0
+Sokoto,Sokoto South,205148.7617,exact,13.04588500025,5.249034479500001,Sokoto South,Usmanu Danfodiyo University Teaching Hospital,Sokoto,4.0
+Sokoto,Tambuwal,223851.4968,exact,12.388276553299999,4.77006686902,Tambuwal,"Federal Medical Centre, Birnin Kebbi",Kebbi,63.0
+Sokoto,Tangaza,140855.7118,exact,13.409683499949999,4.968339499955,Tangaza,Usmanu Danfodiyo University Teaching Hospital,Sokoto,51.0
+Sokoto,Tureta,92248.79818,exact,12.5923560001,5.54606400049,Tureta,Usmanu Danfodiyo University Teaching Hospital,Sokoto,60.0
+Sokoto,Wamakko,366912.8416,closest spelling,13.04162,5.18989300049,Wamako,Usmanu Danfodiyo University Teaching Hospital,Sokoto,4.0
+Sokoto,Wurno,172229.6029,exact,13.2346799995,5.4224627,Wurno,Usmanu Danfodiyo University Teaching Hospital,Sokoto,32.0
+Sokoto,Yabo,114284.3969,exact,12.7306130001,5.0052168,Yabo,Usmanu Danfodiyo University Teaching Hospital,Sokoto,40.0
+Taraba,Ardo-Kola,197653.3887,exact,8.834110833335,11.259917936299999,Ardo-Kola,"Adamawa State Specialist Hospital, Yola",Adamawa,139.0
+Taraba,Bali,398513.2472,exact,8.112487793,10.99291992,Bali,"Adamawa State Specialist Hospital, Yola",Adamawa,206.0
+Taraba,Donga,284433.4662,exact,7.59525,10.25521833,Donga,"Benue State University Teaching Hospital, Makurdi",Benue,186.0
+Taraba,Gashaka,159912.5119,exact,7.532816766,11.358263359999999,Gashaka,"Adamawa State Specialist Hospital, Yola",Adamawa,228.0
+Taraba,Gassol,386898.517,exact,8.53527832,10.67597,Gassol,"Adamawa State Specialist Hospital, Yola",Adamawa,211.0
+Taraba,Ibi,166445.9368,exact,8.32139,9.7509917,Ibi,"Dalhatu Araf Specialist Hospital, Lafia",Nasarawa,136.0
+Taraba,Jalingo,308168.5003,exact,8.9036099,11.36192,Jalingo,"Adamawa State Specialist Hospital, Yola",Adamawa,126.0
+Taraba,Karim Lamido,343373.9646,exact,9.354309082,11.0516345953,Karim-Lamido,"Adamawa State Specialist Hospital, Yola",Adamawa,153.0
+Taraba,Kurmi,148584.2291,exact,7.17761407921,10.63295,Kurmi,"Benue State University Teaching Hospital, Makurdi",Benue,236.0
+Taraba,Lau,146955.1202,exact,9.194877617,11.449774999999999,Lau,"Adamawa State Specialist Hospital, Yola",Adamawa,110.0
+Taraba,Sardauna,417888.9403,exact,6.72789,11.2528784314,Sardauna,"Adamawa State Specialist Hospital, Yola",Adamawa,312.0
+Taraba,Takum,347765.9001,exact,7.2523175,9.944241611614999,Takum,"Benue State University Teaching Hospital, Makurdi",Benue,160.0
+Taraba,Ussa,146980.4303,exact,7.1733659,10.05994,Ussa,"Benue State University Teaching Hospital, Makurdi",Benue,175.0
+Taraba,Wukari,652498.8001,exact,7.897500215,9.798915000000001,Wukari,"Benue State University Teaching Hospital, Makurdi",Benue,137.0
+Taraba,Yorro,157366.9089,exact,8.9454602,11.56723333,Yorro,"Adamawa State Specialist Hospital, Yola",Adamawa,103.0
+Taraba,Zing,210404.5233,exact,8.919311523,11.741516113,Zing,"Adamawa State Specialist Hospital, Yola",Adamawa,87.0
+Yobe,Bade,261693.4917,exact,12.85945625,11.0216056703,Bade,"Fatima Abubakar Dialysis Centre, Hadejia",Jigawa,115.0
+Yobe,Bursari,230779.872,closest spelling,12.8138179996,11.37603,Busari,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,136.0
+Yobe,Damaturu,421155.3635,exact,11.748239185,11.9618137,Damaturu,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,2.0
+Yobe,Fika,373707.8935,exact,11.33048668,11.24306931,Fika,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,89.0
+Yobe,Fune,589857.0279,exact,11.7907205001,11.36111892,Fune,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,65.0
+Yobe,Geidam,292653.597,exact,12.85683367,11.92252,Geidam,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,125.0
+Yobe,Gujba,265787.5385,exact,11.33537,12.00592041,Gujba,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,44.0
+Yobe,Gulani,369438.0736,exact,10.9373169,11.6857100001,Gulani,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,93.0
+Yobe,Jakusko,326684.8126,exact,12.57700455,10.855529355,Jakusko,"Fatima Abubakar Dialysis Centre, Hadejia",Jigawa,89.0
+Yobe,Karasuwa,179477.6995,exact,12.97128845,10.84275,Karasuwa,"Fatima Abubakar Dialysis Centre, Hadejia",Jigawa,104.0
+Yobe,Machina,127523.7783,exact,13.00749806995,9.98559558,Machina,"Fatima Abubakar Dialysis Centre, Hadejia",Jigawa,63.0
+Yobe,Nangere,263767.5073,exact,11.80923548,10.986621979799999,Nangere,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,106.0
+Yobe,Nguru,253951.1673,exact,12.88443,10.4450132741,Nguru,"Fatima Abubakar Dialysis Centre, Hadejia",Jigawa,65.0
+Yobe,Potiskum,676494.1155,exact,11.70785,11.0948779996,Potiskum,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,94.0
+Yobe,Tarmuwa,147478.1343,exact,12.2680661141,11.67565780975,Tarmuwa,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,67.0
+Yobe,Yunusari,292431.4344,exact,13.0693975263,11.82742118,Yunusari,"Yobe State University Teaching Hospital (YSUTH), Damaturu",Yobe,150.0
+Yobe,Yusufari,298015.8045,exact,13.15102,10.91211127,Yusufari,"Fatima Abubakar Dialysis Centre, Hadejia",Jigawa,122.0
+Zamfara,Anka,102507.38,exact,12.0865400004,5.92749,Anka,Usmanu Danfodiyo University Teaching Hospital,Sokoto,130.0
+Zamfara,Bakura,122343.1521,exact,12.6596778349,5.882542000115,Bakura,Usmanu Danfodiyo University Teaching Hospital,Sokoto,83.0
+Zamfara,Birnin Magaji-Kiyaw,190200.9416,closest spelling,12.52718100035,6.822425,Birnin Magaji,Usmanu Danfodiyo University Teaching Hospital,Sokoto,182.0
+Zamfara,Bukkuyum,181390.7023,exact,12.04381609,5.55509899963,Bukkuyum,Usmanu Danfodiyo University Teaching Hospital,Sokoto,115.0
+Zamfara,Bungudu,396967.6153,exact,12.23866199975,6.56917950015,Bungudu,Usmanu Danfodiyo University Teaching Hospital,Sokoto,171.0
+Zamfara,Gummi,254442.1924,exact,12.1376895002,5.1109100000000005,Gummi,Usmanu Danfodiyo University Teaching Hospital,Sokoto,100.0
+Zamfara,Gusau,581817.808,exact,12.163035,6.67578549977,Gusau,Usmanu Danfodiyo University Teaching Hospital,Sokoto,185.0
+Zamfara,Kaura Namoda,300902.7348,exact,12.5369250005,6.59964900035,Kaura Namoda,Usmanu Danfodiyo University Teaching Hospital,Sokoto,159.0
+Zamfara,Maradun,159227.4272,exact,12.656731794999999,6.27759150002,Maradun,Usmanu Danfodiyo University Teaching Hospital,Sokoto,122.0
+Zamfara,Maru,338338.7453,exact,11.90482100025,6.36259800004,Maru,Usmanu Danfodiyo University Teaching Hospital,Sokoto,176.0
+Zamfara,Shinkafi,116124.9208,exact,13.06025899985,6.5050740212400004,Shinkafi,Usmanu Danfodiyo University Teaching Hospital,Sokoto,139.0
+Zamfara,Talata Mafara,207844.6173,exact,12.4794830004,6.09357,Talata Mafara,Usmanu Danfodiyo University Teaching Hospital,Sokoto,113.0
+Zamfara,Tsafe,363056.0154,exact,11.952112499950001,6.915531999980001,Tsafe,"St. Gerard's Catholic Hospital, Kaduna",Kaduna,174.0
+Zamfara,Zurmi,249045.0081,exact,12.7996639542,6.721278499995,Zurmi,Usmanu Danfodiyo University Teaching Hospital,Sokoto,165.0
