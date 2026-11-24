@@ -44,6 +44,13 @@ st.subheader("National dialysis counts")
 nat = ui.csv("register_kidney_national.csv", dtype=str, keep_default_na=False)
 ui.chart(charts.national_counts(nat), key="uh_nat")
 
+st.subheader("National radiotherapy counts")
+cnat = ui.csv("register_cancer_national.csv", dtype=str, keep_default_na=False)
+ui.chart(charts.national_counts_cancer(cnat), key="uh_cancer_nat")
+st.markdown("Why they differ: some count every machine, some only working ones; some count linacs only; some "
+            "are upper bounds ('fewer than 20'); and machines break down and are repaired, so a count is true only "
+            "on its date. This spread is why an on-the-ground assessment has to come first.")
+
 st.header("Data traps")
 dup = steps["grid3"]["duplicates_dropped"]
 flags = int(panel.crosscheck_flag.sum())
@@ -90,6 +97,8 @@ st.markdown("The stress test re-runs the score with each weight between 20% and 
 
 st.header("Limits")
 gap_unknown = int((reg.gap_type == "unknown").sum())
+creg = ui.csv("register_cancer_rows.csv", dtype=str, keep_default_na=False)
+cby = ui.csv("register_cancer_by_state.csv")
 st.markdown(f"""
 - The kidney register is hand-built from {reg.source_url.nunique()} source pages; most are news reports. Of
   {len(reg)} rows, {gap_unknown} don't say whether the gap is equipment, workforce or systems.
@@ -97,6 +106,9 @@ st.markdown(f"""
   config/assumptions_kidney.yaml. PPP structures in it are general examples, not any real firm's terms.
 - Three headline figures rest on news reports of documents not yet found (the National Health Accounts 2023–24,
   a World Bank programme document, the IARC 2025 assessment).
+- The cancer register has {len(creg)} rows from {creg.source_url.nunique()} source pages, with evidence for
+  {int((cby.evidence == "found").sum())} of 37 states. States with no rows are "no evidence found", not "no
+  radiotherapy".
 - Map boundaries: geoBoundaries (from GRID3 state boundaries), CC BY 4.0, simplified for display.
 
 **This is a learning project using public data. It is not investment, medical or financial advice.**

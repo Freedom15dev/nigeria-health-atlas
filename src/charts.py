@@ -138,8 +138,9 @@ def stress_chart(st: pd.DataFrame) -> go.Figure:
 SRC_REG = "Kidney register (news, government and peer-reviewed sources, 2010–2026; see data/register)"
 
 
-def register_gap_types(by_state: pd.DataFrame) -> go.Figure:
-    d = by_state.assign(total=by_state.n_rows).sort_values("total")
+def register_gap_types(by_state: pd.DataFrame, register: str = "Kidney") -> go.Figure:
+    d = by_state[by_state.n_rows > 0].fillna(0)
+    d = d.assign(total=d.n_rows).sort_values("total")
     known = int(d[["gap_equipment", "gap_workforce", "gap_systems"]].sum().sum())
     total = int(d.total.sum())
     top_gap = d[["gap_equipment", "gap_workforce", "gap_systems"]].sum().idxmax().replace("gap_", "")
@@ -151,9 +152,10 @@ def register_gap_types(by_state: pd.DataFrame) -> go.Figure:
     fig.update_layout(barmode="stack", showlegend=True,
                       legend=dict(orientation="h", y=1.0, yanchor="bottom", x=0, title=None, traceorder="normal"))
     style(fig, title=f"Only {known} of {total} state facts say what the gap is; {top_gap} problems come up most",
-          subtitle="Kidney register: facts per state, coloured by the gap type the source states "
+          subtitle=f"{register} register: facts per state, coloured by the gap type the source states "
                    "(equipment, workforce, systems), grey = source doesn't say",
-          source=SRC_REG, height=950, x_title="Register facts (one per source)", x_grid=True)
+          source=SRC_REG.replace("Kidney", register), height=max(450, 24 * len(d) + 250),
+          x_title="Register facts (one per source)", x_grid=True)
     fig.update_layout(margin=dict(t=135))
     return fig
 
@@ -187,7 +189,8 @@ def register_machines_per_million(by_state: pd.DataFrame, panel: pd.DataFrame) -
     return fig
 
 
-def machines_per_million_bars(by_state: pd.DataFrame, panel: pd.DataFrame) -> go.Figure:
+def machines_per_million_bars(by_state: pd.DataFrame, panel: pd.DataFrame, register: str = "Kidney",
+                              machines: str = "Working machines") -> go.Figure:
     """Compact version for the app: horizontal bars, lowest first, upper end of the reported range."""
     d = by_state.merge(panel[["state", "population_total"]], on="state")
     has = d.dropna(subset=["machines_working_high"]).copy()
@@ -201,9 +204,9 @@ def machines_per_million_bars(by_state: pd.DataFrame, panel: pd.DataFrame) -> go
         hovertemplate=("%{y}: %{x:.1f} per million<br>%{customdata[0]:.0f}–%{customdata[1]:.0f} working machines "
                        "named<br>sources %{customdata[2]} to %{customdata[3]}<extra></extra>")))
     style(fig, title=f"{len(has)} states have a count; {len(d) - len(has)} have none",
-          subtitle="Working machines per million people (top of the range).<br>"
+          subtitle=f"{machines} per million people (top of the range).<br>"
                    "A floor: sources name some hospitals, not all.",
-          source="Kidney register; GRID3/WorldPop v3.0", height=520, x_grid=True)
+          source=f"{register} register; GRID3/WorldPop v3.0", height=max(300, 26 * len(has) + 200), x_grid=True)
     return fig
 
 
@@ -247,6 +250,61 @@ def national_counts(national: pd.DataFrame) -> go.Figure:
     fig.update_yaxes(showgrid=False)
     return fig
 
+
+# ---------- chart 4c (cancer): national radiotherapy counts ----------
+
+CANCER_SOURCE_LABELS = {  # URL fragment -> short label (several papers share a domain)
+    "PMC8389883": "JCO Glob Oncol 2021", "PMC9909043": "SAGE Open Med 2023", "PMC10793986": "JCO Glob Oncol 2024",
+    "PMC12688764": "Ann Med Surg 2025", "PMC8675892": "Lancet Oncol 2021 (IAEA DIRAC)",
+    "PMC5833915": "UCH Ibadan survey 2017", "businessday.ng": "IARC 2025 via BusinessDay",
+    "allafrica.com": "Nigerian Cancer Society", "leadership.ng": "ARCON via Leadership",
+    "guardian.ng/?p=1872563": "ARCON via The Guardian", "guardian.ng/?p=1991453": "Experts via The Guardian",
+    "modernghana.com": "Modern Ghana (unnamed stakeholders)", "freedomonline": "Nigerian Cancer Society 2022",
+    "dailytrust": "Daily Trust", "oncodaily.com": "ARCON president",
+}
+
+
+def cancer_source_label(url: str) -> str:
+    return next((v for k, v in CANCER_SOURCE_LABELS.items() if k in url), url.split("/")[2])
+
+
+def cancer_national_groups(national: pd.DataFrame) -> dict[str, pd.DataFrame]:
+    """National cancer figures in three comparable groups (rules, not hand-picked rows):
+    working machines of any type (excluding counts of centres and regional figures), working linacs,
+    and oncologists (excluding need estimates)."""
+    n = national[national["count"].astype(str).str.strip() != ""].copy()
+    n["n"] = n["count"].astype(float)
+    n["who"] = n.source_url.map(cancer_source_label)
+    note = n.evidence_note.str.lower()
+    is_need = note.str.contains("need estimate|a need,|needed")
+    return {
+        "Working radiotherapy machines (any type)": n[(n.item == "other") & (n.status == "working")
+                                                      & ~note.str.contains("centres with|centers with|regional")],
+        "Working linacs": n[(n.item == "linac") & (n.status == "working")],
+        "Oncologists": n[(n.item == "oncologist") & ~is_need],
+        "Machines needed": n[(n.item == "other") & is_need & ~note.str.contains("oncologist")],
+    }
+
+
+def national_counts_cancer(national: pd.DataFrame) -> go.Figure:
+    groups = {k: v for k, v in cancer_national_groups(national).items() if k != "Machines needed"}
+    fig = make_subplots(rows=len(groups), cols=1, subplot_titles=list(groups), vertical_spacing=0.1)
+    spreads = []
+    for row, (label, g) in enumerate(groups.items(), start=1):
+        g = g.sort_values("source_date").drop_duplicates(["n", "who"]).sort_values("n")
+        spreads.append(g.n.max() / g.n.min())
+        fig.add_trace(go.Bar(
+            y=[w if d[:4] in w else f"{w}, {d[:4]}" for w, d in zip(g.who, g.source_date)], x=g.n, orientation="h",
+            marker_color=GREEN, text=[f"{v:,.0f}" for v in g.n], textposition="outside", cliponaxis=False,
+            textfont=dict(size=11, color=NAVY), hovertemplate="%{x:,.0f}<br>%{y}<extra></extra>"), row=row, col=1)
+        fig.update_xaxes(range=[0, g.n.max() * 1.3], row=row, col=1)
+    style(fig, title=f"Published radiotherapy counts differ by up to {max(spreads):.0f}x",
+          subtitle="One bar per published figure (source, year). Machine counts are of working machines.<br>"
+                   "Some are upper bounds ('fewer than 20'); years and coverage differ.",
+          source="Cancer register: peer-reviewed surveys, IARC 2025, ARCON, Nigerian Cancer Society, news",
+          height=900, x_grid=True)
+    fig.update_yaxes(showgrid=False)
+    return fig
 
 # ---------- chart 5: three (plus one) out-of-pocket figures ----------
 
@@ -293,55 +351,69 @@ SHOCK_COLOURS = {0.0: DARK_GREEN, 0.2: GREEN, 0.5: PALE_GREEN}
 def centre_scenarios(sc: pd.DataFrame) -> go.Figure:
     """Left: patients treated per scenario. Right: break-even price vs price received,
     at today's exchange rate and with the naira 20% and 50% weaker."""
+    course = "patient_basis" in sc and sc.patient_basis.iloc[0] == "course"
+    unit = "course" if course else "session"
+    be_col = "breakeven_price_per_course_ngn" if course else "breakeven_price_ngn"
+    avg_col = "average_price_per_course_ngn" if course else "average_price_ngn"
     base = sc[(sc.scenario == "base") & (sc.naira_shock == 0)].iloc[0]
     order = ["low", "base", "high"]
     fig = make_subplots(rows=1, cols=2, column_widths=[0.32, 0.68], horizontal_spacing=0.14,
-                        subplot_titles=("Patients treated (people on the programme)",
-                                        "Break-even price per session vs price received (N)"))
+                        subplot_titles=("Patients treated in a year (courses)" if course else
+                                        "Patients treated (people on the programme)",
+                                        f"Break-even price per {unit} vs price received (N)"))
     today = sc[sc.naira_shock == 0].set_index("scenario").loc[order]
     fig.add_trace(go.Bar(x=[SCENARIO_NAMES[s] for s in order], y=today.patients_treated, marker_color=GREEN,
-                         text=[f"{p:.0f}<br>({s:,.0f} sessions/yr)" for p, s in zip(today.patients_treated,
+                         text=[f"{p:,.0f}<br>({s:,.0f} {'fractions' if course else 'sessions'}/yr)"
+                               for p, s in zip(today.patients_treated,
                                                                                    today.sessions_per_year)],
                          textposition="outside", cliponaxis=False, showlegend=False,
                          hovertemplate="%{x}: %{y:.0f} patients<extra></extra>"), row=1, col=1)
     for shock, colour in SHOCK_COLOURS.items():
         d = sc[sc.naira_shock == shock].set_index("scenario").loc[order]
         name = "Break-even, today's exchange rate" if shock == 0 else f"Break-even, naira {shock:.0%} weaker"
-        fig.add_trace(go.Bar(x=[SCENARIO_NAMES[s] for s in order], y=d.breakeven_price_ngn, name=name,
+        fig.add_trace(go.Bar(x=[SCENARIO_NAMES[s] for s in order], y=d[be_col], name=name,
                              marker_color=colour, hovertemplate="%{x}: N%{y:,.0f}<extra>" + name + "</extra>"),
                       row=1, col=2)
-    fig.add_trace(go.Scatter(x=[SCENARIO_NAMES[s] for s in order], y=today.average_price_ngn,
+    fig.add_trace(go.Scatter(x=[SCENARIO_NAMES[s] for s in order], y=today[avg_col],
                              mode="markers+text", name="Price received (average across payers)",
                              marker=dict(symbol="line-ew-open", size=46, color=NAVY, line_width=3),
-                             text=[f"N{p:,.0f}" for p in today.average_price_ngn], textposition="top center",
+                             text=[f"N{p:,.0f}" for p in today[avg_col]], textposition="top center",
                              textfont=dict(size=11, color=NAVY), cliponaxis=False,
                              hovertemplate="%{x}: N%{y:,.0f} received<extra></extra>"), row=1, col=2)
     fig.update_layout(barmode="group", showlegend=True,
                       legend=dict(orientation="h", y=-0.2, x=0.25, title=None, font=dict(size=11)))
-    gap = base.breakeven_price_ngn - base.average_price_ngn
-    title = (f"In the base case, a session costs N{base.breakeven_price_ngn:,.0f} to break even but brings in "
-             f"N{base.average_price_ngn:,.0f}" if gap > 0 else
-             f"In the base case, the centre breaks even at N{base.breakeven_price_ngn:,.0f} a session, "
-             f"below the N{base.average_price_ngn:,.0f} it receives")
+    gap = base[be_col] - base[avg_col]
+    title = (f"In the base case, a {unit} costs N{base[be_col]:,.0f} to break even but brings in "
+             f"N{base[avg_col]:,.0f}" if gap > 0 else
+             f"In the base case, the centre breaks even at N{base[be_col]:,.0f} a {unit}, "
+             f"below the N{base[avg_col]:,.0f} it receives")
+    what = "radiotherapy centre (one linac)" if course else "haemodialysis centre"
     style(fig, title=title,
-          subtitle=("One illustrative haemodialysis centre, low / base / high scenarios; break-even rises as the "
-                    "naira weakens because consumables and machines are imported.<br>"
+          subtitle=(f"One illustrative {what}, low / base / high scenarios; break-even rises as the "
+                    "naira weakens because equipment and supplies are imported.<br>"
                     "An illustrative model using public data and stated assumptions. Not investment advice."),
-          source=SRC_MODEL, height=640)
+          source=SRC_MODEL_CANCER if course else SRC_MODEL, height=640)
     fig.update_layout(margin=dict(b=170))
     fig.layout.annotations[-1].update(yshift=-120)  # source line below the legend
     fig.update_yaxes(rangemode="tozero")
     fig.update_yaxes(range=[0, today.patients_treated.max() * 1.35], row=1, col=1)
+    if course:
+        fig.update_yaxes(tickformat="~s", row=1, col=2)
     fig.update_yaxes(tickprefix="N", row=1, col=2)
     return fig
 
 
-def centre_sensitivity(sens: pd.DataFrame, top: int = 10) -> go.Figure:
+SRC_MODEL_CANCER = "Illustrative centre model (assumptions_cancer.yaml); cancer register; World Bank exchange rate"
+
+
+def centre_sensitivity(sens: pd.DataFrame, top: int = 10, source: str = SRC_MODEL) -> go.Figure:
     """Tornado: yearly net cash when each input moves to its low and high bound (others at base)."""
     d = sens.head(top).iloc[::-1]
     base = d.base_net_cash_ngn.iloc[0]
     nice = lambda i: (i.replace("_ngn", "").replace("_usd", " (US$)").replace("_pct_of", " % of")
-                       .replace("_", " ").capitalize())
+                       .replace("_", " ").replace("nhia", "NHIA").replace("hmo", "HMO"))
+    nice_ = nice
+    nice = lambda i: (lambda t: t[:1].upper() + t[1:])(nice_(i))
     labels = [f"{nice(i)}{'' if v else ' *'}" for i, v in zip(d.input, d.verified)]
     fig = go.Figure()
     for bound, colour, name in [("low", PALE_GREEN, "Input at its low value"), ("high", GREEN, "Input at its high value")]:
@@ -354,11 +426,11 @@ def centre_sensitivity(sens: pd.DataFrame, top: int = 10) -> go.Figure:
     first = d.iloc[-1]
     style(fig, title=f"The imported consumables cost moves the result most, and it's an unverified assumption"
           if first.input == "consumables_per_session_usd" and not first.verified else
-          f"{first.input.replace('_', ' ').capitalize()} moves the result most",
+          f"{nice(first.input)} moves the result most" + ("" if first.verified else ", and it's an unverified assumption"),
           subtitle=("Yearly net cash (N million) when one input moves to its low or high value, all else at base "
                     f"(solid line = base, {'−' if base < 0 else ''}N{abs(base) / 1e6:,.0f}m; dotted = break-even).<br>* = assumption to verify, "
                     "no public source found."),
-          source=SRC_MODEL, height=560, x_title="Net cash per year (N million)", x_grid=True)
+          source=source, height=560, x_title="Net cash per year (N million)", x_grid=True)
     fig.update_layout(barmode="overlay", showlegend=True, legend=dict(orientation="h", y=1.02, yanchor="bottom", x=0, title=None))
     fig.update_layout(margin=dict(t=150))
     return fig

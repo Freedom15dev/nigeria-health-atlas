@@ -43,8 +43,8 @@ def geojson() -> dict:
 
 
 @st.cache_data(show_spinner=False)
-def assumptions() -> dict:
-    with open(ROOT / "config" / "assumptions_kidney.yaml", encoding="utf-8") as f:
+def assumptions(specialty: str = "kidney") -> dict:
+    with open(ROOT / "config" / f"assumptions_{specialty}.yaml", encoding="utf-8") as f:
         return yaml.safe_load(f)
 
 

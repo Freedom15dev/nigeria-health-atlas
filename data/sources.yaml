@@ -135,3 +135,17 @@ headline_figures:
     Every row verified against the source page on 2026-11-24 (verification_note column). Three figures
     rest on news reports of documents not yet found (NHA 2023-24, the World Bank programme document,
     the IARC 2025 assessment).
+
+specialist_register:
+  name: Specialist capacity register (hand-built), kidney (dialysis) and cancer (radiotherapy)
+  publisher: "various: peer-reviewed studies, government, professional bodies and news (one source per row)"
+  url: data/register/specialist_capacity.csv
+  date_accessed: 2026-11-24
+  licence: n/a (facts quoted from the sources listed per row, each with its URL and date)
+  fields_used: [specialty, state, facility_name, ownership, item, count, status, gap_type, evidence_note, source_url, source_type, source_date, date_accessed]
+  notes: >
+    One row per fact from one source; conflicting counts are kept as separate rows, never averaged.
+    Built from data/register/research/*.json by pipeline/curate_register.py (kidney, phase 3) and
+    pipeline/curate_cancer.py (cancer, phase 6). Price and cost facts are kept separately in
+    kidney_cost_evidence.csv and cancer_cost_evidence.csv (inputs to the centre models).
+    20 quotes spot-checked against their pages by an independent check (data/register/verification_log.csv).

@@ -74,13 +74,16 @@ def main() -> None:
     errors = check_register_rows(r)
     if errors:
         sys.exit("Register problems:\n  " + "\n  ".join(errors[:30]))
-    by_state = summarise_by_state(r)
-    by_state.to_csv(PROCESSED / "register_kidney_by_state.csv", index=False)
-    r[(r.specialty == "kidney") & (r.state == NATIONAL)].to_csv(PROCESSED / "register_kidney_national.csv", index=False)
-    k = r[r.specialty == "kidney"]
-    print(f"  register: {len(k)} kidney rows; {int((by_state.evidence == 'found').sum())} of 37 states have evidence; "
-          f"gap_type unknown in {int((k.gap_type == 'unknown').sum())} rows")
-
+    for specialty in ("kidney", "cancer"):
+        k = r[r.specialty == specialty]
+        if k.empty:
+            print(f"  register: no {specialty} rows yet")
+            continue
+        by_state = summarise_by_state(r, specialty)
+        by_state.to_csv(PROCESSED / f"register_{specialty}_by_state.csv", index=False)
+        k[k.state == NATIONAL].to_csv(PROCESSED / f"register_{specialty}_national.csv", index=False)
+        print(f"  register: {len(k)} {specialty} rows; {int((by_state.evidence == 'found').sum())} of 37 states have "
+              f"evidence; gap_type unknown in {int((k.gap_type == 'unknown').sum())} rows")
 
 if __name__ == "__main__":
     main()

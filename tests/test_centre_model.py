@@ -125,3 +125,69 @@ def test_assumptions_file_is_complete_and_scenarios_order_correctly():
                 assert key in spec, f"{section}.{name} missing {key}"
     nets = {sc: M.run(M.scenario_inputs(a, sc))["net_cash_per_year_ngn"] for sc in ("low", "base", "high")}
     assert nets["low"] < nets["base"] < nets["high"]
+
+
+# ---------------------------------------------------------------------------------------------
+# Phase 6: radiotherapy (course-based) — HAND-WORKED CASE
+#
+# Inputs
+#   1 linac, 1 shift a day, 40 treatment slots (fractions) per shift, open 5 days a week, 50% used
+#   a course = 20 fractions; everyone pays out of pocket N1,000,000 per COURSE
+#   exchange rate N1,000 per US$; consumables US$5 a fraction; power N2,000 a fraction
+#   staff N100,000 per shift; maintenance 10% of equipment a year
+#   linac US$1,000,000; set-up (bunker etc.) US$500,000; life 10 years
+#
+# Capacity and patients
+#   weekly capacity   = 1 x 1 x 40 x 5          = 200 slots      (slots per year 10,400)
+#   fractions / week  = 200 x 0.5              = 100            (per year 5,200)
+#   patients / year   = 5,200 / 20             = 260 courses
+# Money
+#   price per fraction = 1,000,000 / 20        = N50,000
+#   variable / fraction = 5 x 1,000 + 2,000    = N7,000
+#   equipment = N1,000,000,000; set-up capital = N1,500,000,000
+#   staff / year = 100,000 x 1 x 5 x 52        = N26,000,000
+#   maintenance  = 0.10 x 1,000,000,000         = N100,000,000;  fixed = N126,000,000
+#   revenue = 5,200 x 50,000 = N260,000,000;  variable = 5,200 x 7,000 = N36,400,000
+#   net cash = 260,000,000 - 36,400,000 - 126,000,000 = N97,600,000
+#   break-even capacity used = 126,000,000 / 43,000 / 10,400 = 0.28175
+#   break-even price = 162,400,000 / 5,200 = N31,230.77 a fraction = N624,615.38 a course
+#   payback = 1,500,000,000 / 97,600,000 = 15.37 years
+#   cost per patient = (126,000,000 + 36,400,000 + 150,000,000) / 260 = N1,201,538.46
+# ---------------------------------------------------------------------------------------------
+
+def radiotherapy_case():
+    return {
+        "machines": 1, "shifts_per_day": 1, "sessions_per_machine_per_shift": 40, "days_open_per_week": 5,
+        "capacity_used": 0.5, "sessions_per_course": 20, "patient_basis": "course", "price_basis": "course",
+        "price_out_of_pocket_ngn": 1_000_000,
+        "payer_mix": {"out_of_pocket": (1.0, "price_out_of_pocket_ngn")},
+        "fx_ngn_per_usd": 1_000, "consumables_per_session_usd": 5, "power_water_per_session_ngn": 2_000,
+        "staff_cost_per_shift_ngn": 100_000, "maintenance_pct_of_equipment_per_year": 0.10,
+        "equipment_cost_per_machine_usd": 1_000_000, "setup_cost_usd": 500_000, "equipment_life_years": 10,
+        "partner_fee_per_session_ngn": 30_000, "partner_revenue_share": 0.5,
+    }
+
+
+def test_radiotherapy_matches_hand_calculation():
+    r = M.run(radiotherapy_case())
+    assert r["patient_basis"] == "course"
+    assert r["weekly_capacity"] == 200 and r["sessions_per_year"] == 5_200
+    assert r["patients_treated"] == 260
+    assert r["average_price_ngn"] == 50_000 and r["average_price_per_course_ngn"] == 1_000_000
+    assert r["variable_cost_per_session_ngn"] == 7_000
+    assert r["setup_capital_ngn"] == 1_500_000_000
+    assert r["fixed_cost_per_year_ngn"] == 126_000_000
+    assert r["net_cash_per_year_ngn"] == 97_600_000
+    assert r["breakeven_capacity_used"] == pytest.approx(0.28175, abs=1e-5)
+    assert r["breakeven_price_ngn"] == pytest.approx(31_230.77, abs=0.01)
+    assert r["breakeven_price_per_course_ngn"] == pytest.approx(624_615.38, abs=0.01)
+    assert r["payback_years"] == pytest.approx(15.37, abs=0.01)
+    assert r["cost_per_patient_year_ngn"] == pytest.approx(1_201_538.46, abs=0.01)
+
+
+def test_ppp_parts_add_up_to_the_whole_centre():
+    for case in (hand_case(), radiotherapy_case()):
+        for structure in ("fee", "share"):
+            p = M.run_ppp(case, structure)
+            assert p["partner_net_cash_ngn"] + p["hospital_net_cash_ngn"] == pytest.approx(
+                M.run(case)["net_cash_per_year_ngn"])

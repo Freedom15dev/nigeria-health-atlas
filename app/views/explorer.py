@@ -15,7 +15,6 @@ names = ui.display_names()
 panel = ui.csv("state_panel.csv")
 sc = ui.csv("scorecard.csv")[["state", "score_total", "rank"]]
 fc = ui.csv("facility_counts.csv")
-reg_rows = ui.csv("register_kidney_rows.csv", dtype=str, keep_default_na=False)
 ZONES = sorted(panel.zone.unique())
 LEVELS = ["Primary", "Secondary", "Tertiary"]
 DEFAULTS = {"ex_zone": "All zones", "ex_state": "All states", "ex_spec": "Kidney",
@@ -69,8 +68,11 @@ pop = panel.set_index("state").population_total
 per100k = fac_state / pop * 1e5
 national = fac_state.sum() / pop.sum() * 1e5
 
+specialty = "cancer" if spec == "Cancer" else "kidney"
+reg_rows = ui.csv(f"register_{specialty}_rows.csv", dtype=str, keep_default_na=False)
 reg_f = reg_rows[reg_rows.ownership.isin(reg_own_keep)]
-by_state = summarise_by_state(reg_f, list(panel.state)).set_index("state")
+by_state = summarise_by_state(reg_f, list(panel.state), specialty).set_index("state")
+machine_word = "radiotherapy" if spec == "Cancer" else "dialysis"
 ins = panel.set_index("state")[["insurance_any_women_pct", "insurance_any_men_pct"]].mean(axis=1)
 wealth = panel.set_index("state").wealth_top2_pct
 w = pop[focus] / pop[focus].sum()          # population weights for a group of states
@@ -80,8 +82,8 @@ table = pd.DataFrame({
     "State": [names[s] for s in view_states],
     "Zone": panel.set_index("state").zone[view_states].values,
     "Facilities per 100k": per100k[view_states].round(1).values,
-    "Working dialysis machines (register)": [
-        "[—]" if spec == "Cancer" or pd.isna(by_state.loc[s].get("machines_working_low"))
+    f"Working {machine_word} machines (register)": [
+        "[—]" if pd.isna(by_state.loc[s].get("machines_working_low"))
         else (f"{by_state.loc[s].machines_working_low:.0f}" if by_state.loc[s].machines_working_low
               == by_state.loc[s].machines_working_high
               else f"{by_state.loc[s].machines_working_low:.0f}–{by_state.loc[s].machines_working_high:.0f}")
@@ -101,9 +103,7 @@ delta = grp_rate - national
 arrow = "▲" if delta >= 0 else "▼"
 colour = cs.GOOD if delta >= 0 else cs.BAD
 lo_m, hi_m, n_m = story.machines_range(by_state.loc[focus].reset_index())
-if spec == "Cancer":
-    machines_big, machines_line = "[—]", "Cancer register comes in phase 6"
-elif n_m == 0:
+if n_m == 0:
     machines_big, machines_line = "[—]", "No machine count in the register for this view"
 else:
     machines_big = f"{lo_m:.0f}" if lo_m == hi_m else f"{lo_m:.0f}–{hi_m:.0f}"
@@ -113,7 +113,7 @@ tiles = [
     ("Facilities per 100,000", f"{grp_rate:.1f}",
      "national average" if set(focus) == set(panel.state) else
      f'<span style="color:{colour}">{arrow} {abs(delta):.1f}</span> vs national {national:.1f}'),
-    (f"Working {'dialysis' if spec == 'Kidney' else 'radiotherapy'} machines", machines_big, machines_line),
+    (f"Working {machine_word} machines", machines_big, machines_line),
     ("Health insurance (any)", f"{(ins[focus] * w).sum():.1f}%",
      "NDHS 2024, women and men" + (", population-weighted average of states" if len(focus) > 1 else "")),
     ("Scorecard", f"{score[focus].mean():.0f}/100" if len(focus) > 1 else f"{score[selected]:.0f}/100",
@@ -180,11 +180,12 @@ with right:
     # 3. gap type from the register
     with st.container(key="white_gaps"):
         st.markdown(f"**{spec} care: gap type**")
-        if spec == "Cancer":
-            st.html('<div class="small-grey">The cancer (radiotherapy) register is built in phase 6. [—]</div>')
+        g = reg_f[reg_f.state.isin(focus)].gap_type.value_counts()
+        if g.sum() == 0:
+            st.html('<div class="small-grey">No register rows for this view: [—]. That means no evidence was '
+                    'found, not that nothing is missing.</div>')
         else:
-            g = reg_f[reg_f.state.isin(focus)].gap_type.value_counts()
-            gmax = max(g.max() if len(g) else 0, 1)
+            gmax = max(g.max(), 1)
             st.html(ui.bar_rows([(t.title(), g.get(t, 0), gmax, cs.GAP_COLOURS[t]) for t in cs.GAP_COLOURS])
                     + f'<div class="small-grey">Register rows ({int(g.sum())}) by the cause the source '
                       f'gives; "unknown" = the source doesn\'t say.</div>')

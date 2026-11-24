@@ -90,13 +90,18 @@ def headline_cards(hf: pd.DataFrame) -> list[dict]:
 
 # ---------- register sentences ----------
 
-def public_dialysis_sentence(by_state: pd.DataFrame) -> str:
-    yes = (by_state.public_dialysis_working == "yes").sum()
-    unk = (by_state.public_dialysis_working == "unknown").sum()
-    no = (by_state.public_dialysis_working == "reported not working").sum()
-    return (f"{yes} of {len(by_state)} states have a public dialysis unit reported working in the register; "
+def public_unit_sentence(by_state: pd.DataFrame, word: str = "dialysis") -> str:
+    """States with a public unit reported working, reported not working, or no evidence either way."""
+    col = by_state["public_unit_working"].fillna("unknown")
+    yes, no = int((col == "yes").sum()), int((col == "reported not working").sum())
+    unk = len(by_state) - yes - no
+    return (f"{yes} of {len(by_state)} states have a public {word} unit reported working in the register; "
             f"in {no} the only reports say it isn't working, and for {unk} the register has no "
             f"evidence either way.")
+
+
+def public_dialysis_sentence(by_state: pd.DataFrame) -> str:
+    return public_unit_sentence(by_state, "dialysis")
 
 
 def main_gap_type(row: pd.Series) -> str:
@@ -118,12 +123,16 @@ def machines_range(by_state: pd.DataFrame) -> tuple[float, float, int]:
 
 def breakeven_sentence(r: dict) -> str:
     be = r["breakeven_capacity_used"]
+    course = r.get("patient_basis") == "course"
+    unit = "fraction" if course else "session"
     if not math.isfinite(be):
-        return (f"Break-even isn't reachable at this price: each session brings in "
+        return (f"Break-even isn't reachable at this price: each {unit} brings in "
                 f"{naira(r['average_price_ngn'])} but costs {naira(r['variable_cost_per_session_ngn'])} in "
                 f"consumables, power and water alone.")
     if be > 1:
+        price = (f"{naira(r['breakeven_price_per_course_ngn'])} a course" if course
+                 else naira(r["breakeven_price_ngn"]))
         return (f"Break-even isn't reachable: it would need {be:.0%} of slots filled, more than the centre has. "
-                f"The price that covers running costs at this level of use is {naira(r['breakeven_price_ngn'])}.")
+                f"The price that covers running costs at this level of use is {price}.")
     return (f"The centre covers its running costs once it uses {be:.0%} of its slots "
             f"(it uses {r['capacity_used']:.0%} now).")

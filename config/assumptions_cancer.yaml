@@ -1,0 +1,182 @@
+# Inputs for one illustrative radiotherapy centre (src/centre_model.py), phase 6.
+# Every input: value (base case), low, high, unit, source, worse (see assumptions_kidney.yaml).
+# Sources are rows in data/register/cancer_cost_evidence.csv (from data/register/research/cancer_costs.json).
+# "assumption — to verify" means I found no public source; treat it as a placeholder.
+# Nothing here describes any real firm's terms. The PPP structures are general illustrations.
+
+label: "An illustrative model using public data and stated assumptions. Not investment advice."
+currency: NGN
+patient_basis: course   # patients = fractions delivered in a year / fractions per course
+price_basis: course     # prices below are per course of treatment, not per fraction
+
+capacity:
+  machines:
+    value: 1
+    low: 1
+    high: 2
+    unit: linear accelerators (linacs)
+    worse: fixed
+    source: "Design choice: a single-linac centre, the smallest unit a PPP would add to a public hospital. IAEA's basic centre has two teletherapy units (IAEA 2008, via Annals of Medicine and Surgery 2025)"
+  shifts_per_day:
+    value: 2
+    low: 1
+    high: 2
+    unit: shifts per machine per day
+    worse: fixed
+    source: "IAEA guidance (Setting Up a Radiotherapy Programme, 2008): a basic centre runs on two shifts"
+  sessions_per_machine_per_shift:
+    value: 40
+    low: 30
+    high: 50
+    unit: fractions (treatments) per linac per 8-hour shift
+    worse: fixed
+    source: "Derived: IAEA planning figure of about 500 patients per machine per year on an 8-hour day (Lancet Oncology 2021) x about 20 fractions a course / about 250 working days = about 40. National Hospital Abuja reported 80-100 patients a day after adding a backup generator (JCO Global Oncology 2020)"
+  days_open_per_week:
+    value: 5
+    low: 5
+    high: 6
+    unit: days per week
+    worse: fixed
+    source: "assumption — to verify (radiotherapy is usually given on weekdays)"
+  capacity_used:
+    value: 0.75
+    low: 0.50
+    high: 0.90
+    unit: share of available treatment slots used (0-1)
+    worse: low
+    source: "assumption — to verify. Register: public machines were down 35% of the year and treated 60% fewer patients than PPP machines, which had no breakdowns (JCO Global Oncology 2021); power cuts and missing maintenance contracts are named barriers (IARC 2025 via BusinessDay)"
+  sessions_per_course:
+    value: 20
+    low: 15
+    high: 25
+    unit: fractions per course of external-beam radiotherapy
+    worse: fixed
+    source: "JCO Global Oncology 2021 (PPP survey) prices a 20-fraction course; LUTH says a course takes 'about a month' (BusinessDay 2019). No national standard found; varies by cancer type"
+
+prices:   # per COURSE, what the centre receives, by who pays
+  price_out_of_pocket_ngn:
+    value: 800000
+    low: 650000
+    high: 1200000
+    unit: NGN per course
+    worse: low
+    source: "Register cost evidence: about N800,000 for a full breast course at National Hospital Abuja (Modern Ghana, 2026-11-02); N646,667 average on PPP machines in early 2020 (JCO Global Oncology 2021); private six-week course N1.2m-1.8m (Modern Ghana, 2026-11-02)"
+  price_subsidised_ngn:
+    value: 800000
+    low: 400000
+    high: 800000
+    unit: NGN per course received by the centre
+    worse: low
+    source: "assumption — to verify. The Cancer Health Fund paid about N2bn for 1,616 patients over about three years (BusinessDay, 2024-12-22), covering more than radiotherapy; how much a centre receives per course is not published"
+  price_nhia_ngn:
+    value: 800000
+    low: 400000
+    high: 800000
+    unit: NGN per course received by the centre
+    worse: low
+    source: "NHIA pays 50% of radiotherapy, capped at N400,000 (Premium Times, 2025-02-05). Base assumes the patient pays the rest (centre receives the full price); low assumes the centre receives only the NHIA share (assumption — to verify)"
+  price_employer_hmo_ngn:
+    value: 1200000
+    low: 1000000
+    high: 1800000
+    unit: NGN per course
+    worse: low
+    source: "assumption — to verify (set at the private-market range, N1.2m-1.8m, Modern Ghana 2026-11-02)"
+
+payer_mix:   # shares of patients; each column must sum to 1
+  out_of_pocket:  {value: 0.85, low: 0.93, high: 0.70, price: price_out_of_pocket_ngn}
+  subsidised:     {value: 0.05, low: 0.03, high: 0.10, price: price_subsidised_ngn}
+  nhia:           {value: 0.05, low: 0.02, high: 0.10, price: price_nhia_ngn}
+  employer_hmo:   {value: 0.05, low: 0.02, high: 0.10, price: price_employer_hmo_ngn}
+  unit: share of patients
+  source: "assumption — to verify. 'The majority of patients pay out of pocket' (JCO Global Oncology 2021); at UCH Ibadan only 6% had federal insurance, which did not cover radiotherapy (2017 study). No national out-of-pocket share for cancer care was found."
+
+costs:
+  consumables_per_session_usd:
+    value: 5
+    low: 2
+    high: 15
+    unit: US$ per fraction (immobilisation, quality-assurance supplies; imported)
+    worse: high
+    source: "assumption — to verify"
+  power_water_per_session_ngn:
+    value: 5000
+    low: 2000
+    high: 10000
+    unit: NGN per fraction (grid power plus generator diesel)
+    worse: high
+    source: "assumption — to verify. Register: electricity disruptions named as a key barrier (IARC 2025 via BusinessDay); National Hospital Abuja's throughput rose after adding a backup generator (JCO Global Oncology 2020)"
+  staff_cost_per_shift_ngn:
+    value: 400000
+    low: 250000
+    high: 600000
+    unit: NGN per shift (radiation oncologists, physicists, radiotherapists, nurses, engineer)
+    worse: high
+    source: "assumption — to verify. Team size from IAEA guidance for a basic centre: 4-5 radiation oncologists, 3-4 physics staff, 7 radiation therapists, 3 oncology nurses, 1 engineer (IAEA 2008)"
+  equipment_cost_per_machine_usd:
+    value: 2000000
+    low: 1500000
+    high: 4000000
+    unit: US$ per linac
+    worse: high
+    source: "Register cost evidence: US$1.5m-2m per radiotherapy machine (BusinessDay, 2019-01-25); US$2m-4m with accessories (NSIA-LUTH chief clinical oncologist, quoted for 2024 by Modern Ghana, 2026-11-02)"
+  setup_cost_usd:
+    value: 1000000
+    low: 500000
+    high: 2000000
+    unit: US$ one-off (bunker, CT simulator, planning system, generator)
+    worse: high
+    source: "Derived and to verify: a basic centre costs about US$3m (Annals of Medicine and Surgery 2025) less one linac (US$2m). No sourced bunker cost for Nigeria was found"
+  maintenance_pct_of_equipment_per_year:
+    value: 0.10
+    low: 0.02
+    high: 0.15
+    unit: share of equipment cost per year (service contract and parts)
+    worse: high
+    source: "IAEA guidance: service contract up to 15% of a linac's price a year (IAEA 2008). Annals of Medicine and Surgery 2025 gives about US$41,390 a year for a linac (about 2% of US$2m). Base 10% is between them (assumption — to verify)"
+  equipment_life_years:
+    value: 10
+    low: 8
+    high: 12
+    unit: years
+    worse: low
+    source: "assumption — to verify"
+
+fx:
+  fx_ngn_per_usd:
+    value: from_data:wdi:PA.NUS.FCRF
+    low: from_data:wdi:PA.NUS.FCRF
+    high: from_data:wdi:PA.NUS.FCRF
+    unit: NGN per US$
+    worse: fixed
+    source: "World Bank WDI PA.NUS.FCRF, official exchange rate, latest annual average (read at run time from data/processed/wdi_nga.csv)"
+  naira_shocks:
+    value: [0.20, 0.50]
+    low: [0.20, 0.50]
+    high: [0.20, 0.50]
+    unit: share by which the naira weakens (more NGN per US$)
+    worse: fixed
+    source: "Brief: test the naira weakening by 20% and by 50%. Course prices are assumed to stay the same in naira (assumption — to verify)"
+
+ppp:   # illustrative structures only: general examples, not any real firm's terms
+  partner_fee_per_session_ngn:
+    value: 30000
+    low: 30000
+    high: 30000
+    unit: NGN per fraction paid by the hospital to the private partner
+    worse: fixed
+    source: "assumption — illustrative. Set just above the partner's base-case cost per fraction (consumables + maintenance), so the example isn't loss-making by construction"
+  partner_revenue_share:
+    value: 0.70
+    low: 0.70
+    high: 0.70
+    unit: share of income paid to the private partner
+    worse: fixed
+    source: "assumption — illustrative. Set so the partner's base-case income roughly matches the fee structure"
+  cost_split:
+    value: "partner: linac, set-up, maintenance, consumables; hospital: staff, power and water, space"
+    low: same
+    high: same
+    unit: text
+    worse: fixed
+    source: "assumption — illustrative"

@@ -2,9 +2,12 @@
 
 **Where specialist care is missing in Nigeria, why it's missing, and what one centre could change.**
 
-A data project using public data. It maps where specialist care, starting with kidney care (dialysis), is
-missing across Nigeria's 36 states and the FCT. It asks whether the gap is equipment, workforce or
-systems, who can pay, and what one dialysis centre could deliver in patients treated and capacity used.
+**Live app: https://nigeria-health-atlas.streamlit.app/**
+
+A data project using public data. It maps where specialist care, kidney care (dialysis) and cancer care
+(radiotherapy), is missing across Nigeria's 36 states and the FCT. It asks whether the gap is equipment,
+workforce or systems, who can pay, and what one specialist centre could deliver in patients treated and
+capacity used.
 
 > The full write-up comes in the final phase. This page explains how the project is built and run.
 
@@ -17,8 +20,8 @@ A Streamlit app with seven pages:
 | Home | four headline figures and a map of where to look first |
 | State explorer | facilities, specialist capacity and ability to pay, state by state, with filters |
 | Scorecard | an equal-weight state ranking (need, supply gap, ability to pay) and a weight stress-test |
-| Specialist gaps | a hand-built dialysis register: what is missing, and where sources disagree |
-| Centre model | one illustrative dialysis centre: patients treated, capacity used, break-even |
+| Specialist gaps | hand-built dialysis and radiotherapy registers: what is missing, and where sources disagree |
+| Centre model | one illustrative dialysis or radiotherapy centre: patients treated, capacity used, break-even |
 | Cost pressure | the naira, prices and health prices, month by month |
 | Under the hood | sources, conflicting figures, data traps and limits |
 
@@ -27,7 +30,7 @@ python -m venv .venv && .venv/Scripts/activate     # Windows (macOS/Linux: sourc
 pip install -r requirements.txt
 python pipeline/run_all.py        # fetch -> clean -> join -> score -> model -> charts -> validate
 streamlit run app/Home.py
-python -m pytest                  # tests, including a hand-worked centre-model case
+python -m pytest                  # tests, including hand-worked centre-model cases
 ```
 
 ## How it's built
@@ -62,7 +65,7 @@ A GitHub Action re-runs the pipeline every Monday and commits only when a source
 
 GRID3 health facilities and population (with WorldPop), the Nigeria Demographic and Health Survey 2024,
 the World Bank, the Central Bank of Nigeria, the National Bureau of Statistics, geoBoundaries, and a
-hand-built register of dialysis capacity from peer-reviewed, government and news sources. Full list, with
+hand-built register of dialysis and radiotherapy capacity from peer-reviewed, government and news sources. Full list, with
 licences and access dates, in [`data/sources.yaml`](data/sources.yaml) and on the app's Under the hood page.
 
 Code: MIT licence (see `LICENSE`). Data: each source keeps its own licence.

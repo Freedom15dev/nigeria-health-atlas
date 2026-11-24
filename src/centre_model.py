@@ -1,13 +1,20 @@
-"""One illustrative haemodialysis centre: patients treated, capacity used, break-even.
+"""One illustrative specialist centre: patients treated, capacity used, break-even.
+Used for a haemodialysis centre (kidney) and a radiotherapy centre (cancer), with different inputs.
 
 An illustrative model using public data and stated assumptions. Not investment advice.
-Every input comes from config/assumptions_kidney.yaml. Nothing is hard-coded here.
+Every input comes from config/assumptions_<specialty>.yaml. Nothing is hard-coded here.
 
 Capacity and patients
-  weekly_capacity     = machines x shifts_per_day x days_open_per_week        (session slots)
+  weekly_capacity     = machines x shifts_per_day x sessions_per_machine_per_shift x days_open_per_week
+                        (session slots; sessions_per_machine_per_shift is 1 for dialysis, many for a linac)
   sessions_delivered  = weekly_capacity x capacity_used                       (per week)
-  patients_treated    = sessions_delivered / sessions_per_patient_per_week    (people on the programme)
   yearly figures      = weekly x 52
+  patients_treated:
+    patient_basis "ongoing" (dialysis)  = sessions per week / sessions_per_patient_per_week
+                                          (people on treatment all year)
+    patient_basis "course" (radiotherapy) = sessions per year / sessions_per_course
+                                          (patients completing a course in a year)
+  price_basis "course": prices are per course; price per session = price / sessions_per_course
 
 Money (NGN, per year)
   average price       = sum over payers of (share x price)
@@ -20,6 +27,7 @@ Money (NGN, per year)
   break-even price    = (fixed cost + variable cost) / sessions delivered
   payback (years)     = set-up capital / net cash
   cost per patient-year = (fixed + variable + depreciation) / patients treated
+                        (for "course", this is the cost per patient treated in the year)
 """
 from __future__ import annotations
 
@@ -31,6 +39,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSUMPTIONS = ROOT / "config" / "assumptions_kidney.yaml"
+ASSUMPTIONS_CANCER = ROOT / "config" / "assumptions_cancer.yaml"
 WDI = ROOT / "data" / "processed" / "wdi_nga.csv"
 SECTIONS = ["capacity", "prices", "costs", "fx", "ppp"]
 WEEKS = 52
@@ -77,6 +86,8 @@ def scenario_inputs(a: dict, scenario: str = "base") -> dict:
                 raise ValueError(f"unknown scenario {scenario}")
             out[name] = _resolve(spec[col])
     out["payer_mix"] = {p: (v["value"], v["price"]) for p, v in a["payer_mix"].items() if isinstance(v, dict)}
+    out["patient_basis"] = a.get("patient_basis", "ongoing")
+    out["price_basis"] = a.get("price_basis", "session")
     return out
 
 
@@ -95,13 +106,20 @@ def run(x: dict, naira_shock: float = 0.0) -> dict:
         raise ValueError(f"payer mix sums to {sum(shares)}, not 1")
     fx = x["fx_ngn_per_usd"] * (1 + naira_shock)
 
-    weekly_capacity = x["machines"] * x["shifts_per_day"] * x["days_open_per_week"]
+    per_shift = x.get("sessions_per_machine_per_shift", 1)
+    weekly_capacity = x["machines"] * x["shifts_per_day"] * per_shift * x["days_open_per_week"]
     sessions_week = weekly_capacity * x["capacity_used"]
-    patients = sessions_week / x["sessions_per_patient_per_week"]
     sessions_year = sessions_week * WEEKS
     slots_year = weekly_capacity * WEEKS
+    course = x.get("patient_basis", "ongoing") == "course"
+    if course:
+        patients = sessions_year / x["sessions_per_course"]
+    else:
+        patients = sessions_week / x["sessions_per_patient_per_week"]
 
     avg_price = sum(share * x[price] for share, price in x["payer_mix"].values())
+    if x.get("price_basis", "session") == "course":
+        avg_price = avg_price / x["sessions_per_course"]   # price per course -> price per session
     variable_per_session = x["consumables_per_session_usd"] * fx + x["power_water_per_session_ngn"]
     equipment_ngn = x["machines"] * x["equipment_cost_per_machine_usd"] * fx
     capex = equipment_ngn + x["setup_cost_usd"] * fx
@@ -116,7 +134,9 @@ def run(x: dict, naira_shock: float = 0.0) -> dict:
     contribution = avg_price - variable_per_session
 
     be_sessions = fixed_year / contribution if contribution > 0 else math.inf
+    be_price = (fixed_year + variable_year) / sessions_year
     return {
+        "patient_basis": "course" if course else "ongoing",
         "naira_shock": naira_shock,
         "fx_ngn_per_usd": fx,
         "weekly_capacity": weekly_capacity,
@@ -133,7 +153,9 @@ def run(x: dict, naira_shock: float = 0.0) -> dict:
         "net_cash_per_year_ngn": net_cash_year,
         "setup_capital_ngn": capex,
         "breakeven_capacity_used": be_sessions / slots_year if contribution > 0 else math.inf,
-        "breakeven_price_ngn": (fixed_year + variable_year) / sessions_year,
+        "breakeven_price_ngn": be_price,
+        "breakeven_price_per_course_ngn": be_price * x["sessions_per_course"] if course else math.nan,
+        "average_price_per_course_ngn": avg_price * x["sessions_per_course"] if course else math.nan,
         "payback_years": capex / net_cash_year if net_cash_year > 0 else math.inf,
         "cost_per_patient_year_ngn": (fixed_year + variable_year + depreciation_year) / patients,
     }
@@ -159,7 +181,7 @@ def run_ppp(x: dict, structure: str, naira_shock: float = 0.0) -> dict:
     partner_costs = (x["consumables_per_session_usd"] * fx * s
                      + x["maintenance_pct_of_equipment_per_year"] * equipment_ngn)
     hospital_income = r["revenue_per_year_ngn"] - partner_income
-    hospital_costs = (x["staff_cost_per_shift_ngn"] * x["shifts_per_day"] * x["days_open_per_week"] * WEEKS
+    hospital_costs = (r["fixed_cost_per_year_ngn"] - x["maintenance_pct_of_equipment_per_year"] * equipment_ngn
                       + x["power_water_per_session_ngn"] * s)
     partner_net = partner_income - partner_costs
     return {
@@ -172,6 +194,13 @@ def run_ppp(x: dict, structure: str, naira_shock: float = 0.0) -> dict:
         "hospital_costs_ngn": hospital_costs,
         "hospital_net_cash_ngn": hospital_income - hospital_costs,
     }
+
+
+def input_specs(a: dict):
+    """(section, name, spec) for every model input in an assumptions file."""
+    for section in SECTIONS:
+        for name, spec in a[section].items():
+            yield section, name, spec
 
 
 def run_scenarios(a: dict | None = None) -> pd.DataFrame:

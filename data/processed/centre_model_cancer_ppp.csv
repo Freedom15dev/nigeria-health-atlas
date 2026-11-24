@@ -1,0 +1,7 @@
+naira_shock,structure,partner_income_ngn,partner_costs_ngn,partner_net_cash_ngn,partner_payback_years,hospital_income_ngn,hospital_costs_ngn,hospital_net_cash_ngn,label
+0.0,fee,468000000.0,422109903.5811603,45890096.41883969,99.26200204127147,171600000.0,286000000.0,-114400000.0,"Illustrative structures, general examples only. Not any real firm's terms."
+0.2,fee,468000000.0,506531884.2973923,-38531884.29739231,inf,171600000.0,286000000.00000006,-114400000.00000006,"Illustrative structures, general examples only. Not any real firm's terms."
+0.5,fee,468000000.0,633164855.3717403,-165164855.37174034,inf,171600000.0,285999999.99999994,-114399999.99999994,"Illustrative structures, general examples only. Not any real firm's terms."
+0.0,share,447720000.0,422109903.5811603,25610096.418839693,177.86511889311305,191880000.0,286000000.0,-94120000.0,"Illustrative structures, general examples only. Not any real firm's terms."
+0.2,share,447720000.0,506531884.2973923,-58811884.29739231,inf,191880000.0,286000000.00000006,-94120000.00000006,"Illustrative structures, general examples only. Not any real firm's terms."
+0.5,share,447720000.0,633164855.3717403,-185444855.37174034,inf,191880000.0,285999999.99999994,-94119999.99999994,"Illustrative structures, general examples only. Not any real firm's terms."

@@ -11,7 +11,7 @@ Rules:
  7. The de-duplication report and the GRID3 vs eHealth Africa comparison exist.
  8. Every register row has a source URL and source date   (active from phase 3).
  9. Payer-mix shares sum to 100%                          (active from phase 4).
-11. Every centre-model input has value, low, high, unit, source and worse (phase 4).
+11. Every centre-model input has value, low, high, unit, source and worse (phase 4; cancer from phase 6).
 10. scorecard.csv and scorecard_stress.csv have 37 rows, no missing scores, every score
     between 0 and 100, and the "screening tool, not investment advice" label on every row.
 12. Headline figures (Home page): cards 1-4 each have main figures; every row has a number,
@@ -213,8 +213,8 @@ def run_all_checks() -> list[str]:
     errors += check_population_total()
     errors += check_outputs()
     errors += check_register()
-    errors += check_payer_mix()
-    errors += check_assumptions()
+    for name in ("assumptions_kidney.yaml", "assumptions_cancer.yaml"):
+        errors += [f"{name}: {e}" for e in check_payer_mix(CONFIG / name) + check_assumptions(CONFIG / name)]
     errors += check_scorecard()
     errors += check_headline_figures()
     errors += check_app_inputs()

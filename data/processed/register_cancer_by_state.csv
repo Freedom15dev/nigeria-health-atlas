@@ -1,0 +1,38 @@
+state,evidence,n_rows,n_facilities,public_unit_working,machines_working_low,machines_working_high,machines_not_working_low,machines_not_working_high,specialists_low,specialists_high,gap_equipment,gap_workforce,gap_systems,gap_unknown,earliest_source_date,latest_source_date,source_types
+Abia,no evidence found,0,,,,,,,,,,,,,,,
+Adamawa,no evidence found,0,,,,,,,,,,,,,,,
+Akwa Ibom,no evidence found,0,,,,,,,,,,,,,,,
+Anambra,no evidence found,0,,,,,,,,,,,,,,,
+Bauchi,no evidence found,0,,,,,,,,,,,,,,,
+Bayelsa,no evidence found,0,,,,,,,,,,,,,,,
+Benue,no evidence found,0,,,,,,,,,,,,,,,
+Borno,found,6,1.0,yes,2.0,2.0,,,1.0,1.0,1.0,0.0,0.0,5.0,2022-03-24,2025-08-04,"government, news, peer-reviewed"
+Cross River,found,3,1.0,unknown,,,,,,,0.0,0.0,0.0,3.0,2022-03,2025-09,"government, peer-reviewed"
+Delta,no evidence found,0,,,,,,,,,,,,,,,
+Ebonyi,found,1,0.0,unknown,,,,,,,0.0,0.0,0.0,1.0,2025-09,2025-09,government
+Edo,found,4,1.0,yes,,,1.0,1.0,,,0.0,0.0,1.0,3.0,2019-11-29,2026-09-02,"news, peer-reviewed"
+Ekiti,no evidence found,0,,,,,,,,,,,,,,,
+Enugu,found,5,1.0,yes,,,,,3.0,3.0,0.0,0.0,2.0,3.0,2019-11-29,2025-07-24,"news, peer-reviewed"
+Federal Capital Territory,found,6,1.0,yes,2.0,2.0,1.0,1.0,3.0,3.0,0.0,1.0,2.0,3.0,2020-08-05,2024-01-11,"news, peer-reviewed"
+Gombe,found,4,1.0,yes,,,,,3.0,3.0,0.0,0.0,1.0,3.0,2020-02-04,2024-01-11,"news, peer-reviewed"
+Imo,found,1,1.0,unknown,,,,,,,0.0,0.0,0.0,1.0,2024-01-11,2024-01-11,peer-reviewed
+Jigawa,no evidence found,0,,,,,,,,,,,,,,,
+Kaduna,found,5,1.0,reported not working,,,1.0,1.0,2.0,5.0,1.0,1.0,0.0,3.0,2020-09-04,2024-01-11,peer-reviewed
+Kano,found,6,3.0,reported not working,,,2.0,2.0,,,2.0,1.0,1.0,2.0,2022-02-04,2026-08-17,"news, peer-reviewed"
+Katsina,found,2,1.0,unknown,,,,,,,0.0,0.0,0.0,2.0,2025-07-25,2025-07-25,"government, news"
+Kebbi,no evidence found,0,,,,,,,,,,,,,,,
+Kogi,no evidence found,0,,,,,,,,,,,,,,,
+Kwara,no evidence found,0,,,,,,,,,,,,,,,
+Lagos,found,7,3.0,unknown,4.0,4.0,,,10.0,10.0,0.0,0.0,0.0,7.0,2023-02-07,2026-02-01,"government, news, peer-reviewed"
+Nasarawa,no evidence found,0,,,,,,,,,,,,,,,
+Niger,no evidence found,0,,,,,,,,,,,,,,,
+Ogun,no evidence found,0,,,,,,,,,,,,,,,
+Ondo,no evidence found,0,,,,,,,,,,,,,,,
+Osun,no evidence found,0,,,,,,,,,,,,,,,
+Oyo,found,6,1.0,yes,1.0,1.0,2.0,2.0,9.0,9.0,0.0,0.0,1.0,5.0,2023-02-07,2026-11-20,"government, news, peer-reviewed"
+Plateau,found,1,1.0,unknown,,,,,,,1.0,0.0,0.0,0.0,2020-02-04,2020-02-04,news
+Rivers,found,1,1.0,unknown,,,,,,,0.0,0.0,0.0,1.0,2022-11-21,2022-11-21,news
+Sokoto,found,6,1.0,yes,1.0,1.0,1.0,1.0,3.0,3.0,1.0,0.0,0.0,5.0,2018-02-22,2024-01-11,"news, peer-reviewed"
+Taraba,no evidence found,0,,,,,,,,,,,,,,,
+Yobe,no evidence found,0,,,,,,,,,,,,,,,
+Zamfara,no evidence found,0,,,,,,,,,,,,,,,

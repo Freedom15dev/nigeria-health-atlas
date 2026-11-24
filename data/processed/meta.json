@@ -10,7 +10,8 @@
     "geoboundaries_adm1": "boundary year 2022; source updated 2023-02-26; geoBoundaries build 2023-12-12",
     "money_matters_monthly": "latest month in the panel (see meta.json)",
     "nbs_cpi": "latest monthly release (see the release JSON in data/raw)",
-    "headline_figures": null
+    "headline_figures": null,
+    "specialist_register": null
   },
   "raw_files": {
     "grid3_hf_v2": {

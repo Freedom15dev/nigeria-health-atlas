@@ -3,7 +3,7 @@
 The app never reads raw files, calls an API or does heavy work: everything it shows comes
 from data/processed/. This step writes:
   facility_counts.csv      GRID3 facilities (after de-duplication) by state x level x ownership
-  register_kidney_rows.csv the full kidney register (one row per fact, with source and date)
+  register_<specialty>_rows.csv  the full register per specialty (one row per fact, with source and date)
   headline_figures.csv     the four Home page figures (from data/manual/headline_figures.csv)
   sources.csv              data/sources.yaml as a table (Under the hood page)
   states.csv               the states lookup: official name, display name, code, zone
@@ -42,7 +42,8 @@ def main() -> None:
     fc = facility_counts()
     fc.to_csv(PROCESSED / "facility_counts.csv", index=False)
     reg = pd.read_csv(REGISTER / "specialist_capacity.csv", dtype=str, keep_default_na=False)
-    reg[reg.specialty == "kidney"].to_csv(PROCESSED / "register_kidney_rows.csv", index=False)
+    for specialty in ("kidney", "cancer"):
+        reg[reg.specialty == specialty].to_csv(PROCESSED / f"register_{specialty}_rows.csv", index=False)
     hf = pd.read_csv(MANUAL / "headline_figures.csv", dtype=str, keep_default_na=False)
     hf[HEADLINE_COLUMNS].to_csv(PROCESSED / "headline_figures.csv", index=False)
     sources_table().to_csv(PROCESSED / "sources.csv", index=False)

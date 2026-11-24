@@ -33,6 +33,19 @@ def main() -> None:
         figs["chart4_register_gap_types"] = charts.register_gap_types(by_state)
         figs["chart4b_register_machines_per_million"] = charts.register_machines_per_million(by_state, panel)
         figs["chart4c_national_counts_disagree"] = charts.national_counts(national)
+    creg = PROCESSED / "register_cancer_by_state.csv"
+    if creg.exists():
+        cby = pd.read_csv(creg)
+        cnat = pd.read_csv(PROCESSED / "register_cancer_national.csv", dtype=str, keep_default_na=False)
+        figs["chart4d_cancer_register_gap_types"] = charts.register_gap_types(cby, "Cancer")
+        figs["chart4e_cancer_machines_per_million"] = charts.machines_per_million_bars(
+            cby, panel, "Cancer", "Working radiotherapy machines")
+        figs["chart4f_cancer_national_counts_disagree"] = charts.national_counts_cancer(cnat)
+    cmodel = PROCESSED / "centre_model_cancer_scenarios.csv"
+    if cmodel.exists():
+        figs["chart6c_cancer_centre_model_scenarios"] = charts.centre_scenarios(pd.read_csv(cmodel))
+        figs["chart6d_cancer_centre_model_sensitivity"] = charts.centre_sensitivity(
+            pd.read_csv(PROCESSED / "centre_model_cancer_sensitivity.csv"), source=charts.SRC_MODEL_CANCER)
     hf = MANUAL / "headline_figures.csv"
     if hf.exists():
         figs["chart5_out_of_pocket_figures"] = charts.oop_figures(

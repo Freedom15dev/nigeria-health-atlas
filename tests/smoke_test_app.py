@@ -26,6 +26,19 @@ def main() -> None:
         print(f"  {page:22} {'ok' if not problems else problems[:2]}")
         if problems or not at.title:
             failed.append(page)
+    # the cancer side of each specialty switch
+    for page, key, value in [("views/gaps.py", "gap_spec", "Cancer care"),
+                             ("views/centre.py", "cm_kind", "Radiotherapy centre"),
+                             ("views/explorer.py", "ex_spec", "Cancer")]:
+        at = AppTest.from_file(APP, default_timeout=180)
+        at.run()
+        at.switch_page(page)
+        at.session_state[key] = value
+        at.run()
+        problems = [e.value for e in at.exception] + [e.value for e in at.error]
+        print(f"  {page:22} [{value}] {'ok' if not problems else problems[:2]}")
+        if problems:
+            failed.append(f"{page} [{value}]")
     if failed:
         sys.exit(f"Pages with errors: {failed}")
     print("  all pages render")
