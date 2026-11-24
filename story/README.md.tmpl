@@ -125,20 +125,22 @@ government. Published estimates of Nigeria's out-of-pocket share of health spend
 {dialysis_oop_year} survey found **{dialysis_oop}** paid out of pocket. Only {insured_nat} of adults aged 15 to 49 had any health
 insurance in the NDHS 2024 survey.
 
-I built a state scorecard with three parts: **need** (people, plus self-reported high blood pressure and
-blood sugar), **supply gap** (fewer hospitals per person = bigger gap) and **ability to pay** (insurance and
-household wealth). Each part is a percentile rank from 0 to 100, so one extreme state can't squash the rest.
+I built a state scorecard with three parts: **need** (how many people live there: a stand-in until the number
+of people aged 40 and over, the age group most at risk of kidney disease, is published by state), **supply gap**
+(fewer hospitals per person = bigger gap) and **ability to pay** (insurance and household wealth). Each part
+is a percentile rank from 0 to 100, so one extreme state can't squash the rest.
 
-I expected the states with the greatest need to have the least ability to pay. The data showed something
-more specific.
+I expected the states with the greatest need to have the least ability to pay. {need_pay_finding}
 
 ![Need against ability to pay, one dot per state](exports/chart2_need_vs_ability_to_pay.png)
 
-Need and ability to pay actually move *together* (rank correlation **{r_need_pay}**; +1 would mean the two
-rankings line up exactly). Part of that is how need is measured: diagnoses are self-reported, and people who
-can pay get tested more. But the **supply gap** moves the other way: rank correlation **{r_gap_pay}**. The
-states with the fewest hospitals are the least able to pay. {orange_corner} states sit in the high-need,
-low-ability-to-pay corner, including {halima_state}.
+I also tried adding self-reported high blood pressure and blood sugar to need. With them, the link rises to
+**{r_need_pay_dx}**. I left them out of the main score on purpose: the survey asks whether a health worker ever
+*told* you that you have the condition, so it partly measures who gets tested, and testing rises with wealth.
+Including them would tie need to ability to pay by construction.
+
+What holds in both versions is the supply side: {gap_pay_finding} (rank correlation **{r_gap_pay}**).
+{orange_corner} states sit in the high-need, low-ability-to-pay corner: {corner_states}. {halima_corner}
 
 That is the tension that makes public-private partnerships (PPPs) relevant: a **PPP** is an arrangement where
 a private partner and a public hospital share the investment, the work and the money. Where patients can't
@@ -150,7 +152,8 @@ With equal weights, the top five states are {top5}; the bottom five are {bottom5
 
 > **Under the hood.** A screening tool, not investment advice. The out-of-pocket share is national only; I
 > never spread it across states. NDHS state figures are survey estimates with margins of error. With need
-> measured by population alone, {need_pop_only_unchanged} of the top 10 stay the same.
+> self-reported diagnoses added to need, {need_dx_overlap} of the top 10 stay the same and {orange_corner_dx} states
+> sit in the high-need, low-ability-to-pay corner (both versions are on the app's Under the hood page).
 
 ---
 
@@ -205,7 +208,14 @@ larger, and the optimistic case pays back in about {c_high_payback} years.
   at all.
 - **Causes:** most sources don't say why a unit isn't working.
 - **People:** population is modelled, not counted. Population aged 40 and over, which I wanted as a measure
-  of kidney-disease risk, isn't published by state, so need uses total population.
+  of kidney-disease risk, isn't published by state, so need uses total population. And the estimates
+  disagree: GRID3/WorldPop puts Ogun at {ogun_grid3} people, more than Lagos ({lagos_grid3}); the National
+  Population Commission's {npc_year} projection has Ogun at {ogun_npc} and Lagos at {lagos_npc}. Comparing each
+  state's share of the national total, {n_pop_flags} states differ by more than {pop_flag_pct}%: {pop_flag_states}
+  (GRID3 against NPC). I use GRID3 because it is one consistent model for all {n_units} units, built from satellite and
+  survey data rather than projected forward from an old census, but because need is measured by population,
+  this choice moves states up and down the scorecard. Ogun ranks {ogun_rank_grid3} by GRID3 population and
+  {ogun_rank_npc} by the NPC projection.
 - **Money:** Nigeria has no published average household income, so I use the minimum wage and poverty rates
   as yardsticks.
 

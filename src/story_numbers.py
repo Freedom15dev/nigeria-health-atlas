@@ -7,6 +7,8 @@ changes, the text changes with it.
 from __future__ import annotations
 
 import math
+import re
+import sys
 from pathlib import Path
 
 import pandas as pd
@@ -18,6 +20,8 @@ import story
 from story import naira, short_state
 
 ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT / "pipeline") not in sys.path:   # method thresholds live in the pipeline modules
+    sys.path.insert(0, str(ROOT / "pipeline"))
 P = ROOT / "data" / "processed"
 MANUAL = ROOT / "data" / "manual"
 
@@ -46,7 +50,6 @@ def story_numbers() -> dict[str, str]:
     panel = pd.read_csv(P / "state_panel.csv")
     sc = pd.read_csv(P / "scorecard.csv")
     stress = pd.read_csv(P / "scorecard_stress.csv")
-    sens_need = pd.read_csv(P / "scorecard_sensitivity_need.csv")
     reg_k = pd.read_csv(P / "register_kidney_rows.csv", dtype=str, keep_default_na=False)
     reg_c = pd.read_csv(P / "register_cancer_rows.csv", dtype=str, keep_default_na=False)
     by_k = pd.read_csv(P / "register_kidney_by_state.csv")
@@ -169,14 +172,49 @@ def story_numbers() -> dict[str, str]:
     s["insured_nat"] = _pct((ins * panel.population_total).sum() / panel.population_total.sum(), 1)
     r_need = sc[["score_need", "score_ability_to_pay"]].corr(method="spearman").iloc[0, 1]
     r_gap = sc[["score_supply_gap", "score_ability_to_pay"]].corr(method="spearman").iloc[0, 1]
-    s |= {"r_need_pay": f"{r_need:+.2f}".replace("-", "−"), "r_gap_pay": f"{r_gap:+.2f}".replace("-", "−"),
-          "orange_corner": str(int(((sc.score_need >= 50) & (sc.score_ability_to_pay < 50)).sum()))}
+    # sensitivity: Need also including self-reported diagnoses (not used for the ranking)
+    import scoring
+    sc_dx = scoring.build_scorecard(panel, pillars=scoring.PILLARS_NEED_WITH_DIAGNOSES)
+    r_need_dx = sc_dx[["score_need", "score_ability_to_pay"]].corr(method="spearman").iloc[0, 1]
+    fmt_r = lambda r: f"{r:+.2f}".replace("-", "−")
+    corner = sc[(sc.score_need >= 50) & (sc.score_ability_to_pay < 50)]
+    corner_dx = sc_dx[(sc_dx.score_need >= 50) & (sc_dx.score_ability_to_pay < 50)]
+    s |= {"r_need_pay": fmt_r(r_need), "r_need_pay_dx": fmt_r(r_need_dx), "r_gap_pay": fmt_r(r_gap),
+          "orange_corner": str(len(corner)), "orange_corner_dx": str(len(corner_dx)),
+          "corner_states": _list([short_state(x) for x in corner.state]),
+          "need_dx_overlap": str(len(set(sc.head(10).state) & set(sc_dx.nsmallest(10, "rank").state)))}
+
+    def link(r: float, a_: str, b_: str) -> str:
+        if r >= 0.3:
+            return f"states with more {a_} tend to have more {b_}"
+        if r <= -0.3:
+            return f"states with more {a_} tend to have less {b_}"
+        return f"there is no clear link between {a_} and {b_}"
+    if r_need <= -0.3:
+        s["need_pay_finding"] = (f"The data agrees: measured by population, {link(r_need, 'need', 'ability to pay')} "
+                                 f"(rank correlation **{s['r_need_pay']}**).")
+    elif r_need < 0.3:
+        s["need_pay_finding"] = (f"The data doesn't show that. Measured by population, {link(r_need, 'need', 'ability to pay')}"
+                                 f" (rank correlation **{s['r_need_pay']}**; +1 would mean the two rankings line up "
+                                 "exactly, 0 no link at all).")
+    else:
+        s["need_pay_finding"] = (f"The data shows the opposite: measured by population, "
+                                 f"{link(r_need, 'need', 'ability to pay')} (rank correlation **{s['r_need_pay']}**).")
+    s["gap_pay_finding"] = link(r_gap, "hospitals missing", "ability to pay").replace(
+        "states with more hospitals missing tend to have less ability to pay",
+        "the states with the fewest hospitals per person are the least able to pay").replace(
+        "states with more hospitals missing tend to have more ability to pay",
+        "the states with the fewest hospitals per person are the most able to pay")
+    in_corner = st in set(corner.state)
+    s["halima_corner"] = (f"{short_state(st)}, Halima's state, is one of them." if in_corner else
+                          f"{short_state(st)}, Halima's state, is not: its need score is {_n(hrow.score_need)} and its "
+                          f"ability-to-pay score {_n(hrow.score_ability_to_pay)}.")
     robust = stress[stress.share_in_top10_pct >= 80]
     s |= {"top5": _list([short_state(x) for x in sc.head(5).state]),
           "bottom5": _list([short_state(x) for x in sc.tail(5).state]),
           "n_weightings": _n(stress.n_weightings.iloc[0]), "n_robust": str(len(robust)),
           "robust_states": _list([short_state(x) for x in robust.state]),
-          "need_pop_only_unchanged": str(int(((sens_need["rank"] <= 10) & (sens_need.rank_need_pop_only <= 10)).sum()))}
+          }
 
     # ---------- one centre ----------
     ks = pd.read_csv(P / "centre_model_scenarios.csv")
@@ -239,14 +277,21 @@ def story_numbers() -> dict[str, str]:
     s["n_checked"] = str(len(log))
     s["n_checked_ok"] = str(int(log.verdict.str.startswith("verified").sum()))
     s["built"] = str(meta_json["built"])
+    pc = pd.read_csv(P / "population_crosscheck.csv").set_index("state")
+    import population_check
+    fl = pc[pc.flag].sort_values("share_diff_pct", key=abs, ascending=False)
+    s |= {"npc_year": str(int(pc.npc_year.iloc[0])), "pop_flag_pct": str(population_check.FLAG_PCT),
+          "n_pop_flags": str(len(fl)),
+          "pop_flag_states": _list([f"{short_state(x)} ({v:+.0f}%)".replace("-", "−") for x, v in fl.share_diff_pct.items()]),
+          "ogun_grid3": _money(pc.loc["Ogun", "population_grid3_2025"]), "ogun_npc": _money(pc.loc["Ogun", "population_npc"]),
+          "lagos_grid3": _money(pc.loc["Lagos", "population_grid3_2025"]), "lagos_npc": _money(pc.loc["Lagos", "population_npc"]),
+          "ogun_rank_grid3": str(int(pc.loc["Ogun", "rank_grid3"])), "ogun_rank_npc": str(int(pc.loc["Ogun", "rank_npc"]))}
     states = pd.read_csv(ROOT / "data" / "lookups" / "states.csv")
     s["n_units"] = str(len(states))
     s["n_states_only"] = str(int((states.state != "Federal Capital Territory").sum()))
     s["band_a"], s["band_b"] = "50", "100"   # distance bands used in state_dialysis_distance.csv
     s["app_url"] = "https://nigeria-health-atlas.streamlit.app/"
     # method thresholds, read from the code that applies them
-    import sys
-    sys.path.insert(0, str(ROOT / "pipeline"))
     import clean
     import join_states
     s["dedup_m"] = str(clean.DEDUP_METRES)
@@ -254,7 +299,6 @@ def story_numbers() -> dict[str, str]:
     s["robust_pct"] = "80"   # threshold used for "robust" in the scorecard stress-test summary
     s["shock_a"] = f"{a['fx']['naira_shocks']['value'][0]:.0%}"
     src = yaml.safe_load((ROOT / "data" / "sources.yaml").read_text(encoding="utf-8"))
-    import re
     s["census_year"] = re.search(r"census since (\d{4})", src["grid3_pop_v3"]["notes"]).group(1)
     s["dialysis_oop_year"] = str(d98.source_date)[:4]
     return s

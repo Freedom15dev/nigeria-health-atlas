@@ -72,8 +72,12 @@ def test_stress_test_top_state_is_robust_in_toy_case():
     assert st.loc["E", "share_in_top1_pct"] == 100
 
 
-def test_need_pop_only_variant_changes_only_need():
+def test_main_need_is_population_only():
+    assert S.PILLARS["need"] == [("population_total", +1)]
+
+
+def test_need_with_diagnoses_variant_changes_only_need():
     a = S.pillar_scores(toy_panel(), S.PILLARS)
-    b = S.pillar_scores(toy_panel(), S.PILLARS_NEED_POP_ONLY)
+    b = S.pillar_scores(toy_panel(), S.PILLARS_NEED_WITH_DIAGNOSES)
     assert (a.score_supply_gap == b.score_supply_gap).all()
     assert (a.score_ability_to_pay == b.score_ability_to_pay).all()

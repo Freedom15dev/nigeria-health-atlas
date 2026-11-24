@@ -25,7 +25,7 @@ common reason is **systems** (power, water, consumables, maintenance, payment), 
 Halima is 52, a trader in Bauchi. Her kidneys have failed. Without a transplant she
 needs **haemodialysis** (a machine filters her blood) 2 to 3 times a week, for life.
 *Halima is an illustration, not a real person.* I chose her state from the data rather than in advance:
-Bauchi ranks 10 of 37 on my scorecard, with a supply-gap score of 90 out of 100 and an
+Bauchi ranks 8 of 37 on my scorecard, with a supply-gap score of 90 out of 100 and an
 ability-to-pay score of just 25. Only 1.8% of people there have any health insurance.
 
 The nearest units the evidence says are working are Abubakar Tafawa Balewa University Teaching Hospital and Fatima Abubakar Dialysis Centre, Hadejia. Measured in a straight line from
@@ -125,32 +125,35 @@ government. Published estimates of Nigeria's out-of-pocket share of health spend
 2022 survey found **98%** paid out of pocket. Only 3.9% of adults aged 15 to 49 had any health
 insurance in the NDHS 2024 survey.
 
-I built a state scorecard with three parts: **need** (people, plus self-reported high blood pressure and
-blood sugar), **supply gap** (fewer hospitals per person = bigger gap) and **ability to pay** (insurance and
-household wealth). Each part is a percentile rank from 0 to 100, so one extreme state can't squash the rest.
+I built a state scorecard with three parts: **need** (how many people live there: a stand-in until the number
+of people aged 40 and over, the age group most at risk of kidney disease, is published by state), **supply gap**
+(fewer hospitals per person = bigger gap) and **ability to pay** (insurance and household wealth). Each part
+is a percentile rank from 0 to 100, so one extreme state can't squash the rest.
 
-I expected the states with the greatest need to have the least ability to pay. The data showed something
-more specific.
+I expected the states with the greatest need to have the least ability to pay. The data doesn't show that. Measured by population, there is no clear link between need and ability to pay (rank correlation **+0.22**; +1 would mean the two rankings line up exactly, 0 no link at all).
 
 ![Need against ability to pay, one dot per state](exports/chart2_need_vs_ability_to_pay.png)
 
-Need and ability to pay actually move *together* (rank correlation **+0.53**; +1 would mean the two
-rankings line up exactly). Part of that is how need is measured: diagnoses are self-reported, and people who
-can pay get tested more. But the **supply gap** moves the other way: rank correlation **−0.52**. The
-states with the fewest hospitals are the least able to pay. 5 states sit in the high-need,
-low-ability-to-pay corner, including Bauchi.
+I also tried adding self-reported high blood pressure and blood sugar to need. With them, the link rises to
+**+0.53**. I left them out of the main score on purpose: the survey asks whether a health worker ever
+*told* you that you have the condition, so it partly measures who gets tested, and testing rises with wealth.
+Including them would tie need to ability to pay by construction.
+
+What holds in both versions is the supply side: the states with the fewest hospitals per person are the least able to pay (rank correlation **−0.52**).
+8 states sit in the high-need, low-ability-to-pay corner: Katsina, Jigawa, Bauchi, Benue, Niger, Adamawa, Borno and Plateau. Bauchi, Halima's state, is one of them.
 
 That is the tension that makes public-private partnerships (PPPs) relevant: a **PPP** is an arrangement where
 a private partner and a public hospital share the investment, the work and the money. Where patients can't
 pay the full price, someone else has to: insurance, a subsidy or a long-term investor.
 
-With equal weights, the top five states are Kano, Edo, Ogun, Delta and Ondo; the bottom five are Ekiti, Cross River, Enugu, Kebbi and Ebonyi. I re-ran the score
-319 times with different weights, and 9 states stay in the top 10 in at least 80% of runs:
-Kano, Edo, Ogun, Ondo, Rivers, Kaduna, Nasarawa, Delta and Lagos.
+With equal weights, the top five states are Kano, Ogun, Kaduna, Katsina and Lagos; the bottom five are Ekiti, Enugu, Kebbi, Ebonyi and Cross River. I re-ran the score
+319 times with different weights, and 7 states stay in the top 10 in at least 80% of runs:
+Kano, Ogun, Kaduna, Katsina, Edo, Rivers and Lagos.
 
 > **Under the hood.** A screening tool, not investment advice. The out-of-pocket share is national only; I
 > never spread it across states. NDHS state figures are survey estimates with margins of error. With need
-> measured by population alone, 8 of the top 10 stay the same.
+> self-reported diagnoses added to need, 8 of the top 10 stay the same and 5 states
+> sit in the high-need, low-ability-to-pay corner (both versions are on the app's Under the hood page).
 
 ---
 
@@ -205,7 +208,14 @@ larger, and the optimistic case pays back in about 4 years.
   at all.
 - **Causes:** most sources don't say why a unit isn't working.
 - **People:** population is modelled, not counted. Population aged 40 and over, which I wanted as a measure
-  of kidney-disease risk, isn't published by state, so need uses total population.
+  of kidney-disease risk, isn't published by state, so need uses total population. And the estimates
+  disagree: GRID3/WorldPop puts Ogun at ₦12.9m people, more than Lagos (₦12.6m); the National
+  Population Commission's 2023 projection has Ogun at ₦6.5m and Lagos at ₦13.7m. Comparing each
+  state's share of the national total, 12 states differ by more than 20%: Ogun (+85%), Cross River (−47%), Zamfara (−45%), Sokoto (−37%), Benue (+35%), Kebbi (−34%), Yobe (+34%), Ebonyi (−28%), Edo (+27%), Delta (+25%), Ekiti (−22%) and Akwa Ibom (−21%)
+  (GRID3 against NPC). I use GRID3 because it is one consistent model for all 37 units, built from satellite and
+  survey data rather than projected forward from an old census, but because need is measured by population,
+  this choice moves states up and down the scorecard. Ogun ranks 2 by GRID3 population and
+  10 by the NPC projection.
 - **Money:** Nigeria has no published average household income, so I use the minimum wage and poverty rates
   as yardsticks.
 

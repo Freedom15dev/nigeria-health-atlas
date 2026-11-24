@@ -25,8 +25,8 @@ def reset():
 
 
 ui.opening("Which states need specialist care most, and can people pay for it?",
-           "Each state gets three scores from 0 to 100: **need** (people, and self-reported high blood pressure "
-           "and blood sugar), **supply gap** (fewer hospitals per 100,000 people = bigger gap) and **ability to "
+           "Each state gets three scores from 0 to 100: **need** (population, a stand-in until people aged 40+ "
+           "are counted by state), **supply gap** (fewer hospitals per 100,000 people = bigger gap) and **ability to "
            "pay** (health insurance and household wealth). A score is a percentile rank: 100 = highest of the "
            "37 states, 0 = lowest, so one extreme state can't squash the rest.")
 st.html(f'<div class="orange-line">{ui.SCREENING}</div>')
@@ -105,10 +105,12 @@ fig.update_xaxes(range=[-2, 102], showgrid=False)
 fig.update_yaxes(range=[-2, 102])
 ui.chart(fig, key="sc_scatter")
 n_q = int(((d.score_need >= 50) & (d.score_ability_to_pay < 50)).sum())
+dx = scoring.build_scorecard(panel, w, scoring.PILLARS_NEED_WITH_DIAGNOSES)
+r_dx = dx[["score_need", "score_ability_to_pay"]].corr(method="spearman").iloc[0, 1]
 st.markdown(f"**{n_q} of 37 states** sit in the orange corner: high need, low ability to pay. "
-            "Need here leans on population and on *self-reported* diagnoses, which rise with access to testing "
-            "(and so with wealth); that is one reason need and ability to pay move together. Under the hood "
-            "has a check with need from population alone.")
+            f"If self-reported high blood pressure and blood sugar are added to need, the rank correlation becomes "
+            f"{r_dx:+.2f}, but those figures partly measure who gets tested (which rises with wealth), so they're "
+            "kept out of the main score. Under the hood shows both versions.")
 
 # ---------- stress test (pre-computed over the weight grid) ----------
 st.subheader("Which states stay near the top whatever the weights?")

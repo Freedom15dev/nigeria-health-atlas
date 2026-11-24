@@ -21,11 +21,12 @@ import pandas as pd
 LABEL = "A screening tool, not investment advice."
 
 # pillar -> list of (panel column, direction). +1: higher value = higher pillar score.
+# Need = population (a stand-in until population aged 40+ is published by state). The self-reported
+# diagnosis figures are NOT in the main score: "ever told by a health worker" partly measures access to
+# testing, which rises with wealth, so it would tie Need to Ability to pay by construction.
 PILLARS: dict[str, list[tuple[str, int]]] = {
     "need": [
-        ("population_total", +1),          # stand-in until population 40+ is available
-        ("bp_ever_told_high_avg_pct", +1),  # self-reported; partly reflects access to testing
-        ("sugar_ever_told_high_avg_pct", +1),
+        ("population_total", +1),
     ],
     "supply_gap": [
         ("fac_sec_tert_per_100k", -1),      # fewer hospitals per person = bigger gap
@@ -35,9 +36,13 @@ PILLARS: dict[str, list[tuple[str, int]]] = {
         ("wealth_top2_pct", +1),
     ],
 }
-# Sensitivity check: Need from population alone, without the self-reported diagnosis figures,
-# which partly measure access to testing (and so rise with wealth).
-PILLARS_NEED_POP_ONLY = {**PILLARS, "need": [("population_total", +1)]}
+# Sensitivity check: Need also including self-reported high blood pressure and blood sugar (NDHS 2024,
+# ages 15-49, "ever told by a health worker"). Shown on Under the hood and in the README, not used for ranking.
+PILLARS_NEED_WITH_DIAGNOSES = {**PILLARS, "need": [
+    ("population_total", +1),
+    ("bp_ever_told_high_avg_pct", +1),
+    ("sugar_ever_told_high_avg_pct", +1),
+]}
 
 PILLAR_NAMES = {"need": "Need", "supply_gap": "Supply gap", "ability_to_pay": "Ability to pay"}
 EQUAL_WEIGHTS = {p: 1 / 3 for p in PILLARS}

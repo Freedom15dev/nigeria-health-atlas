@@ -30,7 +30,7 @@ def load_ndhs_manual() -> pd.DataFrame:
     return pd.read_csv(MANUAL / "ndhs2024_state.csv")
 
 
-OWN_LAYOUT = {"headline_figures.csv", "income_benchmarks.csv"}
+OWN_LAYOUT = {"headline_figures.csv", "income_benchmarks.csv", "population_alt.csv"}
 
 
 def main() -> None:

@@ -13,7 +13,7 @@ import pandas as pd
 from common import EXPORTS, PROCESSED, ROOT
 
 sys.path.insert(0, str(ROOT / "src"))
-from scoring import LABEL, PILLARS_NEED_POP_ONLY, TOP_N, build_scorecard, stress_test, weight_grid  # noqa: E402
+from scoring import LABEL, PILLARS_NEED_WITH_DIAGNOSES, TOP_N, build_scorecard, stress_test, weight_grid  # noqa: E402
 
 
 def main() -> None:
@@ -23,11 +23,12 @@ def main() -> None:
     st = stress_test(panel)
     st.to_csv(PROCESSED / "scorecard_stress.csv", index=False)
 
-    # Sensitivity: Need from population alone (no self-reported diagnosis inputs).
-    alt = build_scorecard(panel, pillars=PILLARS_NEED_POP_ONLY)
-    sens = sc[["state", "rank"]].merge(alt[["state", "rank", "score_total"]].rename(
-        columns={"rank": "rank_need_pop_only", "score_total": "score_total_need_pop_only"}), on="state")
-    sens["rank_change"] = sens["rank"] - sens["rank_need_pop_only"]
+    # Sensitivity: Need also including self-reported diagnoses (not used for the main ranking).
+    alt = build_scorecard(panel, pillars=PILLARS_NEED_WITH_DIAGNOSES)
+    sens = sc[["state", "rank", "score_need"]].merge(alt[["state", "rank", "score_need", "score_total"]].rename(
+        columns={"rank": "rank_need_with_diagnoses", "score_need": "score_need_with_diagnoses",
+                 "score_total": "score_total_need_with_diagnoses"}), on="state")
+    sens["rank_change"] = sens["rank_need_with_diagnoses"] - sens["rank"]
     sens["label"] = LABEL
     sens.to_csv(PROCESSED / "scorecard_sensitivity_need.csv", index=False)
 
@@ -44,8 +45,8 @@ def main() -> None:
     share = f"share_in_top{TOP_N}_pct"
     robust = st[st[share] >= 80]
     overlap = len(set(sc.head(10).state) & set(alt.nsmallest(10, "rank").state))
-    print(f"  Sensitivity (Need = population only): {overlap} of the top 10 unchanged; biggest movers: "
-          f"{sens.reindex(sens.rank_change.abs().sort_values(ascending=False).index).head(3)[['state', 'rank', 'rank_need_pop_only']].values.tolist()}")
+    print(f"  Sensitivity (Need with self-reported diagnoses): {overlap} of the top 10 unchanged; biggest movers: "
+          f"{sens.reindex(sens.rank_change.abs().sort_values(ascending=False).index).head(3)[['state', 'rank', 'rank_need_with_diagnoses']].values.tolist()}")
     print(f"  Stress-test: {len(weight_grid())} weightings; {len(robust)} states stay in the top {TOP_N} "
           f"in at least 80% of them: {robust.state.tolist()}")
 

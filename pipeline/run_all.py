@@ -25,6 +25,7 @@ import fetch_wdi  # noqa: E402
 import join_states  # noqa: E402
 import load_manual  # noqa: E402
 import load_register  # noqa: E402
+import population_check  # noqa: E402
 import model_centre  # noqa: E402
 import score  # noqa: E402
 import validate  # noqa: E402
@@ -40,6 +41,8 @@ def main() -> None:
         step()
     print("[clean]")
     steps = clean.main()
+    print("[population_check]")
+    population_check.main()
     print("[distance]")
     distance.main()
     print("[join_states]")

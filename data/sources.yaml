@@ -161,3 +161,18 @@ income_benchmarks:
     NBS publishes no average household income or spending per household in naira, so the story uses
     the minimum wage as a yardstick, plus poverty headcounts. 2018/19 figures are at 2018/19 prices and
     exclude Borno. The minimum wage's exact commencement date differs between sources (noted per row).
+
+npc_population_2023:
+  name: Projected population by state, 2023 (Demographic Bulletin 2023, Annex 3)
+  publisher: National Bureau of Statistics (data from the National Population Commission)
+  url: https://microdata.nigerianstat.gov.ng/index.php/catalog/182/download/1392
+  raw_file: data/raw/nbs_demographic_bulletin_2023_2026-11-24.pdf
+  date_accessed: 2026-11-24
+  data_as_of: 2023 projection (bulletin preface signed December 2025)
+  licence: to verify (NBS terms of use)
+  fields_used: [state, total population (Annex 3, printed page 35)]
+  notes: >
+    Cross-check only (pipeline/population_check.py); GRID3/WorldPop v3.0 stays the population used.
+    A projection forward from the 2006 census (base 140,431,790); method and growth rates not stated.
+    The 37 values sum to the printed national total (221,250,127). Compared with GRID3 by share of the
+    national total, because the years differ (2023 vs 2025). Transcribed to data/manual/population_alt.csv.

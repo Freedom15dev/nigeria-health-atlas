@@ -55,6 +55,18 @@ st.header("Data traps")
 dup = steps["grid3"]["duplicates_dropped"]
 flags = int(panel.crosscheck_flag.sum())
 flags_st = int(panel.crosscheck_sec_tert_flag.sum())
+pc = ui.csv("population_crosscheck.csv")
+pcf = pc[pc.flag].sort_values("share_diff_pct", key=abs, ascending=False)
+og, la = pc.set_index("state").loc["Ogun"], pc.set_index("state").loc["Lagos"]
+popnote = (f"GRID3/WorldPop (2025) puts Ogun at {og.population_grid3_2025 / 1e6:.1f}m people, above Lagos "
+           f"({la.population_grid3_2025 / 1e6:.1f}m). The National Population Commission's {int(pc.npc_year.iloc[0])} "
+           f"projection (NBS Demographic Bulletin 2023) has Ogun at {og.population_npc / 1e6:.1f}m and Lagos at "
+           f"{la.population_npc / 1e6:.1f}m. Comparing each state's share of the national total (the years differ), "
+           f"{len(pcf)} states differ by more than 20%: "
+           + ", ".join(f"{r.state} ({r.share_diff_pct:+.0f}%)" for r in pcf.itertuples())
+           + ". I use GRID3 because it is one consistent model for all 37 states, built from satellite and survey "
+           "data rather than projected forward from the 2006 census. Because need is measured by population, this "
+           "choice moves states on the scorecard; the full comparison is in exports/.")
 traps = [
     ("State names", "Spellings vary between sources (FCT, Federal Capital Territory, Abuja; Nassarawa; Akwa-Ibom; "
      "'..FCT Abuja' in the DHS API). One lookup table, data/lookups/states.csv, holds the name each source uses; "
@@ -68,6 +80,7 @@ traps = [
     ("Modelled population", "Nigeria has had no census since 2006. Population figures are GRID3/WorldPop modelled "
      "estimates for 2025, so per-100,000 rates are shown to one decimal place at most. Population aged 40+ is "
      "unknown in this release, so need uses total population."),
+    ("Two population estimates disagree", popnote),
     ("Survey margins of error", "NDHS 2024 state figures come from samples; small differences between states can "
      "be noise. The DHS API gives no state-level confidence intervals. Blood pressure and blood sugar are "
      "self-reported diagnoses for ages 15–49, so they partly measure access to testing."),
@@ -89,8 +102,23 @@ rows = [{"pillar": scoring.PILLAR_NAMES[p], "input": c, "direction": "higher = m
         for p, ins in scoring.PILLARS.items() for c, d in ins]
 st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch")
 sens = ui.csv("scorecard_sensitivity_need.csv")
-st.markdown("**Check: need from population alone.** The self-reported diagnosis figures partly measure access "
-            "to testing, so I re-ran the scorecard with need from population only:")
+sc_main = ui.csv("scorecard.csv")
+sc_dx = scoring.build_scorecard(panel, pillars=scoring.PILLARS_NEED_WITH_DIAGNOSES)
+corr = lambda d, a, b: d[[a, b]].corr(method="spearman").iloc[0, 1]
+st.markdown("**Check: need with self-reported diagnoses.** The main score measures need by population only. "
+            "NDHS 2024 also asks whether a health worker ever *told* people (aged 15-49) they have high blood "
+            "pressure or high blood sugar. That partly measures who gets tested, which rises with wealth, so it is "
+            "kept as a check, not in the ranking:")
+st.dataframe(pd.DataFrame({
+    "Need measured by": ["Population only (main score)", "Population + self-reported diagnoses (check)"],
+    "Need vs ability to pay (rank corr.)": [f"{corr(sc_main, 'score_need', 'score_ability_to_pay'):+.2f}",
+                                            f"{corr(sc_dx, 'score_need', 'score_ability_to_pay'):+.2f}"],
+    "Supply gap vs ability to pay": [f"{corr(sc_main, 'score_supply_gap', 'score_ability_to_pay'):+.2f}",
+                                     f"{corr(sc_dx, 'score_supply_gap', 'score_ability_to_pay'):+.2f}"],
+    "States in the high-need, low-pay corner": [
+        int(((sc_main.score_need >= 50) & (sc_main.score_ability_to_pay < 50)).sum()),
+        int(((sc_dx.score_need >= 50) & (sc_dx.score_ability_to_pay < 50)).sum())],
+}), hide_index=True, width="stretch")
 st.dataframe(sens, hide_index=True, width="stretch")
 st.markdown("The stress test re-runs the score with each weight between 20% and 50% (steps of 5%, rescaled to "
             "add up to 100%) and counts how often each state stays in the top 10.")

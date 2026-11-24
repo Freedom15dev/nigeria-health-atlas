@@ -12,7 +12,8 @@
     "nbs_cpi": "latest monthly release (see the release JSON in data/raw)",
     "headline_figures": null,
     "specialist_register": null,
-    "income_benchmarks": null
+    "income_benchmarks": null,
+    "npc_population_2023": "2023 projection (bulletin preface signed December 2025)"
   },
   "raw_files": {
     "grid3_hf_v2": {

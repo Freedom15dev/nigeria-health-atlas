@@ -202,7 +202,7 @@ def check_app_inputs() -> list[str]:
     names = {f["properties"]["state"] for f in json.loads(geo.read_text(encoding="utf-8"))["features"]}
     if names != set(load_states().state):
         e.append(f"state map does not match the lookup: {sorted(names ^ set(load_states().state))}")
-    for name in ("state_dialysis_distance.csv", "lga_dialysis_distance.csv", "monthly_prices.csv", "nbs_cpi_health.csv", "facility_counts.csv", "register_kidney_rows.csv",
+    for name in ("population_crosscheck.csv", "state_dialysis_distance.csv", "lga_dialysis_distance.csv", "monthly_prices.csv", "nbs_cpi_health.csv", "facility_counts.csv", "register_kidney_rows.csv",
                  "headline_figures.csv", "sources.csv", "states.csv"):
         if not (PROCESSED / name).exists() or pd.read_csv(PROCESSED / name).empty:
             e.append(f"{name} missing or empty")
@@ -218,7 +218,7 @@ def run_all_checks() -> list[str]:
     errors += check_pillars(panel)
     errors += check_dictionary(panel, dictionary, sources)
     for f in sorted(MANUAL.glob("*.csv")):
-        if f.name in ("headline_figures.csv", "income_benchmarks.csv"):
+        if f.name in ("headline_figures.csv", "income_benchmarks.csv", "population_alt.csv"):
             continue  # different layout: checked by check_headline_figures / check_income
         errors += check_manual(pd.read_csv(f), f.name, sources)
     errors += check_ranges(panel)
