@@ -39,6 +39,11 @@ def _list(items: list[str]) -> str:
     return items[0] if len(items) == 1 else ", ".join(items[:-1]) + " and " + items[-1]
 
 
+def _people(v: float) -> str:
+    """Population counts: '12.9m people' style (never with a currency sign)."""
+    return f"{v / 1e6:.1f}m" if abs(v) >= 1e6 else f"{v:,.0f}"
+
+
 def _money(v: float) -> str:
     """₦4.7m style for big sums, ₦45,000 style for small ones."""
     return naira(v, short=abs(v) >= 1e6)
@@ -283,9 +288,15 @@ def story_numbers() -> dict[str, str]:
     s |= {"npc_year": str(int(pc.npc_year.iloc[0])), "pop_flag_pct": str(population_check.FLAG_PCT),
           "n_pop_flags": str(len(fl)),
           "pop_flag_states": _list([f"{short_state(x)} ({v:+.0f}%)".replace("-", "−") for x, v in fl.share_diff_pct.items()]),
-          "ogun_grid3": _money(pc.loc["Ogun", "population_grid3_2025"]), "ogun_npc": _money(pc.loc["Ogun", "population_npc"]),
-          "lagos_grid3": _money(pc.loc["Lagos", "population_grid3_2025"]), "lagos_npc": _money(pc.loc["Lagos", "population_npc"]),
+          "ogun_grid3": _people(pc.loc["Ogun", "population_grid3_2025"]), "ogun_npc": _people(pc.loc["Ogun", "population_npc"]),
+          "lagos_grid3": _people(pc.loc["Lagos", "population_grid3_2025"]), "lagos_npc": _people(pc.loc["Lagos", "population_npc"]),
           "ogun_rank_grid3": str(int(pc.loc["Ogun", "rank_grid3"])), "ogun_rank_npc": str(int(pc.loc["Ogun", "rank_npc"]))}
+    ps = pd.read_csv(P / "scorecard_sensitivity_population.csv")
+    both = ps[(ps["rank"] <= 10) & (ps.rank_npc_population <= 10)].sort_values("rank")
+    og = ps.set_index("state").loc["Ogun"]
+    ordinal = lambda k: f"{k}{'th' if 10 <= k % 100 <= 20 else {1: 'st', 2: 'nd', 3: 'rd'}.get(k % 10, 'th')}"
+    s |= {"n_top10_both_pop": str(len(both)), "top10_both_pop": _list([short_state(x) for x in both.state]),
+          "ogun_score_rank_grid3": ordinal(int(og["rank"])), "ogun_score_rank_npc": ordinal(int(og.rank_npc_population))}
     states = pd.read_csv(ROOT / "data" / "lookups" / "states.csv")
     s["n_units"] = str(len(states))
     s["n_states_only"] = str(int((states.state != "Federal Capital Territory").sum()))

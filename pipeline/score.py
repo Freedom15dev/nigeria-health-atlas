@@ -13,7 +13,8 @@ import pandas as pd
 from common import EXPORTS, PROCESSED, ROOT
 
 sys.path.insert(0, str(ROOT / "src"))
-from scoring import LABEL, PILLARS_NEED_WITH_DIAGNOSES, TOP_N, build_scorecard, stress_test, weight_grid  # noqa: E402
+from scoring import (LABEL, PILLARS_NEED_WITH_DIAGNOSES, TOP_N, build_scorecard, stress_test,  # noqa: E402
+                     weight_grid, with_population)
 
 
 def main() -> None:
@@ -31,6 +32,21 @@ def main() -> None:
     sens["rank_change"] = sens["rank_need_with_diagnoses"] - sens["rank"]
     sens["label"] = LABEL
     sens.to_csv(PROCESSED / "scorecard_sensitivity_need.csv", index=False)
+
+    # Sensitivity: the NPC 2023 projection instead of GRID3/WorldPop population (need and per-100,000 rates).
+    pc = pd.read_csv(PROCESSED / "population_crosscheck.csv").set_index("state")
+    npc = build_scorecard(with_population(panel, pc.population_npc))
+    psens = sc[["state", "rank", "score_need", "score_supply_gap", "score_total"]].merge(
+        npc[["state", "rank", "score_need", "score_supply_gap", "score_total"]], on="state",
+        suffixes=("", "_npc_population"))
+    psens["rank_change"] = psens["rank_npc_population"] - psens["rank"]
+    psens["npc_year"] = int(pc.npc_year.iloc[0])
+    psens["label"] = LABEL
+    psens.to_csv(PROCESSED / "scorecard_sensitivity_population.csv", index=False)
+    both = sorted(set(sc.head(TOP_N).state) & set(npc.nsmallest(TOP_N, "rank").state))
+    print(f"  Sensitivity (NPC population): {len(both)} of the top {TOP_N} in both: {both}; Ogun "
+          f"{int(psens.set_index('state').loc['Ogun', 'rank'])} -> "
+          f"{int(psens.set_index('state').loc['Ogun', 'rank_npc_population'])}")
 
     cols = ["rank", "state", "score_need", "score_supply_gap", "score_ability_to_pay", "score_total"]
     ends = pd.concat([sc.head(5).assign(end="top 5"), sc.tail(5).assign(end="bottom 5")])

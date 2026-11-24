@@ -146,12 +146,17 @@ That is the tension that makes public-private partnerships (PPPs) relevant: a **
 a private partner and a public hospital share the investment, the work and the money. Where patients can't
 pay the full price, someone else has to: insurance, a subsidy or a long-term investor.
 
+Population matters as well as how need is defined, because need is measured by it. Re-running the scorecard
+with the National Population Commission's 2023 projection instead of GRID3 (for need and for hospitals per
+100,000 people), 9 of the top 10 stay in the top 10 under both: Kano, Ogun, Kaduna, Katsina, Lagos, Edo, Jigawa, Bauchi and Rivers. Ogun's place
+depends on the source: 2nd with GRID3, 9th with the NPC projection.
+
 With equal weights, the top five states are Kano, Ogun, Kaduna, Katsina and Lagos; the bottom five are Ekiti, Enugu, Kebbi, Ebonyi and Cross River. I re-ran the score
 319 times with different weights, and 7 states stay in the top 10 in at least 80% of runs:
 Kano, Ogun, Kaduna, Katsina, Edo, Rivers and Lagos.
 
 > **Under the hood.** A screening tool, not investment advice. The out-of-pocket share is national only; I
-> never spread it across states. NDHS state figures are survey estimates with margins of error. With need
+> never spread it across states. NDHS state figures are survey estimates with margins of error. With
 > self-reported diagnoses added to need, 8 of the top 10 stay the same and 5 states
 > sit in the high-need, low-ability-to-pay corner (both versions are on the app's Under the hood page).
 
@@ -209,8 +214,8 @@ larger, and the optimistic case pays back in about 4 years.
 - **Causes:** most sources don't say why a unit isn't working.
 - **People:** population is modelled, not counted. Population aged 40 and over, which I wanted as a measure
   of kidney-disease risk, isn't published by state, so need uses total population. And the estimates
-  disagree: GRID3/WorldPop puts Ogun at ₦12.9m people, more than Lagos (₦12.6m); the National
-  Population Commission's 2023 projection has Ogun at ₦6.5m and Lagos at ₦13.7m. Comparing each
+  disagree: GRID3/WorldPop puts Ogun at 12.9m people, more than Lagos (12.6m people); the National
+  Population Commission's 2023 projection has Ogun at 6.5m and Lagos at 13.7m people. Comparing each
   state's share of the national total, 12 states differ by more than 20%: Ogun (+85%), Cross River (−47%), Zamfara (−45%), Sokoto (−37%), Benue (+35%), Kebbi (−34%), Yobe (+34%), Ebonyi (−28%), Edo (+27%), Delta (+25%), Ekiti (−22%) and Akwa Ibom (−21%)
   (GRID3 against NPC). I use GRID3 because it is one consistent model for all 37 units, built from satellite and
   survey data rather than projected forward from an old census, but because need is measured by population,

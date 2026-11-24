@@ -146,12 +146,17 @@ That is the tension that makes public-private partnerships (PPPs) relevant: a **
 a private partner and a public hospital share the investment, the work and the money. Where patients can't
 pay the full price, someone else has to: insurance, a subsidy or a long-term investor.
 
+Population matters as well as how need is defined, because need is measured by it. Re-running the scorecard
+with the National Population Commission's {npc_year} projection instead of GRID3 (for need and for hospitals per
+100,000 people), {n_top10_both_pop} of the top 10 stay in the top 10 under both: {top10_both_pop}. Ogun's place
+depends on the source: {ogun_score_rank_grid3} with GRID3, {ogun_score_rank_npc} with the NPC projection.
+
 With equal weights, the top five states are {top5}; the bottom five are {bottom5}. I re-ran the score
 {n_weightings} times with different weights, and {n_robust} states stay in the top 10 in at least {robust_pct}% of runs:
 {robust_states}.
 
 > **Under the hood.** A screening tool, not investment advice. The out-of-pocket share is national only; I
-> never spread it across states. NDHS state figures are survey estimates with margins of error. With need
+> never spread it across states. NDHS state figures are survey estimates with margins of error. With
 > self-reported diagnoses added to need, {need_dx_overlap} of the top 10 stay the same and {orange_corner_dx} states
 > sit in the high-need, low-ability-to-pay corner (both versions are on the app's Under the hood page).
 
@@ -209,8 +214,8 @@ larger, and the optimistic case pays back in about {c_high_payback} years.
 - **Causes:** most sources don't say why a unit isn't working.
 - **People:** population is modelled, not counted. Population aged 40 and over, which I wanted as a measure
   of kidney-disease risk, isn't published by state, so need uses total population. And the estimates
-  disagree: GRID3/WorldPop puts Ogun at {ogun_grid3} people, more than Lagos ({lagos_grid3}); the National
-  Population Commission's {npc_year} projection has Ogun at {ogun_npc} and Lagos at {lagos_npc}. Comparing each
+  disagree: GRID3/WorldPop puts Ogun at {ogun_grid3} people, more than Lagos ({lagos_grid3} people); the National
+  Population Commission's {npc_year} projection has Ogun at {ogun_npc} and Lagos at {lagos_npc} people. Comparing each
   state's share of the national total, {n_pop_flags} states differ by more than {pop_flag_pct}%: {pop_flag_states}
   (GRID3 against NPC). I use GRID3 because it is one consistent model for all {n_units} units, built from satellite and
   survey data rather than projected forward from an old census, but because need is measured by population,

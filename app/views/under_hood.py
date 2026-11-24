@@ -120,6 +120,22 @@ st.dataframe(pd.DataFrame({
         int(((sc_dx.score_need >= 50) & (sc_dx.score_ability_to_pay < 50)).sum())],
 }), hide_index=True, width="stretch")
 st.dataframe(sens, hide_index=True, width="stretch")
+
+ps = ui.csv("scorecard_sensitivity_population.csv")
+yr = int(ps.npc_year.iloc[0])
+both = ps[(ps["rank"] <= 10) & (ps.rank_npc_population <= 10)].sort_values("rank")
+og = ps.set_index("state").loc["Ogun"]
+st.markdown(f"**Check: a different population source.** Need is measured by population, and hospitals per 100,000 "
+            f"people divide by it, so the population estimate matters. Re-running the scorecard with the National "
+            f"Population Commission's {yr} projection instead of GRID3/WorldPop: {len(both)} of the top 10 stay in "
+            f"the top 10 under both ({', '.join(both.state)}). Ogun moves from rank {int(og['rank'])} to "
+            f"{int(og.rank_npc_population)}: its place depends on the source.")
+st.dataframe(ps.sort_values("rank")[["state", "rank", "rank_npc_population", "rank_change", "score_total",
+                                     "score_total_npc_population"]].rename(columns={
+    "rank": "rank (GRID3)", "rank_npc_population": f"rank (NPC {yr})", "rank_change": "places moved (+ = down)",
+    "score_total": "score (GRID3)", "score_total_npc_population": f"score (NPC {yr})"}),
+    hide_index=True, width="stretch")
+ui.download(ps, "scorecard_sensitivity_population.csv")
 st.markdown("The stress test re-runs the score with each weight between 20% and 50% (steps of 5%, rescaled to "
             "add up to 100%) and counts how often each state stays in the top 10.")
 

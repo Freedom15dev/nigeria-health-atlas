@@ -92,6 +92,19 @@ def normalise(weights: dict[str, float]) -> dict[str, float]:
     return {k: v / total for k, v in weights.items()}
 
 
+def with_population(panel: pd.DataFrame, population: pd.Series) -> pd.DataFrame:
+    """The same panel with another population estimate (indexed by state): replaces population_total and
+    recomputes the per-100,000 facility rates that depend on it. Used for the population sensitivity check."""
+    p = panel.copy()
+    p["population_total"] = p.state.map(population)
+    if p.population_total.isna().any():
+        raise ValueError("population estimate missing for some states")
+    for n, d in (("fac_sec_tert_per_100k", "fac_sec_tert_grid3"), ("fac_all_per_100k", "fac_all_grid3")):
+        if d in p:
+            p[n] = (p[d] / p.population_total * 1e5).round(1)
+    return p
+
+
 def build_scorecard(panel: pd.DataFrame, weights: dict[str, float] = EQUAL_WEIGHTS,
                     pillars: dict = PILLARS) -> pd.DataFrame:
     sc = pillar_scores(panel, pillars)

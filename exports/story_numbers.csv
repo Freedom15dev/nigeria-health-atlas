@@ -99,8 +99,8 @@ k_unknown,134
 k_used,75%
 k_variable,"₦36,368"
 k_workforce,5
-lagos_grid3,₦12.6m
-lagos_npc,₦13.7m
+lagos_grid3,12.6m
+lagos_npc,13.7m
 low10_north,All 10
 min_wage,"₦70,000"
 min_wage_source,"set in 2024, still the rate in October 2026 according to ThisDay"
@@ -110,6 +110,7 @@ n_pop_flags,12
 n_robust,7
 n_states_80,7
 n_states_only,36
+n_top10_both_pop,9
 n_unit_states,19
 n_units,37
 n_units_located,27
@@ -118,10 +119,12 @@ nat_beyond100,27%
 need_dx_overlap,8
 need_pay_finding,"The data doesn't show that. Measured by population, there is no clear link between need and ability to pay (rank correlation **+0.22**; +1 would mean the two rankings line up exactly, 0 no link at all)."
 npc_year,2023
-ogun_grid3,₦12.9m
-ogun_npc,₦6.5m
+ogun_grid3,12.9m
+ogun_npc,6.5m
 ogun_rank_grid3,2
 ogun_rank_npc,10
+ogun_score_rank_grid3,2nd
+ogun_score_rank_npc,9th
 oop_max,75%
 oop_min,58%
 oop_n,4
@@ -144,6 +147,7 @@ sessions_hi,3
 sessions_lo,2
 shock_a,20%
 states_80,"Gombe, Borno, Taraba, Zamfara, Cross River, Plateau and Katsina"
+top10_both_pop,"Kano, Ogun, Kaduna, Katsina, Lagos, Edo, Jigawa, Bauchi and Rivers"
 top5,"Kano, Ogun, Kaduna, Katsina and Lagos"
 year_cost_hi,₦7m
 year_cost_lo,₦4.7m

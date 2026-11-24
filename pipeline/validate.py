@@ -147,7 +147,8 @@ def check_payer_mix(path=CONFIG / "assumptions_kidney.yaml") -> list[str]:
 
 def check_scorecard() -> list[str]:
     e = []
-    for name in ("scorecard.csv", "scorecard_stress.csv", "scorecard_sensitivity_need.csv"):
+    for name in ("scorecard.csv", "scorecard_stress.csv", "scorecard_sensitivity_need.csv",
+                 "scorecard_sensitivity_population.csv"):
         path = PROCESSED / name
         if not path.exists():
             e.append(f"missing {name}")

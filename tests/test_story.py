@@ -52,6 +52,15 @@ def test_every_placeholder_has_a_number():
         assert placeholders((ROOT / "story" / tmpl).read_text(encoding="utf-8")) <= set(n), tmpl
 
 
+def test_population_is_never_formatted_as_money():
+    from story_numbers import story_numbers
+    n = story_numbers()
+    for k in ("ogun_grid3", "ogun_npc", "lagos_grid3", "lagos_npc"):
+        assert "₦" not in n[k], k
+    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+    assert not re.search(r"₦[\d.,]+m? people", readme)
+
+
 def test_readme_closes_with_the_disclaimer():
     text = (ROOT / "story" / "README.md.tmpl").read_text(encoding="utf-8").rstrip()
     assert text.endswith("**This is a learning project using public data. It is not investment, medical or "
